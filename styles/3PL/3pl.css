@@ -23,6 +23,16 @@
  
 */
 
+.comn-py {
+  padding: 50px 0;
+}
+
+@media (min-width: 1200px) {
+  .comn-py {
+    padding: var(--lg-eShipperSectionContainer-y);
+  }
+}
+
 /* ===================================== */
 /*              HERO STYLE
 /* ===================================== */
@@ -1078,6 +1088,10 @@
   gap: 14px;
 }
 
+.tailored-benefit {
+  padding-bottom: 0;
+}
+
 .tailored-benefit .section-top-content li:first-child span {
   max-width: 30ch;
 }
@@ -1120,6 +1134,15 @@
   .tailored-benefit img {
     width: 619px;
     height: 473px;
+  }
+
+  .tailored-benefit {
+    padding: var(--lg-eShipperSectionContainer-y);
+  }
+
+  .tailored-benefit dotlottie-player {
+    position: relative;
+    right: -40px;
   }
 
   .tailored-benefit-wrapper h2 {
@@ -1205,7 +1228,7 @@
   flex-direction: column;
   gap: 18px;
   padding-top: 24px;
-  padding-left: 14px;
+  padding-left: 24px;
 }
 
 .skip-content p {
@@ -1234,6 +1257,7 @@
   height: 36px;
 
   margin-bottom: 50px;
+  margin-top: 10px;
 }
 
 .skip-benefits {

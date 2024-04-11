@@ -146,7 +146,7 @@ competitive edge
 
   lottiePlayer: `
 
-   <dotlottie-player src="https://lottie.host/3d322369-55de-4ca3-aa76-c73d0e18da7b/Bq7x9vR9Lx.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop class="d-none d-xl-block"></dotlottie-player>
+   <dotlottie-player src="https://lottie.host/15deea79-342f-4156-a587-d347b9843911/dLKF7tVeYi.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop class="d-none d-xl-block"></dotlottie-player>
 
 
 `,
@@ -368,7 +368,7 @@ card = {
   Img: `
 
    <img
-        src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/09120246/Frame-1597879062.png"
+        src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/11172232/Frame-1597879063.png"
         alt=""
       />
     `,
