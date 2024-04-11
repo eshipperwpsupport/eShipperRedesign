@@ -1,0 +1,16 @@
+<svg
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="mobile-header"
+>
+    <path
+    d="M3.75 15.002H21M3.75 6.00195H26.25M3.75 24.002H26.25"
+    stroke="#1D2939"
+    stroke-width="3.3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    />
+</svg>

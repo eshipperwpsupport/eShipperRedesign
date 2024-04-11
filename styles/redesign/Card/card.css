@@ -1,0 +1,74 @@
+/* 
+
+1.CARD
+
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+
+*/
+
+/* ===================================== */
+/*              GENERAL STYLE
+/* ===================================== */
+
+.eshipper-card {
+  border-radius: 10px;
+  background: var(--Generic-White, #fff);
+  padding: 20px 16px;
+  padding-right: 0;
+  border: 0;
+}
+
+.eshipper-card:hover {
+  box-shadow: 0px 4px 42px 0px rgba(113, 125, 150, 0.24);
+}
+
+.eshipper-card .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eshipper-card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.eshipper-card h5 {
+  font-family: "thicccboi-medium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.eshipper-card .card-content span,
+.eshipper-card .card-content p {
+  font-family: "thicccboi-medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}

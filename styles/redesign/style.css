@@ -1,0 +1,137 @@
+/* 
+
+1. H1
+
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+
+*/
+
+/* ===================================== */
+/*              GENERAL STYLE
+/* ===================================== */
+
+:root {
+  /* Secondary */
+  /* --eShipperSectionContainer-x: 0 4vw; */
+  --eShipperSectionContainer-x: 0 20px;
+  --lg-eShipperSectionContainer-x: 1216px;
+  --eShipperSectionContainer-y: 60px 0;
+  --lg-eShipperSectionContainer-y: 100px 0;
+}
+
+.comn-py {
+  padding: var(--eShipperSectionContainer-y);
+}
+
+.section-margin {
+  margin: var(--eShipperSectionContainer-x);
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  .comn-py {
+    padding: var(--lg-eShipperSectionContainer-y);
+  }
+}
+@media (min-width: 1400px) {
+  .section-margin {
+    max-width: var(--lg-eShipperSectionContainer-x);
+    margin: auto;
+  }
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+/* ===================================== */
+/*              TEXT STYLE
+/* ===================================== */
+
+h1 {
+  font-family: "thicccboi-medium" !important;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+}
+
+h2 {
+  /* font-family: "thicccboi-medium" !important; */
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px; /* 116.667% */
+}
+
+.header-supporting-text {
+  font-family: "thicccboi-regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+.paragraph-supporting-text {
+  font-family: "thicccboi-medium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 44px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  .supporting-text {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 54px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: normal;
+  }
+
+  .header-supporting-text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+  }
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+/* ============= NAVBAR ============== */

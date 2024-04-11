@@ -1,0 +1,52 @@
+/* 
+
+1.CARD
+
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+
+*/
+
+/* ===================================== */
+/*              GENERAL STYLE
+/* ===================================== */
+
+.eshipper-card-2 {
+  border: 0;
+  gap: 24px;
+}
+.eshipper-card-2 h5 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+}
+
+.eshipper-card-2 p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  margin-top: 12px;
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}

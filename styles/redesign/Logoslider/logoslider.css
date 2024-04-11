@@ -1,0 +1,153 @@
+/* 
+
+1.CARD
+
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+
+*/
+
+/* ===================================== */
+/*              GENERAL STYLE
+
+inspo https://www.youtube.com/watch?v=ZMCNin2VjxU&ab_channel=WebBae
+/* ===================================== */
+
+:root {
+  --gap: 4rem;
+  --lg-gap: 48px;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  gap: var(--gap); /* must match gap in marquee-content*/
+  position: relative;
+  user-select: none;
+  padding: 24px 0;
+  border: none;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  align-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+#rivo {
+  width: 87.306px;
+  height: 35.66px;
+  /* flex-shrink: 0; */
+}
+#UPS {
+  width: 143.87px;
+  height: 23.363px;
+}
+#Purolator {
+  width: 143.87px;
+  height: 19.675px;
+  /* flex-shrink: 0; */
+}
+#FedEx {
+  width: 88.535px;
+  height: 25.823px;
+}
+#Canada-Post {
+  width: 136.492px;
+  height: 33.201px;
+}
+#Canpar {
+  width: 143.87px;
+  height: 33.201px;
+}
+#Aramax {
+  width: 145.099px;
+  height: 22.134px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.marquee .scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* if you want to reverse the direction */
+/* .reverse {
+  animation-direction: reverse;
+} */
+
+.marquee-content img {
+  -webkit-transform: translateZ(0);
+}
+
+@media (min-width: 992px) {
+  .marquee {
+    padding: 40px 0;
+    border-top: 1px solid var(--Neutral-200, #e5e7eb);
+    border-bottom: 1px solid var(--Neutral-200, #e5e7eb);
+    gap: var(--lg-gap);
+  }
+
+  .marquee-content {
+    gap: var(--lg-gap);
+  }
+
+  #rivo {
+    width: 87.306px;
+    height: 35.66px;
+    /* flex-shrink: 0; */
+  }
+  #UPS {
+    width: 143.87px;
+    height: 23.363px;
+  }
+  #Purolator {
+    width: 143.87px;
+    height: 19.675px;
+  }
+  #FedEx {
+    width: 88.535px;
+    height: 25.823px;
+  }
+  #Canada-Post {
+    width: 136.492px;
+    height: 33.201px;
+  }
+  #Canpar {
+    width: 143.87px;
+    height: 33.201px;
+  }
+  #Aramax {
+    width: 145.099px;
+    height: 22.134px;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}

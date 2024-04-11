@@ -1,0 +1,303 @@
+/* 
+
+1. SERVICES
+2. PLATFORM
+3. SUPPORT
+
+
+section-top-headline
+section-top-header
+section-top-paragraph
+supporting-title
+supporting-paragraph
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+
+
+
+
+*/
+/* =============== SUB MENU ====================== */
+
+/* ===================================== */
+/*              XXXXXXXXXXX
+/* ===================================== */
+
+/* ===================================== */
+/*              SERVICES
+/* ===================================== */
+
+.services {
+  background: var(--Neutral-100, #f3f4f6);
+}
+
+.services .section-top-header {
+}
+.services .section-top-headline {
+  color: var(--secondary-500-main, #472f92);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+.services .section-top-paragraph {
+}
+
+@media (min-width: 992px) {
+  .services-container {
+    gap: 121px;
+  }
+
+  .section-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .services .section-top-header span {
+    color: var(--Neutral-400, #9ca3af);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+  }
+  .services .section-top-header {
+    color: var(--Neutral-900, #111827);
+
+    /* Heading/H2/Bold/Desktop */
+    font-family: THICCCBOI;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px; /* 122.222% */
+    letter-spacing: -0.72px;
+  }
+
+  .services .section-top-headline {
+    color: var(--secondary-500-main, #472f92);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .service-item {
+    /* width: 100%; */
+    width: 294px;
+  }
+
+  .service-item-title {
+    color: var(--Neutral-900, #111827);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+    max-width: 208px;
+  }
+
+  .service-title-wrapper {
+    border-radius: 0px 0px 12px 12px;
+    background: #fff;
+    padding: 20px;
+    gap: 6px;
+    height: 306px;
+  }
+
+  .service-item-supporting-text {
+    color: var(--Neutral-700, #374151);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.32px;
+  }
+
+  /* =========== SWIPPER ============= */
+
+  .swiper-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  .swiper {
+    flex: 1.25 1;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    z-index: 2;
+    position: fixed;
+    color: black;
+    font-size: 24px;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border: 1px solid var(--Neutral-100, #f3f4f6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+
+  .swiper-button-next {
+    right: -6%;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+/* ===================================== */
+/*              PLATFORM
+/* ===================================== */
+
+/* =============== PLATFORM EXPAND BUTTON ====================== */
+
+.expand-platform-container {
+  padding: 24px 0;
+  gap: 14px;
+}
+
+/* =============== PLATFORM SECOND SECTION ====================== */
+
+.platform-feature {
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 14px;
+}
+
+.platform.expanded-feature {
+  background: var(--Neutral-100, #f3f4f6);
+}
+
+@media (min-width: 992px) {
+  /* =============== PLATFORM EXPAND BUTTON ====================== */
+
+  .expand-platform-benefit {
+    color: var(--secondary-500-main, #472f92);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.48px;
+    text-decoration-line: underline;
+  }
+
+  /* =============== PLATFORM SECOND SECTION ====================== */
+
+  .platform-feature:last-child {
+    margin-top: 14px;
+  }
+
+  .platform-container {
+    gap: 130px;
+  }
+
+  .platform-feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .platform .supporting-title {
+    color: var(--Neutral-900, #111827);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    margin-bottom: 4px;
+  }
+
+  .platform .supporting-paragraph {
+    color: var(--Neutral-700, #374151);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+/* ===================================== */
+/*              SUPPORT
+/* ===================================== */
+
+.support-container {
+  border-radius: 20px;
+  background: var(--Neutral-900, #111827);
+}
+
+.section-top-container {
+  padding: 42px 54px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.support .section-top-headline {
+  color: var(--primary-500-main, #2fb5c0);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.support .section-top-paragraph {
+  color: var(--Generic-White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (min-width: 992px) {
+  .support-container img {
+    width: 658px;
+    height: 352px;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
