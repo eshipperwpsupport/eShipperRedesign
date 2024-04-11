@@ -310,6 +310,11 @@
     max-width: 18ch;
   }
 
+  .service-desc dotlottie-player {
+    width: 539px;
+    height: 456px;
+  }
+
   .service-desc-paragraph-container p,
   .service-desc-paragraph-container p:last-child {
     max-width: none;
@@ -376,7 +381,7 @@
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 196px;
+  height: 205px;
 }
 
 .benefit .card-container {
@@ -1025,10 +1030,23 @@
   }
 
   .form-container > div {
-    width: 308px;
-    height: 197.749px;
-    margin-top: 27px;
-    left: 12px;
+    margin-top: 54px;
+    position: relative;
+    left: -21px;
+    top: -32px;
+    width: 400px;
+    height: 188px;
+    flex-shrink: 0;
+  }
+
+  #lottie-arrow {
+    /* border: 1px solid red; */
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (min-width: 1200px) {
@@ -1080,6 +1098,12 @@
 }
 
 .tailored-benefit .top-section-paragraph {
+  color: var(--Neutral-200, #e5e7eb);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.3px;
   max-width: 30ch;
 }
 
@@ -1098,12 +1122,17 @@
     height: 473px;
   }
 
+  .tailored-benefit-wrapper h2 {
+    font-size: 39px;
+  }
+
   .tailored-benefit .section-top {
     gap: 24px;
   }
 
   .tailored-benefit-wrapper {
-    gap: 78px;
+    /* gap: 78px; */
+    gap: 0;
   }
   .tailored-benefit-wrapper ul {
     max-width: 57ch;
@@ -1152,24 +1181,31 @@
   font-family: "thicccboi-semibold";
 }
 
+.skip-wrapper > div:first-child {
+  background-image: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/11122659/eshipper-3pl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
 .skip-content {
   background-image: none;
   background-repeat: no-repeat;
-  padding: 39px;
+  /* padding: 39px; */
 
   background-size: cover;
   padding-right: 0;
   background-position: left;
   border-radius: 20px;
 
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-top: 18px;
-  padding-bottom: 35px;
-  padding-left: 18px;
+  padding-top: 24px;
+  padding-left: 14px;
 }
 
 .skip-content p {
@@ -1178,11 +1214,14 @@
   color: var(--Generic-White, #fff);
   font-family: "thicccboi-medium";
 
-  font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 16px; /* 133.333% */
-  letter-spacing: -0.18px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.21px;
 }
 .skip-content a {
   padding: 10px 14px;
@@ -1194,13 +1233,14 @@
   line-height: 20px; /* 166.667% */
   height: 36px;
 
-  margin-bottom: 61px;
+  margin-bottom: 50px;
 }
 
 .skip-benefits {
   border-radius: 20px;
   background: var(--generic-white, #fff);
-  padding: 24px;
+  padding: 10px 24px;
+
   height: 100%;
 }
 

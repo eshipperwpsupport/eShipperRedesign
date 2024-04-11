@@ -599,6 +599,7 @@ header .review {
   header .banner-wrapper main {
     /* padding-top: 140px; */
     padding-top: 130px;
+    height: 100%;
   }
 
   header .banner-wrapper dotlottie-player {
@@ -624,7 +625,7 @@ header .review {
     gap: 34px;
   }
   main .section-top-container {
-    gap: 68px;
+    gap: 42px;
   }
 
   main h1 {

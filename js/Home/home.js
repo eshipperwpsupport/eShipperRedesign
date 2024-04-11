@@ -1,5 +1,6 @@
 import { sliderLogo } from "../helper.js";
 import { sliderInput } from "../helper.js";
+import { play_lottie } from "../helper.js";
 
 document.querySelector("#canada-usa").addEventListener("click", activateForm);
 document.querySelector("#worldwide").addEventListener("click", activateForm);
@@ -254,3 +255,9 @@ sliderLogo(images, "sliderlogo");
 sliderLogo(images, "sliderlogo");
 
 sliderInput();
+
+/**
+ *
+ * PLAY ANIMATION ON HOVER ON CARD
+ */
+play_lottie();

@@ -29,15 +29,6 @@ export function sliderLogo(images, id) {
 }
 
 export function sliderInput() {
-  // var slider = document.getElementById("myRange");
-  // var output = document.getElementById("demo");
-  // output.innerHTML = slider.value; // Display the default slider value
-
-  // // Update the current slider value (each time you drag the slider handle)
-  // slider.oninput = function () {
-  //   output.innerHTML = this.value;
-  // };
-
   const slider_input = document.getElementById("slider_input"),
     slider_thumb = document.getElementById("slider_thumb"),
     demo = document.getElementById("demo"),
@@ -84,12 +75,9 @@ export function eshipperHeaderInstantQuote(e) {
 
 export function play_lottie() {
   const lottiePlayer = document.querySelectorAll(".lottie");
-
   // Play animation on hover
   lottiePlayer.forEach((item) => {
     item.addEventListener("mouseenter", (e) => {
-      // document.querySelector("#lottie-1").play();
-
       const player = item.querySelector("dotlottie-player");
       if (player) player.play();
     });
@@ -99,10 +87,36 @@ export function play_lottie() {
 
   lottiePlayer.forEach((item) => {
     item.addEventListener("mouseleave", () => {
-      // document.querySelector("#lottie-1").play();
-
       const player = item.querySelector("dotlottie-player");
       if (player) player.stop();
     });
   });
+}
+
+/**
+ *
+ * LOOP ANIMATION 3 TIMES
+ */
+
+export function loop_arrow() {
+  const target = document.querySelector(".CTA");
+  const lottieArrow = document.querySelector("#lottie-arrow");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // lottieArrow.setAttribute("loop", 3);
+          lottieArrow.play();
+        }
+      });
+    },
+    {
+      root: null, // null means it uses the viewport
+      rootMargin: "0px",
+      threshold: 1.0, // 1.0 means 100% of the target must be visible
+    }
+  );
+
+  observer.observe(target);
 }

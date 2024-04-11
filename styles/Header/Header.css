@@ -228,15 +228,6 @@
     position: relative;
   }
 
-  .service-menu-container {
-    /* background: var(--Neutral-100, #f3f4f6);
-    filter: drop-shadow(0px 0px 250px rgba(164, 164, 164, 0.42));
-    fill: #fff;
-    stroke-width: 4px;
-    stroke: var(--Neutral-100, #f3f4f6); */
-    /* gap: 8px; */
-  }
-
   .pillar-page-menu {
     flex: 1 1;
     background: #f3f4f6;
@@ -249,6 +240,7 @@
     background: var(--Neutral-100, #f3f4f6);
     border: 6px solid #f3f4f6;
     position: relative;
+    display: inline-block;
   }
 
   .pillar-page-wrapper {

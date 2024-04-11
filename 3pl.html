@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3PL</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/eShipperRedesign/styles/style.css" />
+    <link rel="stylesheet" href="/eShipperRedesign/styles/design-system.css" />
+
+    <!-- Header & Footer -->
+    <link rel="stylesheet" href="/eShipperRedesign/styles/Header/header.css" />
+    <link rel="stylesheet" href="/eShipperRedesign/styles/Footer/footer.css" />
+    <!-- Card -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/Card/card.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/Card/eshipperCard-2.css"
+    />
+
+    <!-- Form Style -->
+    <link rel="stylesheet" href="/eShipperRedesign/styles/Form/form.css" />
+
+    <!-- Logo Slider -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/Logoslider/logoslider.css"
+    />
+
+    <!-- Header Instant Quote -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/headerInstantQuote.css"
+    />
+
+    <link rel="stylesheet" href="/eShipperRedesign/styles/redesign/style.css" />
+    <link rel="stylesheet" href="/eShipperRedesign/styles/3PL/3pl.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <eshipper-header class=""></eshipper-header>
+
+    <!-- <section id="layered-pin-1" class="layered-pin"> -->
+    <section class="comn-py hero bg-Neutral-100">
+      <div class="section-margin">
+        <div class="hero-container">
+          <div class="hero-context">
+            <h1 class="Neutral-900">
+              <span class="semibold position-relative"
+                >A 3PL’s Most Powerful </span
+              >
+              <br class="d-none d-sm-block" />
+              Shipping Advantage
+            </h1>
+
+            <p class="header-supporting-text Neutral-500">
+              Supercharge your services with tailor-made, fully managed shipping
+              and software solutions for your 3PL operation.
+            </p>
+
+            <div class="include-btn d-none d-lg-block"></div>
+          </div>
+
+          <div class="animation flex-item">
+            <dotlottie-player
+              class=""
+              id="lottie-header"
+              src="https://lottie.host/f26e4635-bdcd-4691-95ae-f168f62fc3d2/Rf3Gn1OFgY.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+
+          <div class="include-btn mobile d-block d-lg-none"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sliderlogo">
+      <eshipper-logoslider></eshipper-logoslider>
+    </section>
+
+    <section class="comn-py service-desc">
+      <div class="section-margin">
+        <div class="service-desc-container">
+          <div class="d-flex flex-row">
+            <h2 class="text-white semibold">
+              Offload the headache of
+              <span class="service-svg active" id="service-svg-1">
+                <svg
+                  width="161"
+                  height="42"
+                  viewBox="0 0 161 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M161 0H0V42H161V0ZM17.0627 18.12C16.5587 17.88 16.3067 17.52 16.3067 17.04C16.3067 16.44 16.5467 15.972 17.0267 15.636C17.5307 15.276 18.2027 15.096 19.0427 15.096C19.9307 15.096 20.6507 15.276 21.2027 15.636C21.7547 15.972 22.1867 16.464 22.4987 17.112L26.1347 15.276C25.4387 14.052 24.4667 13.128 23.2187 12.504C21.9947 11.856 20.6027 11.532 19.0427 11.532C18.0827 11.532 17.1587 11.664 16.2707 11.928C15.4067 12.168 14.6387 12.54 13.9667 13.044C13.3187 13.524 12.8027 14.112 12.4187 14.808C12.0347 15.504 11.8427 16.296 11.8427 17.184C11.8427 18.264 12.1067 19.128 12.6347 19.776C13.1627 20.424 13.8107 20.952 14.5787 21.36C15.3707 21.744 16.2227 22.044 17.1347 22.26C18.0707 22.452 18.9227 22.656 19.6907 22.872C20.4827 23.064 21.1427 23.304 21.6707 23.592C22.1987 23.856 22.4627 24.252 22.4627 24.78C22.4627 25.14 22.3547 25.452 22.1387 25.716C21.9467 25.98 21.6827 26.196 21.3467 26.364C21.0347 26.532 20.6747 26.664 20.2667 26.76C19.8587 26.832 19.4387 26.868 19.0067 26.868C17.9987 26.868 17.1347 26.676 16.4147 26.292C15.6947 25.908 15.1667 25.272 14.8307 24.384L11.1587 26.292C11.8067 27.636 12.8027 28.668 14.1467 29.388C15.4907 30.108 17.1107 30.468 19.0067 30.468C20.0387 30.468 21.0227 30.336 21.9587 30.072C22.8947 29.832 23.7227 29.472 24.4427 28.992C25.1627 28.512 25.7267 27.924 26.1347 27.228C26.5667 26.508 26.7827 25.692 26.7827 24.78C26.7827 23.604 26.5187 22.668 25.9907 21.972C25.4867 21.252 24.8387 20.688 24.0467 20.28C23.2787 19.848 22.4387 19.536 21.5267 19.344C20.6387 19.128 19.7987 18.936 19.0067 18.768C18.2387 18.576 17.5907 18.36 17.0627 18.12ZM34.4757 4.8H30.0117V30H34.4757V18.66C34.5957 18.084 34.7637 17.604 34.9797 17.22C35.2197 16.812 35.4957 16.488 35.8077 16.248C36.1437 16.008 36.4917 15.84 36.8517 15.744C37.2357 15.624 37.6077 15.564 37.9677 15.564C38.3997 15.564 38.8317 15.624 39.2637 15.744C39.7197 15.864 40.1277 16.068 40.4877 16.356C40.8477 16.644 41.1477 17.028 41.3877 17.508C41.6277 17.988 41.7477 18.6 41.7477 19.344V30H46.2117V19.236C46.1877 17.676 45.9237 16.404 45.4197 15.42C44.9157 14.436 44.2917 13.668 43.5477 13.116C42.8277 12.54 42.0477 12.156 41.2077 11.964C40.3917 11.748 39.6597 11.64 39.0117 11.64C38.0997 11.64 37.2597 11.82 36.4917 12.18C35.7237 12.516 35.0517 12.96 34.4757 13.512V4.8ZM50.4268 7.14C50.9068 7.596 51.4708 7.824 52.1188 7.824C52.7668 7.824 53.3188 7.596 53.7748 7.14C54.2548 6.684 54.4948 6.12 54.4948 5.448C54.4948 4.776 54.2548 4.212 53.7748 3.756C53.3188 3.276 52.7668 3.036 52.1188 3.036C51.4708 3.036 50.9068 3.276 50.4268 3.756C49.9468 4.212 49.7068 4.776 49.7068 5.448C49.7068 6.12 49.9468 6.684 50.4268 7.14ZM54.2788 12H49.8508V30H54.2788V12ZM62.9874 12H58.5234V37.2H62.9874V28.128C63.6114 28.824 64.3434 29.4 65.1834 29.856C66.0474 30.288 67.0554 30.504 68.2074 30.504C69.5994 30.504 70.8474 30.264 71.9514 29.784C73.0554 29.304 73.9914 28.644 74.7594 27.804C75.5514 26.94 76.1514 25.932 76.5594 24.78C76.9914 23.604 77.2074 22.344 77.2074 21C77.2074 19.656 76.9914 18.408 76.5594 17.256C76.1514 16.08 75.5514 15.072 74.7594 14.232C73.9914 13.392 73.0554 12.732 71.9514 12.252C70.8474 11.772 69.5994 11.532 68.2074 11.532C67.0554 11.532 66.0474 11.76 65.1834 12.216C64.3434 12.648 63.6114 13.212 62.9874 13.908V12ZM66.0114 16.104C66.6354 15.816 67.3194 15.672 68.0634 15.672C68.7834 15.672 69.4314 15.816 70.0074 16.104C70.6074 16.368 71.1114 16.752 71.5194 17.256C71.9514 17.736 72.2754 18.3 72.4914 18.948C72.7314 19.596 72.8514 20.28 72.8514 21C72.8514 21.72 72.7314 22.404 72.4914 23.052C72.2754 23.676 71.9514 24.24 71.5194 24.744C71.1114 25.224 70.6074 25.608 70.0074 25.896C69.4314 26.16 68.7834 26.292 68.0634 26.292C67.3194 26.292 66.6354 26.16 66.0114 25.896C65.4114 25.632 64.8834 25.272 64.4274 24.816C63.9714 24.336 63.6114 23.784 63.3474 23.16C63.1074 22.512 62.9874 21.804 62.9874 21.036C62.9874 20.268 63.1074 19.56 63.3474 18.912C63.6114 18.264 63.9714 17.7 64.4274 17.22C64.8834 16.74 65.4114 16.368 66.0114 16.104ZM84.4327 12H79.9687V37.2H84.4327V28.128C85.0567 28.824 85.7887 29.4 86.6287 29.856C87.4927 30.288 88.5007 30.504 89.6527 30.504C91.0447 30.504 92.2927 30.264 93.3967 29.784C94.5007 29.304 95.4367 28.644 96.2047 27.804C96.9967 26.94 97.5967 25.932 98.0047 24.78C98.4367 23.604 98.6527 22.344 98.6527 21C98.6527 19.656 98.4367 18.408 98.0047 17.256C97.5967 16.08 96.9967 15.072 96.2047 14.232C95.4367 13.392 94.5007 12.732 93.3967 12.252C92.2927 11.772 91.0447 11.532 89.6527 11.532C88.5007 11.532 87.4927 11.76 86.6287 12.216C85.7887 12.648 85.0567 13.212 84.4327 13.908V12ZM87.4567 16.104C88.0807 15.816 88.7647 15.672 89.5087 15.672C90.2287 15.672 90.8767 15.816 91.4527 16.104C92.0527 16.368 92.5567 16.752 92.9647 17.256C93.3967 17.736 93.7207 18.3 93.9367 18.948C94.1767 19.596 94.2967 20.28 94.2967 21C94.2967 21.72 94.1767 22.404 93.9367 23.052C93.7207 23.676 93.3967 24.24 92.9647 24.744C92.5567 25.224 92.0527 25.608 91.4527 25.896C90.8767 26.16 90.2287 26.292 89.5087 26.292C88.7647 26.292 88.0807 26.16 87.4567 25.896C86.8567 25.632 86.3287 25.272 85.8727 24.816C85.4167 24.336 85.0567 23.784 84.7927 23.16C84.5527 22.512 84.4327 21.804 84.4327 21.036C84.4327 20.268 84.5527 19.56 84.7927 18.912C85.0567 18.264 85.4167 17.7 85.8727 17.22C86.3287 16.74 86.8567 16.368 87.4567 16.104ZM101.72 7.14C102.2 7.596 102.764 7.824 103.412 7.824C104.06 7.824 104.612 7.596 105.068 7.14C105.548 6.684 105.788 6.12 105.788 5.448C105.788 4.776 105.548 4.212 105.068 3.756C104.612 3.276 104.06 3.036 103.412 3.036C102.764 3.036 102.2 3.276 101.72 3.756C101.24 4.212 101 4.776 101 5.448C101 6.12 101.24 6.684 101.72 7.14ZM105.572 12H101.144V30H105.572V12ZM121.66 30H126.124V19.236C126.124 17.652 125.872 16.368 125.368 15.384C124.864 14.376 124.24 13.584 123.496 13.008C122.776 12.432 121.996 12.048 121.156 11.856C120.34 11.64 119.608 11.532 118.96 11.532C118 11.532 117.124 11.724 116.332 12.108C115.54 12.492 114.856 12.96 114.28 13.512V12H109.816V30H114.28V19.92C114.28 19.056 114.388 18.348 114.604 17.796C114.82 17.22 115.096 16.764 115.432 16.428C115.792 16.068 116.176 15.816 116.584 15.672C117.016 15.528 117.448 15.456 117.88 15.456C118.312 15.456 118.744 15.516 119.176 15.636C119.632 15.756 120.04 15.96 120.4 16.248C120.76 16.536 121.06 16.92 121.3 17.4C121.54 17.88 121.66 18.492 121.66 19.236V30ZM141.5 29.856C142.364 29.4 143.108 28.824 143.732 28.128V29.1C143.732 29.772 143.588 30.372 143.3 30.9C143.036 31.452 142.664 31.92 142.184 32.304C141.704 32.712 141.14 33.024 140.492 33.24C139.844 33.456 139.136 33.564 138.368 33.564C136.928 33.564 135.728 33.312 134.768 32.808C133.808 32.328 133.16 31.764 132.824 31.116L129.008 33.312C129.344 33.96 129.812 34.548 130.412 35.076C131.036 35.604 131.756 36.06 132.572 36.444C133.388 36.828 134.276 37.128 135.236 37.344C136.196 37.56 137.204 37.668 138.26 37.668C139.676 37.668 140.984 37.464 142.184 37.056C143.408 36.648 144.452 36.072 145.316 35.328C146.204 34.584 146.9 33.684 147.404 32.628C147.908 31.572 148.16 30.396 148.16 29.1V12H143.732V13.908C143.108 13.212 142.364 12.648 141.5 12.216C140.66 11.76 139.664 11.532 138.512 11.532C137.12 11.532 135.86 11.772 134.732 12.252C133.628 12.732 132.68 13.404 131.888 14.268C131.12 15.108 130.52 16.116 130.088 17.292C129.68 18.444 129.476 19.692 129.476 21.036C129.476 22.38 129.68 23.628 130.088 24.78C130.52 25.932 131.12 26.94 131.888 27.804C132.68 28.644 133.628 29.304 134.732 29.784C135.86 30.264 137.12 30.504 138.512 30.504C139.664 30.504 140.66 30.288 141.5 29.856ZM140.672 25.932C140.048 26.196 139.364 26.328 138.62 26.328C137.9 26.328 137.252 26.196 136.676 25.932C136.1 25.644 135.596 25.26 135.164 24.78C134.756 24.3 134.432 23.736 134.192 23.088C133.976 22.44 133.868 21.756 133.868 21.036C133.868 20.316 133.976 19.644 134.192 19.02C134.432 18.372 134.756 17.808 135.164 17.328C135.596 16.824 136.1 16.44 136.676 16.176C137.252 15.888 137.9 15.744 138.62 15.744C139.364 15.744 140.048 15.876 140.672 16.14C141.296 16.404 141.836 16.776 142.292 17.256C142.748 17.712 143.096 18.264 143.336 18.912C143.6 19.536 143.732 20.232 143.732 21C143.732 21.768 143.6 22.476 143.336 23.124C143.096 23.772 142.748 24.336 142.292 24.816C141.836 25.296 141.296 25.668 140.672 25.932Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </h2>
+          </div>
+          <div class="service-desc-paragraph-container">
+            <p class="text-white paragraph-supporting-text">
+              We’ve designed a tailored 3PL solution that acts as an extension
+              of your brand. With eShipper's technology, vast carrier network
+              and a full team dedicated to your success, you can enjoy a
+              completely automated shipping experience.
+            </p>
+            <p class="text-white paragraph-supporting-text">
+              Offer your customers competitive rates and services – without the
+              added headache of having to manage it all yourself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py benefit">
+      <div class="section-margin">
+        <div>
+          <div>
+            <h2 class="text-lg-center medium">
+              Built for your <span class="semibold">business.</span>
+            </h2>
+          </div>
+          <div class="card-container">
+            <div class="card-item lottie card-item-1"></div>
+            <div class="card-item lottie card-item-2"></div>
+            <div class="card-item lottie card-item-3"></div>
+            <div class="card-item lottie card-item-4"></div>
+          </div>
+          <div class="benefit-btn d-flex justify-content-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py tailored-benefit bg-secondary-500-main">
+      <div class="section-margin">
+        <div
+          class="d-flex tailored-benefit-wrapper justify-content-between flex-column flex-lg-row align-items-center"
+        >
+          <div class="flex-item section-top d-flex flex-column">
+            <div class="d-flex flex-column section-top-container">
+              <h2 class="medium text-white" style="">
+                Tailored for your
+                <span class="primary-200 bold">business needs</span>. <br />
+                No cookie-cutter solutions involved.
+              </h2>
+              <p
+                class="Neutral-400 top-section-paragraph main-content"
+                style=""
+              >
+                Whatever your needs, we’ll create a specialized solution for
+                your business. Our tailored 3PL solutions include:
+              </p>
+            </div>
+
+            <div class="section-top-content d-flex flex-column">
+              <ul>
+                <li class="d-flex text-white align-items-center">
+                  <div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#2FB5C0" />
+                      <path
+                        d="M6 10L9 13L15 7"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <span>
+                    Strategic shipping consultancy and project management
+                  </span>
+                </li>
+
+                <li class="d-flex text-white align-items-center">
+                  <div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#2FB5C0" />
+                      <path
+                        d="M6 10L9 13L15 7"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <span> Flexible billing options </span>
+                </li>
+
+                <li class="d-flex text-white align-items-center">
+                  <div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#2FB5C0" />
+                      <path
+                        d="M6 10L9 13L15 7"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+
+                  <span> Affiliate programs </span>
+                </li>
+
+                <li class="d-flex text-white align-items-center">
+                  <div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#2FB5C0" />
+                      <path
+                        d="M6 10L9 13L15 7"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+
+                  <span>
+                    Branded platform capabilities including white labeling
+                  </span>
+                </li>
+
+                <li class="d-flex text-white align-items-center">
+                  <div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#2FB5C0" />
+                      <path
+                        d="M6 10L9 13L15 7"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+
+                  <span> Branded labeling on packages </span>
+                </li>
+
+                <li class="d-flex text-white align-items-center">
+                  <div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#2FB5C0" />
+                      <path
+                        d="M6 10L9 13L15 7"
+                        stroke="white"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <span> Line hauls into Canada for US-based 3PLs </span>
+                </li>
+              </ul>
+
+              <a href="" class="btn rounded-pill button-teal-bg text-white">
+                Get Started for Free
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="base-state"
+                >
+                  <path
+                    d="M6.75 13.5L11.25 9L6.75 4.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover-state"
+                >
+                  <path
+                    d="M9.5 13.5L14 9M14 9L9.5 4.5M14 9H3.5"
+                    stroke="#472F92"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-item">
+            <dotlottie-player
+              src="https://lottie.host/c9ff8211-d88a-4037-9ed0-25ab1eecb693/QT5IX1afdt.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py bg-Neutral-50">
+      <div class="section-margin skip">
+        <div class="skip-wrapper d-flex flex-column flex-lg-row">
+          <div class="flex-item position-relative">
+            <!-- <dotlottie-player
+              src="https://lottie.host/2a5aec54-3f78-4baf-8ce0-dbf34877edab/TJ4o9FADNv.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+              class="flex-item"
+            ></dotlottie-player> -->
+
+            <div class="flex-item skip-content">
+              <h2 class="text-white">Air Zone <span>Skipping</span></h2>
+
+              <p class="text-white main-content">
+                Introducing SKIP, the revolutionary air zone skipping service
+                you've been waiting for, at the price of ground.
+              </p>
+
+              <a href="" class="btn rounded-pill button-teal-bg text-white">
+                Get Started
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="base-state"
+                >
+                  <path
+                    d="M6.75 13.5L11.25 9L6.75 4.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hover-state"
+                >
+                  <path
+                    d="M9.5 13.5L14 9M14 9L9.5 4.5M14 9H3.5"
+                    stroke="#472F92"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-item">
+            <ul class="d-flex flex-column mb-0 bg-white skip-benefits">
+              <li>
+                <div>
+                  <svg
+                    width="42"
+                    height="43"
+                    viewBox="0 0 42 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="21" cy="21.5" r="21" fill="#111827" />
+                    <g clip-path="url(#clip0_2312_42238)">
+                      <path
+                        d="M25.2859 20.0714C22.1298 20.0714 19.5715 22.6298 19.5715 25.7857C19.5715 28.9418 22.13 31.5001 25.2859 31.5001C28.4419 31.5001 31.0002 28.9416 31.0002 25.7857C31.0002 22.6297 28.4419 20.0714 25.2859 20.0714ZM23.1429 25.7857C23.1429 26.1803 22.8232 26.5 22.4287 26.5C22.0341 26.5 21.7144 26.1803 21.7144 25.7857C21.7144 23.8164 23.3166 22.2142 25.2859 22.2142C25.6805 22.2142 26.0002 22.5339 26.0002 22.9285C26.0002 23.323 25.6804 23.6427 25.2859 23.6427C24.1043 23.6427 23.1429 24.604 23.1429 25.7857L23.1429 25.7857ZM27.9499 23.4043L26.6279 26.0969C26.5392 26.2775 26.5312 26.4862 26.6079 26.6722C26.6764 26.8393 26.7143 27.0224 26.7143 27.2142C26.7143 28.002 26.0736 28.6428 25.2858 28.6428C24.4979 28.6428 23.8573 28.0021 23.8573 27.2142C23.8573 26.49 24.4091 25.8516 25.1675 25.7961C25.3597 25.7821 25.5279 25.6604 25.6406 25.504L27.3939 23.0705C27.4989 22.9249 27.7021 22.8918 27.848 22.9968C27.9786 23.0912 28.0186 23.2642 27.9499 23.4043Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M18.1429 25.7857H11.7142C11.3197 25.7857 11 25.466 11 25.0715V12.2142C11 11.8197 11.3197 11.5 11.7142 11.5H16V16.1421C16 16.445 16.3531 16.6104 16.5857 16.4164L18.1428 15.0715L19.6999 16.4164C19.9326 16.6103 20.2856 16.445 20.2856 16.1421L20.2857 11.5H24.5715C24.966 11.5 25.2857 11.8197 25.2857 12.2142V18.6429C21.3471 18.6429 18.1428 21.8472 18.1428 25.7858L18.1429 25.7857Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2312_42238">
+                        <rect
+                          width="20"
+                          height="20"
+                          fill="white"
+                          transform="translate(11 11.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                2-3 day shipping anywhere across Canada
+              </li>
+
+              <li>
+                <div>
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="18" cy="18" r="18" fill="#111827" />
+                    <path
+                      d="M23.5714 20.0894H24.2678V21.4822H23.5714V20.0894Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M27.75 20.0894H25.6607V22.1786C25.6607 22.3633 25.5873 22.5405 25.4567 22.671C25.3261 22.8016 25.149 22.875 24.9643 22.875H22.875C22.6904 22.875 22.5132 22.8016 22.3827 22.671C22.2521 22.5404 22.1786 22.3633 22.1786 22.1786V20.0894H20.0894C19.9047 20.0894 19.7275 20.1628 19.597 20.2934C19.4664 20.424 19.3929 20.6011 19.3929 20.7858V27.75C19.3929 27.9347 19.4664 28.1119 19.597 28.2424C19.7276 28.373 19.9047 28.4465 20.0894 28.4465H27.7501C27.9347 28.4465 28.1119 28.373 28.2424 28.2424C28.373 28.1118 28.4465 27.9347 28.4465 27.75V20.7858C28.4465 20.6011 28.373 20.4239 28.2424 20.2934C28.1119 20.1628 27.9347 20.0894 27.7501 20.0894H27.75ZM25.6607 27.0536H22.1786V25.6608H25.6607V27.0536Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M16.8718 10.7363C16.8754 10.8176 16.9133 10.8936 16.9764 10.9453L17.1923 11.1333V11.1332C17.2971 11.2134 17.4426 11.2134 17.5475 11.1332L18.0001 10.8616C18.409 10.594 18.9136 10.5163 19.3841 10.6484C19.8546 10.7805 20.245 11.1095 20.455 11.5507C20.665 11.9921 20.6738 12.5025 20.4795 12.9509L19.595 15.0402C19.5476 15.1519 19.5724 15.2811 19.6576 15.3675L19.8108 15.5207H19.8109C19.8873 15.5975 20.0005 15.6246 20.1034 15.5904L26.3712 13.7589V13.7587C25.7858 12.2915 24.8544 10.9876 23.6564 9.95812C22.4583 8.92862 21.029 8.20412 19.4904 7.84607L16.9555 10.5204C16.9011 10.5791 16.8711 10.6562 16.8718 10.7363Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M14.8521 23.6899L14.2531 23.0979L14.2533 23.0981C13.9504 22.8 13.775 22.3965 13.7632 21.972C13.7515 21.5474 13.9047 21.1348 14.1905 20.8207L15.5346 19.393C15.6208 19.2956 15.6208 19.1492 15.5346 19.0518L15.4858 19.003C15.4179 18.9266 15.3105 18.8991 15.2142 18.9334L13.3965 19.6299C13.0365 19.764 12.6407 19.7679 12.2782 19.6407C11.9156 19.5134 11.609 19.2631 11.4118 18.9334C11.3742 18.8731 11.314 18.8304 11.2447 18.8149C11.1756 18.8015 11.1042 18.8193 11.0496 18.8637L8.26392 20.953C9.22577 23.3138 11.0692 25.2072 13.4036 26.2319L14.8869 24.0034H14.887C14.9508 23.9038 14.9363 23.7732 14.8522 23.6899L14.8521 23.6899Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M26.9422 18.6965C27.0109 18.2352 27.0481 17.7699 27.0535 17.3037C27.0489 16.5436 26.9578 15.7867 26.782 15.0472L20.5141 16.8857C20.3608 16.9332 20.201 16.9568 20.0404 16.9554C19.5936 16.9549 19.1653 16.7771 18.8496 16.461L18.6964 16.3078C18.4558 16.0703 18.2926 15.7658 18.228 15.4341C18.1633 15.1022 18.2004 14.7587 18.3342 14.4483L19.2187 12.359C19.2624 12.2559 19.2435 12.1371 19.1699 12.0526C19.0762 11.9371 18.9096 11.9128 18.7868 11.9968L18.3272 12.2962V12.2964C18.0191 12.496 17.655 12.5911 17.2885 12.5671C16.9221 12.5433 16.5732 12.402 16.2937 12.1641L16.0778 11.9691C15.7279 11.6719 15.5162 11.2436 15.4928 10.7851C15.4671 10.3419 15.6172 9.90651 15.9107 9.57327L17.791 7.55371H17.3035C14.7176 7.55371 12.2379 8.58103 10.4093 10.4095C8.58078 12.2379 7.55359 14.7177 7.55359 17.3037C7.55512 18.0327 7.63928 18.7594 7.80438 19.4696L10.207 17.6659C10.5812 17.3834 11.0587 17.2751 11.5181 17.3683C11.9777 17.4617 12.375 17.7475 12.6096 18.1533C12.67 18.2572 12.7972 18.3016 12.9091 18.2579L14.7338 17.5615C15.0385 17.452 15.3687 17.4344 15.6832 17.5113C15.9976 17.588 16.2827 17.7556 16.5027 17.9931L16.5515 18.0489H16.5514C16.8324 18.3505 16.9887 18.7474 16.9887 19.1597C16.9887 19.5719 16.8324 19.9689 16.5514 20.2705L15.2143 21.7608C15.124 21.8594 15.124 22.0106 15.2143 22.109L15.8202 22.701C16.0945 22.9695 16.2657 23.3259 16.3038 23.7078C16.342 24.0897 16.2448 24.4729 16.029 24.7903L14.7616 26.7055C15.5895 26.9347 16.4444 27.0519 17.3035 27.0537C17.5404 27.0537 17.7701 27.0537 17.9999 27.0189V20.0894C17.9999 19.7199 18.1467 19.3658 18.4078 19.1044C18.6692 18.8433 19.0233 18.6965 19.3928 18.6965L26.9422 18.6965Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                Tailored solutions for Canada, USA and Cross-Border
+              </li>
+
+              <li>
+                <div>
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="18" cy="18" r="18" fill="#111827" />
+                    <path
+                      d="M14.593 17.4873C14.8192 17.4873 15.0455 17.5284 15.251 17.6106L16.7726 18.1658L16.7727 16.1301H7.37573V23.615C7.37573 23.7591 7.49904 23.8824 7.64306 23.8824H16.5055C16.6495 23.8824 16.7728 23.7591 16.7728 23.615V22.1962C16.4233 22.1757 16.0738 22.0935 15.7446 21.97L13.9146 21.312C12.907 20.9419 12.3725 19.811 12.7425 18.8033C13.0304 18.0015 13.7706 17.4874 14.5931 17.4874L14.593 17.4873ZM10.8917 22.8955H8.79436V22.402H10.8917V22.8955ZM10.2543 20.1401V21.9701H9.43181V20.1401H8.67095L9.84302 18.7829L11.0151 20.1401H10.2543Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12.5781 15.1226V13.4775H14.4494C14.5316 13.4775 14.5934 13.5186 14.6551 13.5597L16.0328 15.1019L12.5781 15.102L12.5781 15.1226Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M8.11572 15.1226L9.49347 13.5805C9.53457 13.5188 9.61677 13.4983 9.69914 13.4983H11.5704V15.1434H8.11573L8.11572 15.1226Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.3096 22.2372L25.0185 16.274H21.0706C20.2686 16.274 19.4872 16.6236 18.9732 17.2404L17.5339 18.906C17.3487 19.1117 17.0609 19.1939 16.8141 19.0912L14.9841 18.4332C14.4083 18.2275 13.7915 18.5154 13.5858 19.0912C13.3801 19.6669 13.668 20.2838 14.2438 20.4894L16.0738 21.1474C17.1842 21.5586 18.4179 21.2296 19.1993 20.3454L20.3303 19.0499V22.2372L20.3096 22.2372Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M26.0053 16.521L20.9674 22.8954H24.7098V23.8207L20.3093 23.8209V24.6023C20.3093 24.9724 20.5972 25.2603 20.9673 25.2603H26.2522C26.6222 25.2603 26.9101 24.9724 26.9101 24.6023V18.0841C26.9101 17.426 26.54 16.8297 26.0054 16.5212L26.0053 16.521Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M19.5899 12.9841H20.4946V13.1487C20.4946 14.5675 21.6461 15.719 23.065 15.719C24.4838 15.719 25.6353 14.5675 25.6353 13.1487C25.6353 12.7375 25.5326 12.3672 25.368 12.0177H25.3063H20.7416L19.5078 12.6757C19.3844 12.7579 19.4255 12.9841 19.5901 12.9841L19.5899 12.9841Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.5976 11.3803C20.6387 11.442 20.7209 11.5036 20.8033 11.5036H25.3066C25.4299 11.5036 25.5328 11.4009 25.5328 11.2774V10.496C25.5328 10.3727 25.4506 10.2903 25.3272 10.2698L20.1455 9.85861C19.9604 9.83805 19.8371 10.0437 19.9398 10.1876L20.5976 11.3803Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                Customs clearance included
+              </li>
+
+              <li>
+                <div>
+                  <svg
+                    width="42"
+                    height="43"
+                    viewBox="0 0 42 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="21" cy="21.5" r="21" fill="#111827" />
+                    <g clip-path="url(#clip0_2204_18187)">
+                      <path
+                        d="M25.6 12H16.4C15.2001 12 14.24 12.96 14.24 14.1601V23.38C14.24 24.42 14.98 25.3 15.96 25.5C15.94 25.6401 15.94 25.8 15.94 25.9601C15.94 28.7601 18.1999 31.0202 21.0001 31.0202C23.8001 31.0202 26.0603 28.7603 26.0603 25.9601C26.0603 25.8 26.0603 25.6601 26.0403 25.5C27.0204 25.3 27.7602 24.44 27.7602 23.38L27.7604 14.1601C27.7604 12.96 26.8005 12 25.6005 12H25.6ZM17.9598 14.86H24.02C24.4199 14.86 24.76 15.18 24.76 15.6C24.76 16.0201 24.44 16.3401 24.02 16.3401L17.9598 16.3399C17.5599 16.3399 17.2198 16.02 17.2198 15.5999C17.2198 15.18 17.5599 14.86 17.9598 14.86ZM17.9598 18.3401H24.02C24.4199 18.3401 24.76 18.6601 24.76 19.0801C24.76 19.5002 24.44 19.8202 24.02 19.8202L17.9598 19.82C17.5599 19.82 17.2198 19.5 17.2198 19.08C17.2198 18.66 17.5599 18.3401 17.9598 18.3401ZM20.9998 29.5202C19.0198 29.5202 17.4198 27.9001 17.4198 25.9402C17.4198 23.9802 19.0198 22.3602 20.9998 22.3602C22.9798 22.3602 24.5798 23.9802 24.5798 25.9402C24.5798 27.9002 22.9798 29.5202 20.9998 29.5202Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M22.0603 24.3801L20.4802 25.9601L19.9402 25.4201C19.6602 25.1401 19.1802 25.1401 18.9002 25.4201C18.6202 25.7001 18.6202 26.1802 18.9002 26.4602L19.9602 27.5202C20.1003 27.6603 20.3002 27.7402 20.4802 27.7402C20.6603 27.7402 20.8602 27.6603 21.0002 27.5202L23.1003 25.4201C23.3803 25.1401 23.3803 24.6601 23.1003 24.3801C22.8002 24.0801 22.3403 24.0801 22.0603 24.3801Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2204_18187">
+                        <rect
+                          width="20"
+                          height="20"
+                          fill="white"
+                          transform="translate(11 11.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                Picture Proof of Delivery (POD)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py solution">
+      <div class="section-margin">
+        <div>
+          <div>
+            <h2>
+              <span class="semibold">Adaptive solutions</span> to keep your
+              business moving – and growing.
+            </h2>
+          </div>
+
+          <div class="card-container">
+            <div class="card-item card-item-1"></div>
+            <div class="card-item card-item-2"></div>
+            <div class="card-item card-item-3"></div>
+            <div class="card-item card-item-4"></div>
+            <div class="card-item card-item-5"></div>
+            <div class="card-item card-item-6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py support">
+      <div class="section-margin">
+        <div class="support-container">
+          <div>
+            <div>
+              <h2 class="text-white">
+                Get a Dedicated <br />
+                <span class="bold secondary-300">Support Team</span>
+              </h2>
+              <p class="text-white paragraph-supporting-text">
+                Every 3PL receives a Dedicated Account Manager with a full
+                support team behind them. They manage shipping, claims, queries,
+                consultations and returns management for all your clients, so
+                you get to take the credit without doing the heavy lifting.
+              </p>
+              <div class="include-btn btn-support"></div>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/09120835/Frame-1597879006.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py more-services bg-Neutral-50">
+      <div class="section-margin">
+        <div class="d-flex flex-column more-services-container">
+          <div class="section-top-container">
+            <div>
+              <h2 class="section-top-header medium Neutral-900 text-xl-center">
+                Didn’t find what you were
+                <span class="bold">looking for?</span>
+              </h2>
+            </div>
+            <p class="Neutral-600">
+              Explore some of our other tailored business solutions to see what
+              best fits your business needs.
+            </p>
+          </div>
+
+          <!-- <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div> -->
+
+          <div class="swipper-container">
+            <main>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="more-services-card">
+                      <div>
+                        <svg
+                          width="64"
+                          height="64"
+                          viewBox="0 0 64 64"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_431_1168)">
+                            <circle cx="32" cy="32" r="32" fill="#472F92" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M36.6718 26.1094L47 31.5631L46.7005 34.6803L36.4586 34.1117C36.2549 36.1666 35.948 38.1776 35.5616 39.9775L40.2362 42.5474V44.7739L34.4107 44.0191C33.7043 45.854 32.8801 47 31.9999 47C31.1198 47 30.2957 45.854 29.5893 44.0191L23.7638 44.7739V42.5474L28.4384 39.9775C28.0516 38.1778 27.7449 36.1667 27.5414 34.1117L17.2995 34.6803L17 31.5631L27.3282 26.1094C28.0554 13.9635 35.9456 13.9635 36.6722 26.1094H36.6718Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_431_1168">
+                              <rect
+                                width="64"
+                                height="64"
+                                rx="32"
+                                fill="white"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div>
+                        <p>International</p>
+                        <p class="desc">
+                          For brands looking to import, export or ship to global
+                          customers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="more-services-card">
+                      <div>
+                        <svg
+                          width="72"
+                          height="72"
+                          viewBox="0 0 72 72"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_431_1189)">
+                            <circle cx="36" cy="36" r="36" fill="#472F92" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M45.971 53H48.8036C50.5637 53 52 51.6455 52 49.9842V30.8105C52 29.8137 51.5377 28.9563 50.6834 28.3704L37.8787 19.5864C36.7394 18.8045 35.2606 18.8045 34.1213 19.5864L21.3166 28.3704C20.4622 28.9563 20 29.8137 20 30.8105V49.9842C20 51.6455 21.4363 53 23.1964 53H26.029V38.8275C26.029 37.3279 27.3292 36.1008 28.918 36.1008H43.084C44.6728 36.1008 45.973 37.328 45.973 38.8275V53H45.971ZM33.2672 38.1252H35.2269V41.646H36.7724V38.1252H38.7321C39.1991 38.1252 39.5793 38.4852 39.5793 38.926V44.0827C39.5793 44.5224 39.1979 44.8824 38.7321 44.8824H33.2686C32.8015 44.8824 32.4213 44.5224 32.4213 44.0827V38.926C32.4213 38.4852 32.8027 38.1252 33.2686 38.1252H33.2672ZM37.7509 46.2437H39.7106V49.7645H41.2561V46.2437H43.2158C43.6816 46.2437 44.063 46.6036 44.063 47.0433V52.2001C44.063 52.6409 43.6816 52.9997 43.2158 52.9997H37.7523C37.2853 52.9997 36.9051 52.6397 36.9051 52.2001V47.0433C36.9051 46.6025 37.2864 46.2437 37.7523 46.2437H37.7509ZM28.7821 46.2437H30.7418V49.7645H32.2872V46.2437H34.2469C34.714 46.2437 35.0942 46.6036 35.0942 47.0433V52.2001C35.0942 52.6409 34.7128 52.9997 34.2469 52.9997H28.7834C28.3176 52.9997 27.9362 52.6397 27.9362 52.2001V47.0433C27.9362 46.6025 28.3176 46.2437 28.7834 46.2437H28.7821ZM32.8585 30.4409C32.3634 30.4409 31.9632 30.0632 31.9632 29.5959C31.9632 29.1297 32.3634 28.7508 32.8585 28.7508H39.1387C39.6326 28.7508 40.034 29.1297 40.034 29.5959C40.034 30.0631 39.6326 30.4409 39.1387 30.4409H32.8585Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_431_1189">
+                              <rect
+                                width="72"
+                                height="72"
+                                rx="36"
+                                fill="white"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div>
+                        <p>Marketplace Fulfillment</p>
+                        <p class="desc">
+                          For businesses that sell on Amazon, Walmart & Best Buy
+                          Marketplaces
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="more-services-card">
+                      <div>
+                        <svg
+                          width="64"
+                          height="64"
+                          viewBox="0 0 64 64"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_431_1171)">
+                            <circle cx="32" cy="32" r="32" fill="#472F92" />
+                            <path
+                              d="M47.2269 19.5H40.9746V25.1762C40.9746 25.3442 40.8738 25.5124 40.7391 25.5796C40.6719 25.6132 40.5712 25.6468 40.5037 25.6468C40.4365 25.6468 40.3357 25.6132 40.2683 25.5796L38.0833 24.3358L35.8983 25.5796C35.764 25.6468 35.5621 25.6468 35.4277 25.5796C35.2934 25.5124 35.1923 25.3442 35.1923 25.1762L35.1931 19.5H28.9746C28.6048 19.5 28.2686 19.8026 28.2686 20.206V26.3864L29.3105 25.6468C29.8483 25.277 30.5208 25.1426 31.1593 25.277C31.7979 25.4114 32.3695 25.7812 32.7055 26.3526C33.3776 27.4281 33.1089 28.8063 32.1005 29.546L30.6215 30.6215H40.3696C41.6806 30.6215 42.7562 31.6971 42.7562 33.0081C42.7562 33.3779 42.6554 33.7478 42.5208 34.0501C42.9914 34.1173 43.462 34.3527 43.7982 34.7222C44.2352 35.1592 44.5042 35.7642 44.5042 36.4031C44.5042 37.5123 43.7645 38.4198 42.7562 38.6888C42.9242 39.025 43.0588 39.3948 43.0588 39.798C43.0588 40.235 42.958 40.6384 42.7226 41.0082H47.2942C47.664 41.0082 48.0002 40.7056 48.0002 40.3022L47.9999 20.2061C47.9327 19.8363 47.6303 19.5 47.2269 19.5Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M34.4873 37.4454H42.017C42.5548 37.4454 43.0253 37.0756 43.0926 36.5379C43.1262 36.2353 43.0254 35.9329 42.79 35.7311C42.5884 35.5295 42.353 35.4285 42.0839 35.4285H35.2266C34.8567 35.4285 34.5205 35.1258 34.5205 34.7224C34.5205 34.3526 34.8231 34.0164 35.2266 34.0164H40.3359C40.8065 34.0164 41.2098 33.7138 41.3442 33.2768C41.5122 32.6046 41.008 31.9994 40.3694 31.9994L28.4706 31.9999C28.168 31.9999 27.8992 31.7983 27.7985 31.5293C27.6977 31.2267 27.7985 30.9243 28.0339 30.7561L31.2273 28.4031C31.6643 28.1005 31.7651 27.4955 31.4963 27.0586C31.3619 26.8231 31.1265 26.6888 30.8577 26.6216C30.5887 26.5544 30.3199 26.6216 30.0845 26.7896L25.8156 29.2097C24.8744 29.7475 24.034 30.3863 23.2611 31.1257L21.4795 32.8401V42.1509L22.0173 42.4535C24.2359 43.6637 26.7232 44.2686 29.2443 44.2686H38.6227C39.1941 44.2686 39.6647 43.8316 39.6983 43.3274C39.7319 43.0248 39.6311 42.7561 39.3957 42.5543C39.1941 42.3527 38.9587 42.2516 38.6896 42.2516L33.7819 42.2519C33.4121 42.2519 33.0758 41.9493 33.0758 41.5459C33.0758 41.1761 33.3785 40.8398 33.7819 40.8398H40.5723C41.1101 40.8398 41.5806 40.47 41.6479 39.9323C41.7151 39.3273 41.2445 38.8231 40.6395 38.8231L34.488 38.8233C34.1182 38.8233 33.7819 38.5207 33.7819 38.1173C33.7822 37.7475 34.0848 37.4452 34.488 37.4452L34.4873 37.4454Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M16.9412 42.2852H20.1346V32.8398H16.9412C16.437 32.8398 16 33.2432 16 33.781V41.3777C16 41.8483 16.4034 42.2852 16.9412 42.2852Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_431_1171">
+                              <rect
+                                width="64"
+                                height="64"
+                                rx="32"
+                                fill="white"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div>
+                        <p>Domestic</p>
+                        <p class="desc">
+                          For high value or fragile shipments that need extra
+                          care and attention
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="more-services-card">
+                      <div>
+                        <svg
+                          width="64"
+                          height="64"
+                          viewBox="0 0 64 64"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_431_1168)">
+                            <circle cx="32" cy="32" r="32" fill="#472F92" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M36.6718 26.1094L47 31.5631L46.7005 34.6803L36.4586 34.1117C36.2549 36.1666 35.948 38.1776 35.5616 39.9775L40.2362 42.5474V44.7739L34.4107 44.0191C33.7043 45.854 32.8801 47 31.9999 47C31.1198 47 30.2957 45.854 29.5893 44.0191L23.7638 44.7739V42.5474L28.4384 39.9775C28.0516 38.1778 27.7449 36.1667 27.5414 34.1117L17.2995 34.6803L17 31.5631L27.3282 26.1094C28.0554 13.9635 35.9456 13.9635 36.6722 26.1094H36.6718Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_431_1168">
+                              <rect
+                                width="64"
+                                height="64"
+                                rx="32"
+                                fill="white"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div>
+                        <p>International</p>
+                        <p class="desc">
+                          For brands looking to import, export or ship to global
+                          customers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="more-services-card">
+                      <div>
+                        <svg
+                          width="72"
+                          height="72"
+                          viewBox="0 0 72 72"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_431_1189)">
+                            <circle cx="36" cy="36" r="36" fill="#472F92" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M45.971 53H48.8036C50.5637 53 52 51.6455 52 49.9842V30.8105C52 29.8137 51.5377 28.9563 50.6834 28.3704L37.8787 19.5864C36.7394 18.8045 35.2606 18.8045 34.1213 19.5864L21.3166 28.3704C20.4622 28.9563 20 29.8137 20 30.8105V49.9842C20 51.6455 21.4363 53 23.1964 53H26.029V38.8275C26.029 37.3279 27.3292 36.1008 28.918 36.1008H43.084C44.6728 36.1008 45.973 37.328 45.973 38.8275V53H45.971ZM33.2672 38.1252H35.2269V41.646H36.7724V38.1252H38.7321C39.1991 38.1252 39.5793 38.4852 39.5793 38.926V44.0827C39.5793 44.5224 39.1979 44.8824 38.7321 44.8824H33.2686C32.8015 44.8824 32.4213 44.5224 32.4213 44.0827V38.926C32.4213 38.4852 32.8027 38.1252 33.2686 38.1252H33.2672ZM37.7509 46.2437H39.7106V49.7645H41.2561V46.2437H43.2158C43.6816 46.2437 44.063 46.6036 44.063 47.0433V52.2001C44.063 52.6409 43.6816 52.9997 43.2158 52.9997H37.7523C37.2853 52.9997 36.9051 52.6397 36.9051 52.2001V47.0433C36.9051 46.6025 37.2864 46.2437 37.7523 46.2437H37.7509ZM28.7821 46.2437H30.7418V49.7645H32.2872V46.2437H34.2469C34.714 46.2437 35.0942 46.6036 35.0942 47.0433V52.2001C35.0942 52.6409 34.7128 52.9997 34.2469 52.9997H28.7834C28.3176 52.9997 27.9362 52.6397 27.9362 52.2001V47.0433C27.9362 46.6025 28.3176 46.2437 28.7834 46.2437H28.7821ZM32.8585 30.4409C32.3634 30.4409 31.9632 30.0632 31.9632 29.5959C31.9632 29.1297 32.3634 28.7508 32.8585 28.7508H39.1387C39.6326 28.7508 40.034 29.1297 40.034 29.5959C40.034 30.0631 39.6326 30.4409 39.1387 30.4409H32.8585Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_431_1189">
+                              <rect
+                                width="72"
+                                height="72"
+                                rx="36"
+                                fill="white"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div>
+                        <p>Marketplace Fulfillment</p>
+                        <p class="desc">
+                          For businesses that sell on Amazon, Walmart & Best Buy
+                          Marketplaces
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="more-services-card">
+                      <div>
+                        <svg
+                          width="64"
+                          height="64"
+                          viewBox="0 0 64 64"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_431_1171)">
+                            <circle cx="32" cy="32" r="32" fill="#472F92" />
+                            <path
+                              d="M47.2269 19.5H40.9746V25.1762C40.9746 25.3442 40.8738 25.5124 40.7391 25.5796C40.6719 25.6132 40.5712 25.6468 40.5037 25.6468C40.4365 25.6468 40.3357 25.6132 40.2683 25.5796L38.0833 24.3358L35.8983 25.5796C35.764 25.6468 35.5621 25.6468 35.4277 25.5796C35.2934 25.5124 35.1923 25.3442 35.1923 25.1762L35.1931 19.5H28.9746C28.6048 19.5 28.2686 19.8026 28.2686 20.206V26.3864L29.3105 25.6468C29.8483 25.277 30.5208 25.1426 31.1593 25.277C31.7979 25.4114 32.3695 25.7812 32.7055 26.3526C33.3776 27.4281 33.1089 28.8063 32.1005 29.546L30.6215 30.6215H40.3696C41.6806 30.6215 42.7562 31.6971 42.7562 33.0081C42.7562 33.3779 42.6554 33.7478 42.5208 34.0501C42.9914 34.1173 43.462 34.3527 43.7982 34.7222C44.2352 35.1592 44.5042 35.7642 44.5042 36.4031C44.5042 37.5123 43.7645 38.4198 42.7562 38.6888C42.9242 39.025 43.0588 39.3948 43.0588 39.798C43.0588 40.235 42.958 40.6384 42.7226 41.0082H47.2942C47.664 41.0082 48.0002 40.7056 48.0002 40.3022L47.9999 20.2061C47.9327 19.8363 47.6303 19.5 47.2269 19.5Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M34.4873 37.4454H42.017C42.5548 37.4454 43.0253 37.0756 43.0926 36.5379C43.1262 36.2353 43.0254 35.9329 42.79 35.7311C42.5884 35.5295 42.353 35.4285 42.0839 35.4285H35.2266C34.8567 35.4285 34.5205 35.1258 34.5205 34.7224C34.5205 34.3526 34.8231 34.0164 35.2266 34.0164H40.3359C40.8065 34.0164 41.2098 33.7138 41.3442 33.2768C41.5122 32.6046 41.008 31.9994 40.3694 31.9994L28.4706 31.9999C28.168 31.9999 27.8992 31.7983 27.7985 31.5293C27.6977 31.2267 27.7985 30.9243 28.0339 30.7561L31.2273 28.4031C31.6643 28.1005 31.7651 27.4955 31.4963 27.0586C31.3619 26.8231 31.1265 26.6888 30.8577 26.6216C30.5887 26.5544 30.3199 26.6216 30.0845 26.7896L25.8156 29.2097C24.8744 29.7475 24.034 30.3863 23.2611 31.1257L21.4795 32.8401V42.1509L22.0173 42.4535C24.2359 43.6637 26.7232 44.2686 29.2443 44.2686H38.6227C39.1941 44.2686 39.6647 43.8316 39.6983 43.3274C39.7319 43.0248 39.6311 42.7561 39.3957 42.5543C39.1941 42.3527 38.9587 42.2516 38.6896 42.2516L33.7819 42.2519C33.4121 42.2519 33.0758 41.9493 33.0758 41.5459C33.0758 41.1761 33.3785 40.8398 33.7819 40.8398H40.5723C41.1101 40.8398 41.5806 40.47 41.6479 39.9323C41.7151 39.3273 41.2445 38.8231 40.6395 38.8231L34.488 38.8233C34.1182 38.8233 33.7819 38.5207 33.7819 38.1173C33.7822 37.7475 34.0848 37.4452 34.488 37.4452L34.4873 37.4454Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M16.9412 42.2852H20.1346V32.8398H16.9412C16.437 32.8398 16 33.2432 16 33.781V41.3777C16 41.8483 16.4034 42.2852 16.9412 42.2852Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_431_1171">
+                              <rect
+                                width="64"
+                                height="64"
+                                rx="32"
+                                fill="white"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div>
+                        <p>Domestic</p>
+                        <p class="desc">
+                          For high value or fragile shipments that need extra
+                          care and attention
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev position-absolute"></div>
+                <div class="swiper-button-next position-absolute"></div>
+              </div>
+
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </main>
+          </div>
+
+          <div class="swiper-btn d-flex justify-content-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py CTA">
+      <section class="section-margin">
+        <div
+          class="CTA-section d-flex align-items-center justify-content-center flex-column flex-lg-row"
+        >
+          <h2 class="text-center text-lg-start text-white medium">
+            Your <span class="semibold primary-100">3PL experience</span> is
+            about to gain a serious upgrade
+          </h2>
+
+          <div class="d-none d-xl-block">
+            <dotlottie-player
+              src="https://lottie.host/b4bd1a82-9d92-4e5c-a474-60b39fde1c8d/CHm9l2FtDR.json"
+              background="transparent"
+              speed="1"
+              style="width: 105px"
+              id="lottie-arrow"
+              autoplay
+              loop="4"
+            ></dotlottie-player>
+          </div>
+          <!-- <eshipper-headerinstantquote></eshipper-headerinstantquote> -->
+
+          <div class="quote">
+            <div class="quote-container">
+              <div class="form-button-container">
+                <button type="button" class="active" id="canada">
+                  Canada & USA
+                </button>
+                <button type="button" id="worldwide">Worldwide</button>
+              </div>
+              <form
+                id="CanadaInstantQuote"
+                class="eshipperHeaderInstantQuote active"
+                action="#"
+                method="get"
+              >
+                <div class="quote-container-fieldset">
+                  <div class="quote-container-fieldset-item">
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="s_zipcode">From</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="text"
+                          name="s_zipcode"
+                          id="s_zipcode"
+                          placeholder="Zip Code"
+                        />
+                      </div>
+                    </fieldset>
+                    <hr />
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="r_zipcode">To</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="text"
+                          name="r_zipcode"
+                          id="r_zipcode"
+                          placeholder="Zip Code"
+                        />
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div class="quote-container-fieldset-item">
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="weight">Weight (lb)</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="number"
+                          name="weight"
+                          id="weight"
+                          placeholder="Weight"
+                        />
+                        <!-- <span>lb</span> -->
+                      </div>
+                    </fieldset>
+                    <hr />
+                    <fieldset
+                      id="packageType_fieldset"
+                      class="d-flex flex-column flex-item"
+                    >
+                      <label for="packageType" class="medium"
+                        >Package Type</label
+                      >
+                      <div class="packageType">
+                        <div class="dropdown">
+                          <div class="caption">
+                            <div>
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7.1945 13.4556L6.79868 13.8294C6.97676 14.0179 7.26312 14.0547 7.48305 13.9172L7.1945 13.4556ZM13.2337 7.03889H13.7782C13.7782 6.8891 13.7164 6.74592 13.6075 6.64307L13.2337 7.03889ZM6.4396 0.622223L6.81343 0.226405C6.636 0.0588381 6.36875 0.0298059 6.15948 0.155366L6.4396 0.622223ZM0.777832 4.01928L0.497718 3.55242C0.333728 3.65082 0.233388 3.82804 0.233388 4.01928H0.777832ZM0.777832 6.66144H0.233388C0.233388 6.80045 0.286563 6.9342 0.382014 7.03527L0.777832 6.66144ZM13.2337 9.68105L13.5223 10.1427C13.6815 10.0432 13.7782 9.86876 13.7782 9.68105H13.2337ZM7.73894 13.4556V10.8134H6.65005V13.4556H7.73894ZM7.48305 11.2751L13.5223 7.50058L12.9452 6.5772L6.90594 10.3517L7.48305 11.2751ZM13.6075 6.64307L6.81343 0.226405L6.06577 1.01804L12.8599 7.43471L13.6075 6.64307ZM6.15948 0.155366L0.497718 3.55242L1.05795 4.48614L6.71971 1.08908L6.15948 0.155366ZM0.382014 4.39311L6.79868 11.1872L7.59032 10.4396L1.17365 3.64545L0.382014 4.39311ZM0.233388 4.01928V6.66144H1.32228V4.01928H0.233388ZM0.382014 7.03527L6.79868 13.8294L7.59032 13.0817L1.17365 6.28761L0.382014 7.03527ZM12.9452 9.21936L6.90594 12.9939L7.48305 13.9172L13.5223 10.1427L12.9452 9.21936ZM13.7782 9.68105V7.03889H12.6893V9.68105H13.7782Z"
+                                  fill="#111827"
+                                />
+                              </svg>
+                            </div>
+                            <span>Parcel</span>
+                          </div>
+                          <div class="list">
+                            <div class="item">
+                              <div class="Parcel">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.1945 13.4556L6.79868 13.8294C6.97676 14.0179 7.26312 14.0547 7.48305 13.9172L7.1945 13.4556ZM13.2337 7.03889H13.7782C13.7782 6.8891 13.7164 6.74592 13.6075 6.64307L13.2337 7.03889ZM6.4396 0.622223L6.81343 0.226405C6.636 0.0588381 6.36875 0.0298059 6.15948 0.155366L6.4396 0.622223ZM0.777832 4.01928L0.497718 3.55242C0.333728 3.65082 0.233388 3.82804 0.233388 4.01928H0.777832ZM0.777832 6.66144H0.233388C0.233388 6.80045 0.286563 6.9342 0.382014 7.03527L0.777832 6.66144ZM13.2337 9.68105L13.5223 10.1427C13.6815 10.0432 13.7782 9.86876 13.7782 9.68105H13.2337ZM7.73894 13.4556V10.8134H6.65005V13.4556H7.73894ZM7.48305 11.2751L13.5223 7.50058L12.9452 6.5772L6.90594 10.3517L7.48305 11.2751ZM13.6075 6.64307L6.81343 0.226405L6.06577 1.01804L12.8599 7.43471L13.6075 6.64307ZM6.15948 0.155366L0.497718 3.55242L1.05795 4.48614L6.71971 1.08908L6.15948 0.155366ZM0.382014 4.39311L6.79868 11.1872L7.59032 10.4396L1.17365 3.64545L0.382014 4.39311ZM0.233388 4.01928V6.66144H1.32228V4.01928H0.233388ZM0.382014 7.03527L6.79868 13.8294L7.59032 13.0817L1.17365 6.28761L0.382014 7.03527ZM12.9452 9.21936L6.90594 12.9939L7.48305 13.9172L13.5223 10.1427L12.9452 9.21936ZM13.7782 9.68105V7.03889H12.6893V9.68105H13.7782Z"
+                                    fill="#6B7280"
+                                  />
+                                </svg>
+                              </div>
+                              <span>Parcel</span>
+                            </div>
+                            <div class="item">
+                              <div class="Envelope">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M1.1665 11.375H12.8332V7V2.625H6.99984H1.1665V7V11.375Z"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M1.1665 2.625L6.99984 7L12.8332 2.625"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M6.99984 2.625H1.1665V7"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M12.8333 7V2.625H7"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                              <span>Envelope</span>
+                            </div>
+                            <div class="item">
+                              <div class="Pak">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g clip-path="url(#clip0_1697_9679)">
+                                    <path
+                                      d="M12.1743 4.12526L6.99985 6.99998M6.99985 6.99998L1.82536 4.12526M6.99985 6.99998L6.99987 12.7833M12.4787 9.4707V4.5293C12.4787 4.32071 12.4787 4.21642 12.448 4.1234C12.4208 4.04111 12.3764 3.96557 12.3176 3.90184C12.2513 3.8298 12.1601 3.77915 11.9777 3.67785L7.4729 1.17516C7.30025 1.07924 7.21392 1.03128 7.12251 1.01248C7.04159 0.99584 6.95814 0.99584 6.87723 1.01248C6.78581 1.03128 6.69949 1.07924 6.52684 1.17516L2.02199 3.67785C1.83965 3.77915 1.74848 3.8298 1.6821 3.90184C1.62336 3.96557 1.57892 4.04111 1.55173 4.1234C1.521 4.21642 1.521 4.32071 1.521 4.5293V9.4707C1.521 9.67929 1.521 9.78358 1.55173 9.8766C1.57892 9.95889 1.62336 10.0344 1.6821 10.0982C1.74848 10.1702 1.83965 10.2208 2.02199 10.3221L6.52684 12.8248C6.69949 12.9208 6.78581 12.9687 6.87723 12.9875C6.95814 13.0042 7.04159 13.0042 7.12251 12.9875C7.21392 12.9687 7.30025 12.9208 7.4729 12.8248L11.9777 10.3221C12.1601 10.2208 12.2513 10.1702 12.3176 10.0982C12.3764 10.0344 12.4208 9.95889 12.448 9.8766C12.4787 9.78358 12.4787 9.67929 12.4787 9.4707Z"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M9.73961 5.47808L4.26074 2.43427"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_1697_9679">
+                                      <rect
+                                        width="14"
+                                        height="14"
+                                        fill="white"
+                                      />
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <span>Pak</span>
+                            </div>
+                            <div class="item">
+                              <div class="Pallet">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g clip-path="url(#clip0_1700_9758)">
+                                    <path
+                                      d="M3 6H2.95918H2C1.44772 6 1 6.4476 1 6.99989C1 7.98204 1 9.17372 1 10.0011C1 10.5534 1.44772 11 2 11H7V7C7 6.44772 6.55228 6 6 6H5M3 6V6.66667C3 7.21895 3.44772 7.66667 4 7.66667V7.66667C4.55228 7.66667 5 7.21895 5 6.66667V6M3 6H5"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                    />
+                                    <path
+                                      d="M9 6H8.95918H8C7.44772 6 7 6.4476 7 6.99989C7 7.98204 7 9.17372 7 10.0011C7 10.5534 7.44772 11 8 11H12C12.5523 11 13 10.5523 13 10V7C13 6.44772 12.5523 6 12 6H11M9 6V6.66667C9 7.21895 9.44772 7.66667 10 7.66667V7.66667C10.5523 7.66667 11 7.21895 11 6.66667V6M9 6H11"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                    />
+                                    <path
+                                      d="M6 1H5.95918H5C4.44772 1 4 1.4476 4 1.99989C4 2.98204 4 4.17372 4 5.00108C4 5.55337 4.44772 6 5 6H9C9.55228 6 10 5.55228 10 5V2C10 1.44772 9.55228 1 9 1H8M6 1V1.66667C6 2.21895 6.44772 2.66667 7 2.66667V2.66667C7.55228 2.66667 8 2.21895 8 1.66667V1M6 1H8"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                    />
+                                    <path
+                                      d="M1 13V12.5C1 11.9477 1.44772 11.5 2 11.5H12C12.5523 11.5 13 11.9477 13 12.5V13"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_1700_9758">
+                                      <rect
+                                        width="14"
+                                        height="14"
+                                        fill="white"
+                                      />
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <span>Pallet</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="form-submit">
+                  <button type="submit" class="btn">
+                    Get a Quote
+                    <div style="margin-bottom: 1px">
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 13.5458L11.25 9.04578L6.75 4.54578"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </form>
+              <form
+                id="WorldwideInstantQuote"
+                class="eshipperHeaderInstantQuote"
+                action="#"
+                method="get"
+              >
+                <div class="quote-container-fieldset">
+                  <div class="quote-container-fieldset-item">
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="s_country">From</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="text"
+                          name="s_country"
+                          id="s_country"
+                          placeholder="Country"
+                        />
+                      </div>
+                    </fieldset>
+                    <hr />
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="s_city">To</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="text"
+                          name="s_city"
+                          id="s_city"
+                          placeholder="City"
+                        />
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div class="quote-container-fieldset-item">
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="r_country">To</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="text"
+                          name="r_country"
+                          id="r_country"
+                          placeholder="Country"
+                        />
+                      </div>
+                    </fieldset>
+                    <hr />
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="s_city">To</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="text"
+                          name="r_city"
+                          id="r_city"
+                          placeholder="City"
+                        />
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div class="quote-container-fieldset-item">
+                    <fieldset
+                      class="d-flex flex-column form_fieldset flex-item"
+                    >
+                      <label class="" for="weight">Weight (lb)</label>
+                      <div class="d-flex justify-content-between">
+                        <input
+                          required=""
+                          type="number"
+                          name="weight"
+                          id="weight"
+                          placeholder="Weight"
+                        />
+                        <!-- <span>lb</span> -->
+                      </div>
+                    </fieldset>
+                    <hr />
+                    <fieldset
+                      id="packageType_fieldset"
+                      class="d-flex flex-column flex-item"
+                    >
+                      <label for="packageType" class="medium"
+                        >Package Type</label
+                      >
+                      <div class="packageType">
+                        <div class="dropdown">
+                          <div class="caption">
+                            <div>
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7.1945 13.4556L6.79868 13.8294C6.97676 14.0179 7.26312 14.0547 7.48305 13.9172L7.1945 13.4556ZM13.2337 7.03889H13.7782C13.7782 6.8891 13.7164 6.74592 13.6075 6.64307L13.2337 7.03889ZM6.4396 0.622223L6.81343 0.226405C6.636 0.0588381 6.36875 0.0298059 6.15948 0.155366L6.4396 0.622223ZM0.777832 4.01928L0.497718 3.55242C0.333728 3.65082 0.233388 3.82804 0.233388 4.01928H0.777832ZM0.777832 6.66144H0.233388C0.233388 6.80045 0.286563 6.9342 0.382014 7.03527L0.777832 6.66144ZM13.2337 9.68105L13.5223 10.1427C13.6815 10.0432 13.7782 9.86876 13.7782 9.68105H13.2337ZM7.73894 13.4556V10.8134H6.65005V13.4556H7.73894ZM7.48305 11.2751L13.5223 7.50058L12.9452 6.5772L6.90594 10.3517L7.48305 11.2751ZM13.6075 6.64307L6.81343 0.226405L6.06577 1.01804L12.8599 7.43471L13.6075 6.64307ZM6.15948 0.155366L0.497718 3.55242L1.05795 4.48614L6.71971 1.08908L6.15948 0.155366ZM0.382014 4.39311L6.79868 11.1872L7.59032 10.4396L1.17365 3.64545L0.382014 4.39311ZM0.233388 4.01928V6.66144H1.32228V4.01928H0.233388ZM0.382014 7.03527L6.79868 13.8294L7.59032 13.0817L1.17365 6.28761L0.382014 7.03527ZM12.9452 9.21936L6.90594 12.9939L7.48305 13.9172L13.5223 10.1427L12.9452 9.21936ZM13.7782 9.68105V7.03889H12.6893V9.68105H13.7782Z"
+                                  fill="#111827"
+                                />
+                              </svg>
+                            </div>
+                            <span>Parcel</span>
+                          </div>
+                          <div class="list">
+                            <div class="item">
+                              <div class="Parcel">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.1945 13.4556L6.79868 13.8294C6.97676 14.0179 7.26312 14.0547 7.48305 13.9172L7.1945 13.4556ZM13.2337 7.03889H13.7782C13.7782 6.8891 13.7164 6.74592 13.6075 6.64307L13.2337 7.03889ZM6.4396 0.622223L6.81343 0.226405C6.636 0.0588381 6.36875 0.0298059 6.15948 0.155366L6.4396 0.622223ZM0.777832 4.01928L0.497718 3.55242C0.333728 3.65082 0.233388 3.82804 0.233388 4.01928H0.777832ZM0.777832 6.66144H0.233388C0.233388 6.80045 0.286563 6.9342 0.382014 7.03527L0.777832 6.66144ZM13.2337 9.68105L13.5223 10.1427C13.6815 10.0432 13.7782 9.86876 13.7782 9.68105H13.2337ZM7.73894 13.4556V10.8134H6.65005V13.4556H7.73894ZM7.48305 11.2751L13.5223 7.50058L12.9452 6.5772L6.90594 10.3517L7.48305 11.2751ZM13.6075 6.64307L6.81343 0.226405L6.06577 1.01804L12.8599 7.43471L13.6075 6.64307ZM6.15948 0.155366L0.497718 3.55242L1.05795 4.48614L6.71971 1.08908L6.15948 0.155366ZM0.382014 4.39311L6.79868 11.1872L7.59032 10.4396L1.17365 3.64545L0.382014 4.39311ZM0.233388 4.01928V6.66144H1.32228V4.01928H0.233388ZM0.382014 7.03527L6.79868 13.8294L7.59032 13.0817L1.17365 6.28761L0.382014 7.03527ZM12.9452 9.21936L6.90594 12.9939L7.48305 13.9172L13.5223 10.1427L12.9452 9.21936ZM13.7782 9.68105V7.03889H12.6893V9.68105H13.7782Z"
+                                    fill="#6B7280"
+                                  />
+                                </svg>
+                              </div>
+                              <span>Parcel</span>
+                            </div>
+                            <div class="item">
+                              <div class="Envelope">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M1.1665 11.375H12.8332V7V2.625H6.99984H1.1665V7V11.375Z"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M1.1665 2.625L6.99984 7L12.8332 2.625"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M6.99984 2.625H1.1665V7"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M12.8333 7V2.625H7"
+                                    stroke="#6B7280"
+                                    stroke-width="1.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                              <span>Envelope</span>
+                            </div>
+                            <div class="item">
+                              <div class="Pak">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g clip-path="url(#clip0_1697_9679)">
+                                    <path
+                                      d="M12.1743 4.12526L6.99985 6.99998M6.99985 6.99998L1.82536 4.12526M6.99985 6.99998L6.99987 12.7833M12.4787 9.4707V4.5293C12.4787 4.32071 12.4787 4.21642 12.448 4.1234C12.4208 4.04111 12.3764 3.96557 12.3176 3.90184C12.2513 3.8298 12.1601 3.77915 11.9777 3.67785L7.4729 1.17516C7.30025 1.07924 7.21392 1.03128 7.12251 1.01248C7.04159 0.99584 6.95814 0.99584 6.87723 1.01248C6.78581 1.03128 6.69949 1.07924 6.52684 1.17516L2.02199 3.67785C1.83965 3.77915 1.74848 3.8298 1.6821 3.90184C1.62336 3.96557 1.57892 4.04111 1.55173 4.1234C1.521 4.21642 1.521 4.32071 1.521 4.5293V9.4707C1.521 9.67929 1.521 9.78358 1.55173 9.8766C1.57892 9.95889 1.62336 10.0344 1.6821 10.0982C1.74848 10.1702 1.83965 10.2208 2.02199 10.3221L6.52684 12.8248C6.69949 12.9208 6.78581 12.9687 6.87723 12.9875C6.95814 13.0042 7.04159 13.0042 7.12251 12.9875C7.21392 12.9687 7.30025 12.9208 7.4729 12.8248L11.9777 10.3221C12.1601 10.2208 12.2513 10.1702 12.3176 10.0982C12.3764 10.0344 12.4208 9.95889 12.448 9.8766C12.4787 9.78358 12.4787 9.67929 12.4787 9.4707Z"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M9.73961 5.47808L4.26074 2.43427"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_1697_9679">
+                                      <rect
+                                        width="14"
+                                        height="14"
+                                        fill="white"
+                                      />
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <span>Pak</span>
+                            </div>
+                            <div class="item">
+                              <div class="Pallet">
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 14 14"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g clip-path="url(#clip0_1700_9758)">
+                                    <path
+                                      d="M3 6H2.95918H2C1.44772 6 1 6.4476 1 6.99989C1 7.98204 1 9.17372 1 10.0011C1 10.5534 1.44772 11 2 11H7V7C7 6.44772 6.55228 6 6 6H5M3 6V6.66667C3 7.21895 3.44772 7.66667 4 7.66667V7.66667C4.55228 7.66667 5 7.21895 5 6.66667V6M3 6H5"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                    />
+                                    <path
+                                      d="M9 6H8.95918H8C7.44772 6 7 6.4476 7 6.99989C7 7.98204 7 9.17372 7 10.0011C7 10.5534 7.44772 11 8 11H12C12.5523 11 13 10.5523 13 10V7C13 6.44772 12.5523 6 12 6H11M9 6V6.66667C9 7.21895 9.44772 7.66667 10 7.66667V7.66667C10.5523 7.66667 11 7.21895 11 6.66667V6M9 6H11"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                    />
+                                    <path
+                                      d="M6 1H5.95918H5C4.44772 1 4 1.4476 4 1.99989C4 2.98204 4 4.17372 4 5.00108C4 5.55337 4.44772 6 5 6H9C9.55228 6 10 5.55228 10 5V2C10 1.44772 9.55228 1 9 1H8M6 1V1.66667C6 2.21895 6.44772 2.66667 7 2.66667V2.66667C7.55228 2.66667 8 2.21895 8 1.66667V1M6 1H8"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                    />
+                                    <path
+                                      d="M1 13V12.5C1 11.9477 1.44772 11.5 2 11.5H12C12.5523 11.5 13 11.9477 13 12.5V13"
+                                      stroke="#6B7280"
+                                      stroke-width="1.2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_1700_9758">
+                                      <rect
+                                        width="14"
+                                        height="14"
+                                        fill="white"
+                                      />
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <span>Pallet</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="form-submit">
+                  <button type="submit" class="btn">
+                    Get a Quote
+                    <div style="margin-bottom: 1px">
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 18 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 13.5458L11.25 9.04578L6.75 4.54578"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- </section> -->
+
+    <!-- <section id="layered-pin-2" class="layered-pin"> -->
+    <section class="comn-py bg-Neutral-100">
+      <section class="section-margin">
+        <div class="d-flex flex-column flex-lg-row">
+          <div class="flex-item form-container">
+            <h2 class="medium" style="">
+              Let's talk about <br />
+              <span class="semibold">your business</span>
+            </h2>
+
+            <div class="d-none d-lg-block">
+              <img
+                src="/eShipperRedesign/assets/svgFolder/B2B/contact-us.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex-item d-flex flex-column-reverse flex-lg-row form-wrapper"
+          >
+            <div class="Contact-Us-form flex-item">
+              <eshipper-contact-us></eshipper-contact-us>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <eshipper-footer></eshipper-footer>
+    <!-- </section> -->
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LOTTIE FILE -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+    <!-- SCROLL TRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" src="/eShipperRedesign/js/helper.js"></script>
+    <script
+      type="module"
+      src="/eShipperRedesign/js/insert-sections.js"
+    ></script>
+    <script type="module" src="/eShipperRedesign/js/Header/header.js"></script>
+    <script type="module" src="/eShipperRedesign/js/3PL/3pl.js"></script>
+  </body>
+</html>
