@@ -21,6 +21,86 @@ Thicccboi ## Weights
 
 */
 
+@font-face {
+  font-family: "thicccboi-thin";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-Thin.ttf")
+    format("truetype");
+  font-weight: 100;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-light";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-regular";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-medium";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-semiBold";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-bold";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-extraBold";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-thicccAF";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-ThicccAF.ttf")
+    format("truetype");
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thicccboi-black";
+  src: url("/eShipperRedesign/assets/font/THICCCBOI-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+
+  font-style: normal;
+}
+
 /* body {
   font-family: "thicccboi-regular";
 } */
