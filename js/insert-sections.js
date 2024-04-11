@@ -12,12 +12,12 @@ class eShipperHeader extends HTMLElement {
             <a href="/">
               <img
                 class="d-none d-sm-block"
-                src="/assets/logo/eshipper-full-purple.svg"
+                src="/eShipperRedesign/assets/logo/eshipper-full-purple.svg"
                 alt=""
               />
               <img
                 class="d-block d-sm-none"
-                src="/assets/logo/eshipper-half-purple.svg"
+                src="/eShipperRedesign/assets/logo/eshipper-half-purple.svg"
                 alt=""
               />
               </a>
@@ -538,7 +538,7 @@ class eShipperHeader extends HTMLElement {
       <div>
         <div class="top-section">
           <div>
-            <img src="/assets/logo/eshipper-half-purple.svg" alt="" />
+            <img src="/eShipperRedesign/assets/logo/eshipper-half-purple.svg" alt="" />
           </div>
 
           <div class="close-menu">
