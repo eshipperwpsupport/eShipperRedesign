@@ -501,6 +501,7 @@
 }
 .solution .eshipper-card-2 h5 {
   color: var(--neutral-900);
+  font-family: "thicccboi-semibold" !important;
 }
 .solution .eshipper-card-2 p {
   color: var(--neutral-600);
@@ -748,6 +749,10 @@
   display: none;
 }
 
+.more-services .swiper-pagination-bullet {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .more-services .section-top-container h2 {
     max-width: 18ch;
@@ -765,6 +770,25 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+
+  .more-services .swiper-btn {
+    margin-top: 20px;
+  }
+
+  .more-services .swiper-pagination-bullet {
+    display: none;
+    width: 80px;
+    height: 2px;
+    border-radius: 0;
+  }
+
+  .more-services .swiper-pagination-bullet-active {
+    background: var(--secondary-500-main, #472f92);
+  }
+
+  .more-services .swiper-pagination-bullet.visible {
+    display: inline-block;
   }
 
   .swiper-slide-active {
@@ -1034,9 +1058,13 @@
   gap: 34px;
 }
 
+.CTA-section .include-btn {
+  margin-top: 0 !important;
+}
+
 @media (min-width: 992px) {
   .CTA h2 {
-    max-width: 18ch;
+    max-width: 23ch;
   }
 
   .form-container > div {

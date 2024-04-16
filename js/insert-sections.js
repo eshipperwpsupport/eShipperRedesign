@@ -276,7 +276,7 @@ class eShipperHeader extends HTMLElement {
                             </p>
                           </div>
                         </div>
-                        <a href="#">
+                        <a href="/eShipperRedesign/courier.html">
                           View More
                           <svg
                             width="14"

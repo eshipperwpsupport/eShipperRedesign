@@ -1,0 +1,37 @@
+.Icon_Text_Block {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+.Icon_Text_Block h4 {
+  color: var(--Neutral-900, #111827);
+
+  font-family: "thicccboi-medium";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.48px;
+  margin-bottom: 10px;
+}
+
+.Icon_Text_Block p {
+  color: var(--Neutral-600, #4b5563);
+  font-feature-settings: "salt" on;
+
+  /* Paragraph/Small/Medium */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}

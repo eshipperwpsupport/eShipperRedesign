@@ -188,13 +188,21 @@ card = {
     `,
 
   lottiePlayer: `
-<dotlottie-player src="https://lottie.host/fc25e103-6bdc-4219-a4ad-e3c45d574e39/mFiSMWu8Ml.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop hover class="d-none d-xl-block"></dotlottie-player>
-
-
-`,
+  
+  <img
+  src="/eShipperRedesign/assets/svgFolder/3PL/card-3.svg"
+  
+  alt=""
+  class="d-none d-xl-block"
+  />
+  
+  `,
   buttonText: "Learn More",
   buttonClass: "d-none",
 };
+{
+  /* <dotlottie-player src="https://lottie.host/fc25e103-6bdc-4219-a4ad-e3c45d574e39/mFiSMWu8Ml.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop hover class="d-none d-xl-block"></dotlottie-player> */
+}
 
 document.querySelector(".benefit .card-item-3").innerHTML = eShipperCard(card);
 
@@ -234,7 +242,7 @@ card = {
   mobileImg: `
 
     <img
-        src="/eShipperRedesign/assets/svgFolder/3PL/card-4.svg"
+        src="/eShipperRedesign/assets/svgFolder/3PL/card-3.svg"
 
         alt=""
         class="d-block d-xl-none"
@@ -244,7 +252,7 @@ card = {
   lottiePlayer: `
 
 
-    <dotlottie-player src="https://lottie.host/7beca047-995a-4f9e-ba8f-948b010e1116/yFz312fdE2.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop hover class="d-none d-xl-block"></dotlottie-player>
+    <dotlottie-player src="https://lottie.host/fc25e103-6bdc-4219-a4ad-e3c45d574e39/mFiSMWu8Ml.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop hover class="d-none d-xl-block"></dotlottie-player>
 
 
 `,
@@ -284,7 +292,7 @@ card = {
        End-to-end Logistics Capabilities
     `,
   Desc: `
-We take a 360-degree approach to logistics including label generation, inbound, receiving at our warehouse in Toronto, cross docking, labour management, shipment monitoring, and rate analysis – while simultaneously providing you with the most competitive shipping rates.
+We take a 360-degree approach to logistics including label generation, inbound, receiving at our warehouse, cross docking, labour management, shipment monitoring, and rate analysis – while simultaneously providing you with the most competitive shipping rates.
       `,
   Img: `
    <img
@@ -342,7 +350,7 @@ card = {
        Cross-Border Distribution
     `,
   Desc: `
-    Our team of experts will arrange first mile pickup, clear customs, line haul your shipments across the border, and provide final mile delivery across Canada and USA.
+    Our team of experts will arrange pickups, line haul and customs clearance of your shipments across the border and provide final mile delivery across Canada and USA. 
     
       `,
   Img: `
@@ -362,7 +370,7 @@ card = {
       Postal
     `,
   Desc: `
- Allow your customers to save on fully tracked postal delivery locally and across the globe, perfect for eCommerce businesses that sell low-value high-volume shipments.
+ Allow your customers to save on fully tracked postal delivery locally and across the globe, perfect for eCommerce businesses.
     
       `,
   Img: `
@@ -403,6 +411,20 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 1.5,
   spaceBetween: 10,
 
+  on: {
+    init: function () {
+      updatePaginationVisibility(this); // Call the function when slide changes
+    },
+    slideChange: function () {
+      updatePaginationVisibility(this); // Call the function when slide changes
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -432,6 +454,40 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+function updatePaginationVisibility(swiper) {
+  // Select all bullets
+  const allBullets = document.querySelectorAll(".swiper-pagination-bullet");
+  const totalBullets = allBullets.length;
+  // Remove 'visible' class from all bullets initially
+  allBullets.forEach((bullet) => bullet.classList.remove("visible"));
+
+  // console.log(allBullets);
+
+  // Find index of the active bullet
+  const activeIndex = Array.from(allBullets).findIndex((bullet) =>
+    bullet.classList.contains("swiper-pagination-bullet-active")
+  );
+
+  // Determine start index based on active bullet position
+  let startIndex;
+  if (activeIndex <= 2) {
+    // Covers first 3 slides where we want to show the first 4 bullets
+    startIndex = 0;
+  } else if (activeIndex > totalBullets - 4) {
+    // Covers last slide scenarios
+    startIndex = totalBullets - 3;
+  } else {
+    // For middle slides, keep the active bullet as the third bullet
+    startIndex = activeIndex - 2;
+  }
+
+  // Add 'visible' class to relevant bullets
+  for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
+    allBullets[i].classList.add("visible");
+    // console.log(allBullets[i]);
+  }
+}
 
 swiper.slideTo(3, false, false);
 
@@ -543,13 +599,13 @@ gsap.utils.toArray("#layered-pin-1").forEach((container, i) => {
  * TOGGLE ESHIPPER HEADER INSTANT QUOTE FORM
  */
 
-document.querySelector("#canada").addEventListener("click", function (e) {
-  // Call your function here
-  eshipperHeaderInstantQuote(e);
-});
-document
-  .querySelector("#worldwide")
-  .addEventListener("click", eshipperHeaderInstantQuote);
+// document.querySelector("#canada").addEventListener("click", function (e) {
+//   // Call your function here
+//   eshipperHeaderInstantQuote(e);
+// });
+// document
+//   .querySelector("#worldwide")
+//   .addEventListener("click", eshipperHeaderInstantQuote);
 
 /**
  *
