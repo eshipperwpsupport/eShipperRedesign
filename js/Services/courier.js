@@ -25,7 +25,7 @@ document.querySelectorAll(".include-btn").forEach((btn) => {
   }
 
   btn.innerHTML = buildButton({
-    text: "Get an Instant Quote",
+    text: "Get a Quote",
     className: "button-black-bg text-white rounded-pill",
   });
 });
@@ -37,7 +37,7 @@ document.querySelectorAll(".include-btn").forEach((btn) => {
 
 document.querySelectorAll(".benefit-btn").forEach((btn) => {
   btn.innerHTML = buildButton({
-    text: "Get A Quote",
+    text: "Get a Quote",
     className: "button-black-bg text-white rounded-pill",
   });
 });
@@ -216,7 +216,7 @@ you’ve shipped with
     header: "Get Free Insurance",
     paragragh: `
        Get free insurance up to $100 in value, then 
-pay $1* for every additional $100 in value. <br> <br> *Average price. Varies by carrier.
+pay $1* for every additional $100 in value. <br> <br> <span class="mt-2">*Average price. Varies by carrier.</span>
         `,
   },
   {

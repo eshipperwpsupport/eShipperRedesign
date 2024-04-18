@@ -1,0 +1,262 @@
+/* 
+
+Contact us form 
+
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+
+*/
+
+/* ===================================== */
+/*              FORM 
+/* ===================================== */
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.Contact-Us-form Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-Us-form Form,
+.Contact-Us-form Form > div {
+  gap: 20px;
+}
+
+.Contact-Us-form Form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-Us-form button {
+  margin-top: 14px;
+}
+
+.Contact-Us-form Form label {
+  color: var(--Neutral-400, #9ca3af);
+  font-size: 14.467px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.667px; /* 142.857% */
+}
+
+.formInput-Container input,
+.slider-container {
+  width: 100%;
+  flex: 1 1;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: var(--Generic-White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  border: none;
+
+  color: var(--Neutral-500, #6b7280);
+  font-feature-settings: "salt" on;
+  /* Paragraph/Medium/Medium */
+  font-family: "thicccboi-medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.formInput-Container input::placeholder {
+  color: var(--Neutral-500, #6b7280);
+  font-family: "thicccboi-medium";
+
+  /* Paragraph/Medium/Medium */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.form-wrapper {
+  gap: 34px;
+}
+
+/* SLIDER INPUT FIELD */
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  /* width: 80vmin; */
+  /* height: 20vmin; */
+}
+
+.range-slider_input {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  margin: 0;
+}
+
+.range-slider_input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.range-slider_input::-moz-range-thumb {
+  width: 14vmin;
+  height: 14vmin;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.range-slider_thumb {
+  width: 15px;
+  height: 15px;
+  border: 0.6vmin solid var(--primary-500-main);
+  /* background: var(--primary-500-main); */
+
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4vmin;
+  color: #303030;
+  z-index: 2;
+}
+
+.range-slider_line {
+  height: 0.5vmin;
+  width: 100%;
+  background-color: #f3f4f6;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.range-slider_line-fill {
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: var(--primary-500-main);
+}
+
+/* ERROR STATE */
+
+.form-error {
+  display: none;
+}
+
+.form-error.active {
+  display: block;
+  color: red;
+}
+
+.industry .formInput-Container {
+  width: 100%;
+  flex: 1 1;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: var(--Generic-White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  border: none;
+  color: var(--Neutral-500, #6b7280);
+  font-family: "thicccboi-medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.industry .formInput-Container input {
+  padding: 0;
+  box-shadow: none;
+  padding-left: 8px;
+}
+
+.industry input:focus {
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  .Contact-Us-form {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 488px;
+  }
+  .Contact-Us-form Form {
+    width: 488px;
+  }
+
+  .Contact-Us-form Form > div {
+    flex-direction: row;
+  }
+
+  .Contact-Us-form Form .formDetails {
+    flex: 1 1;
+  }
+
+  .form-container {
+    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container > div {
+    margin-top: 54px;
+    position: relative;
+    left: -21px;
+    top: -32px;
+    width: 400px;
+    height: 188px;
+    flex-shrink: 0;
+  }
+
+  .form-wrapper {
+    gap: 70px;
+    /* max-width: 488px; */
+  }
+}
+@media (min-width: 1200px) {
+  .form-wrapper img {
+    position: relative;
+    bottom: 92px;
+  }
+
+  .form-wrapper > div:last-child {
+    flex: 1.4 1;
+  }
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}

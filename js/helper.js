@@ -1,3 +1,5 @@
+import buildButton from "../assets/Button/button.js";
+
 /**
  *
  * Slider Logo JS
@@ -119,4 +121,16 @@ export function loop_arrow() {
   );
 
   observer.observe(target);
+}
+
+/**
+ *
+ * BUTTON
+ */
+
+export function createButton(btnClass, text, classname) {
+  document.querySelector(`${btnClass}`).innerHTML = buildButton({
+    text: `${text}`,
+    className: `${classname}`,
+  });
 }

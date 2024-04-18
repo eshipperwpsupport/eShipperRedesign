@@ -1788,6 +1788,7 @@ customElements.define(
   "eshipper-headerinstantquote",
   eShipperHeaderInstantQuote
 );
+
 class eShipperContactUsSection extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -1979,3 +1980,272 @@ class eShipperContactUsSection extends HTMLElement {
 }
 
 customElements.define("eshipper-contact-us", eShipperContactUsSection);
+
+class eShipperMoreServices extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+   
+
+     <section class="comn-py more-services bg-Neutral-50">
+  <section class="section-margin">
+    <div
+      class="more-services-top-container d-flex justify-content-center flex-column align-items-lg-center align-items-start"
+    >
+      <h2
+        class="section-top-header medium Neutral-900 text-start text-lg-center"
+      >
+        Didn’t find what you were
+        <span class="bold">looking for?</span>
+      </h2>
+      <p class="Neutral-600 text-left text-lg-center">
+        Explore some of our other tailored business solutions to see what best
+        fits your business needs.
+      </p>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <div class="swiper-slide">
+          <div class="service">
+            <div>
+              <svg
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_162_301)">
+                  <circle cx="36" cy="36" r="36" fill="#472F92" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M45.971 53H48.8036C50.5637 53 52 51.6455 52 49.9842V30.8105C52 29.8137 51.5377 28.9563 50.6834 28.3704L37.8787 19.5864C36.7394 18.8045 35.2606 18.8045 34.1213 19.5864L21.3166 28.3704C20.4622 28.9563 20 29.8137 20 30.8105V49.9842C20 51.6455 21.4363 53 23.1964 53H26.029V38.8275C26.029 37.3279 27.3292 36.1008 28.918 36.1008H43.084C44.6728 36.1008 45.973 37.328 45.973 38.8275V53H45.971ZM33.2672 38.1252H35.2269V41.646H36.7724V38.1252H38.7321C39.1991 38.1252 39.5793 38.4852 39.5793 38.926V44.0827C39.5793 44.5224 39.1979 44.8824 38.7321 44.8824H33.2686C32.8015 44.8824 32.4213 44.5224 32.4213 44.0827V38.926C32.4213 38.4852 32.8027 38.1252 33.2686 38.1252H33.2672ZM37.7509 46.2437H39.7106V49.7645H41.2561V46.2437H43.2158C43.6816 46.2437 44.063 46.6036 44.063 47.0433V52.2001C44.063 52.6409 43.6816 52.9997 43.2158 52.9997H37.7523C37.2853 52.9997 36.9051 52.6397 36.9051 52.2001V47.0433C36.9051 46.6025 37.2864 46.2437 37.7523 46.2437H37.7509ZM28.7821 46.2437H30.7418V49.7645H32.2872V46.2437H34.2469C34.714 46.2437 35.0942 46.6036 35.0942 47.0433V52.2001C35.0942 52.6409 34.7128 52.9997 34.2469 52.9997H28.7834C28.3176 52.9997 27.9362 52.6397 27.9362 52.2001V47.0433C27.9362 46.6025 28.3176 46.2437 28.7834 46.2437H28.7821ZM32.8585 30.4409C32.3634 30.4409 31.9632 30.0632 31.9632 29.5959C31.9632 29.1297 32.3634 28.7508 32.8585 28.7508H39.1387C39.6326 28.7508 40.034 29.1297 40.034 29.5959C40.034 30.0631 39.6326 30.4409 39.1387 30.4409H32.8585Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_162_301">
+                    <rect width="72" height="72" rx="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h4>Marketplace Fulfillment</h4>
+            <p>
+              For businesses that sell on Amazon, Walmart & Best Buy
+              Marketplaces
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service">
+            <div>
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_162_290)">
+                  <circle cx="32" cy="32" r="32" fill="#472F92" />
+                  <path
+                    d="M34.835 19.9167C32.926 21.6913 31.8363 24.1995 31.8311 26.8303V36.7264H16.957C16.4309 36.721 16.0057 36.2883 16 35.753V26.9048C16.0251 22.3662 19.8946 19.4589 24.1761 19.9174V17.4647H22.2381C21.809 17.459 21.4152 17.223 21.2022 16.844C20.9894 16.4652 20.9894 15.9998 21.2022 15.6207C21.4153 15.242 21.809 15.0057 22.2381 15H25.3874C25.7084 15.0009 26.0158 15.131 26.2427 15.3619C26.4697 15.5928 26.5976 15.9059 26.5985 16.2325V19.917L34.835 19.9167ZM26.0168 39.1908V40.115C26.0183 40.7243 26.2579 41.3085 26.6826 41.7382C27.1076 42.1683 27.6827 42.4088 28.2818 42.4069H29.1661V49H34.8348V42.4069H35.719C36.3179 42.4087 36.8932 42.1682 37.3179 41.7382C37.7426 41.3085 37.9823 40.7244 37.984 40.115V39.1908H26.0168ZM48 26.9117V35.7508V35.7505C48 36.0105 47.8983 36.2597 47.7179 36.4432C47.5373 36.627 47.2923 36.7302 47.0371 36.7302H34.2539V26.9108C34.5586 17.6411 47.6973 17.6457 47.9999 26.9108L48 26.9117ZM39.6904 28.9416V28.9413C39.6842 28.5052 39.4519 28.1049 39.0797 27.8887C38.7074 27.6725 38.2506 27.6725 37.8783 27.8887C37.506 28.1049 37.2738 28.5052 37.2676 28.9413V30.5432C37.2667 30.8706 37.3938 31.1849 37.621 31.417C37.8485 31.6488 38.1571 31.7793 38.479 31.7793C38.8008 31.7793 39.1094 31.6488 39.3367 31.417C39.5642 31.1849 39.6912 30.8707 39.6903 30.5432L39.6904 28.9416Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_162_290">
+                    <rect width="64" height="64" rx="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h4>Domestic</h4>
+            <p>
+              For high value or fragile shipments that need extra care and
+              attention
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service">
+            <div>
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="32" cy="32" r="32" fill="#472F92" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M36.6718 26.1094L47 31.5631L46.7005 34.6803L36.4586 34.1117C36.2549 36.1666 35.948 38.1776 35.5616 39.9775L40.2362 42.5474V44.7739L34.4107 44.0191C33.7043 45.854 32.8801 47 31.9999 47C31.1198 47 30.2957 45.854 29.5893 44.0191L23.7638 44.7739V42.5474L28.4384 39.9775C28.0516 38.1778 27.7449 36.1667 27.5414 34.1117L17.2995 34.6803L17 31.5631L27.3282 26.1094C28.0554 13.9635 35.9456 13.9635 36.6722 26.1094H36.6718Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h4>International</h4>
+            <p>
+              For brands looking to import, export or ship to global customers
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service">
+            <div>
+              <svg
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_162_301)">
+                  <circle cx="36" cy="36" r="36" fill="#472F92" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M45.971 53H48.8036C50.5637 53 52 51.6455 52 49.9842V30.8105C52 29.8137 51.5377 28.9563 50.6834 28.3704L37.8787 19.5864C36.7394 18.8045 35.2606 18.8045 34.1213 19.5864L21.3166 28.3704C20.4622 28.9563 20 29.8137 20 30.8105V49.9842C20 51.6455 21.4363 53 23.1964 53H26.029V38.8275C26.029 37.3279 27.3292 36.1008 28.918 36.1008H43.084C44.6728 36.1008 45.973 37.328 45.973 38.8275V53H45.971ZM33.2672 38.1252H35.2269V41.646H36.7724V38.1252H38.7321C39.1991 38.1252 39.5793 38.4852 39.5793 38.926V44.0827C39.5793 44.5224 39.1979 44.8824 38.7321 44.8824H33.2686C32.8015 44.8824 32.4213 44.5224 32.4213 44.0827V38.926C32.4213 38.4852 32.8027 38.1252 33.2686 38.1252H33.2672ZM37.7509 46.2437H39.7106V49.7645H41.2561V46.2437H43.2158C43.6816 46.2437 44.063 46.6036 44.063 47.0433V52.2001C44.063 52.6409 43.6816 52.9997 43.2158 52.9997H37.7523C37.2853 52.9997 36.9051 52.6397 36.9051 52.2001V47.0433C36.9051 46.6025 37.2864 46.2437 37.7523 46.2437H37.7509ZM28.7821 46.2437H30.7418V49.7645H32.2872V46.2437H34.2469C34.714 46.2437 35.0942 46.6036 35.0942 47.0433V52.2001C35.0942 52.6409 34.7128 52.9997 34.2469 52.9997H28.7834C28.3176 52.9997 27.9362 52.6397 27.9362 52.2001V47.0433C27.9362 46.6025 28.3176 46.2437 28.7834 46.2437H28.7821ZM32.8585 30.4409C32.3634 30.4409 31.9632 30.0632 31.9632 29.5959C31.9632 29.1297 32.3634 28.7508 32.8585 28.7508H39.1387C39.6326 28.7508 40.034 29.1297 40.034 29.5959C40.034 30.0631 39.6326 30.4409 39.1387 30.4409H32.8585Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_162_301">
+                    <rect width="72" height="72" rx="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h4>Marketplace Fulfillment</h4>
+            <p>
+              For businesses that sell on Amazon, Walmart & Best Buy
+              Marketplaces
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service">
+            <div>
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_162_290)">
+                  <circle cx="32" cy="32" r="32" fill="#472F92" />
+                  <path
+                    d="M34.835 19.9167C32.926 21.6913 31.8363 24.1995 31.8311 26.8303V36.7264H16.957C16.4309 36.721 16.0057 36.2883 16 35.753V26.9048C16.0251 22.3662 19.8946 19.4589 24.1761 19.9174V17.4647H22.2381C21.809 17.459 21.4152 17.223 21.2022 16.844C20.9894 16.4652 20.9894 15.9998 21.2022 15.6207C21.4153 15.242 21.809 15.0057 22.2381 15H25.3874C25.7084 15.0009 26.0158 15.131 26.2427 15.3619C26.4697 15.5928 26.5976 15.9059 26.5985 16.2325V19.917L34.835 19.9167ZM26.0168 39.1908V40.115C26.0183 40.7243 26.2579 41.3085 26.6826 41.7382C27.1076 42.1683 27.6827 42.4088 28.2818 42.4069H29.1661V49H34.8348V42.4069H35.719C36.3179 42.4087 36.8932 42.1682 37.3179 41.7382C37.7426 41.3085 37.9823 40.7244 37.984 40.115V39.1908H26.0168ZM48 26.9117V35.7508V35.7505C48 36.0105 47.8983 36.2597 47.7179 36.4432C47.5373 36.627 47.2923 36.7302 47.0371 36.7302H34.2539V26.9108C34.5586 17.6411 47.6973 17.6457 47.9999 26.9108L48 26.9117ZM39.6904 28.9416V28.9413C39.6842 28.5052 39.4519 28.1049 39.0797 27.8887C38.7074 27.6725 38.2506 27.6725 37.8783 27.8887C37.506 28.1049 37.2738 28.5052 37.2676 28.9413V30.5432C37.2667 30.8706 37.3938 31.1849 37.621 31.417C37.8485 31.6488 38.1571 31.7793 38.479 31.7793C38.8008 31.7793 39.1094 31.6488 39.3367 31.417C39.5642 31.1849 39.6912 30.8707 39.6903 30.5432L39.6904 28.9416Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_162_290">
+                    <rect width="64" height="64" rx="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h4>Domestic</h4>
+            <p>
+              For high value or fragile shipments that need extra care and
+              attention
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="service">
+            <div>
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="32" cy="32" r="32" fill="#472F92" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M36.6718 26.1094L47 31.5631L46.7005 34.6803L36.4586 34.1117C36.2549 36.1666 35.948 38.1776 35.5616 39.9775L40.2362 42.5474V44.7739L34.4107 44.0191C33.7043 45.854 32.8801 47 31.9999 47C31.1198 47 30.2957 45.854 29.5893 44.0191L23.7638 44.7739V42.5474L28.4384 39.9775C28.0516 38.1778 27.7449 36.1667 27.5414 34.1117L17.2995 34.6803L17 31.5631L27.3282 26.1094C28.0554 13.9635 35.9456 13.9635 36.6722 26.1094H36.6718Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h4>International</h4>
+            <p>
+              For brands looking to import, export or ship to global customers
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="swiper-btn d-flex justify-content-center">
+      <a href="#" class="btn button-black-bg text-white rounded-pill">
+        More Services
+
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="base-state"
+        >
+          <path
+            d="M6.75 13.5L11.25 9L6.75 4.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="hover-state"
+        >
+          <path
+            d="M9.5 13.5L14 9M14 9L9.5 4.5M14 9H3.5"
+            stroke="#472F92"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </section>
+</section>
+
+
+    `;
+  }
+}
+
+customElements.define("eshipper-more-services", eShipperMoreServices);

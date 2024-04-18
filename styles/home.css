@@ -1467,7 +1467,6 @@ header .review {
 }
 .skip-content a {
   padding: 10px 14px;
-
   color: var(--Neutral-0, #fff);
   font-size: 12px;
   font-style: normal;
@@ -1483,6 +1482,7 @@ header .review {
   background: var(--generic-white, #fff);
   padding: 24px;
   height: 100%;
+  justify-content: center;
 }
 
 .skip-benefits li {

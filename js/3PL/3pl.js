@@ -6,6 +6,7 @@ import { sliderInput } from "../helper.js";
 import { eshipperHeaderInstantQuote } from "../helper.js";
 import { play_lottie } from "../helper.js";
 import { loop_arrow } from "../helper.js";
+import { createButton } from "../helper.js";
 
 /**
  *
@@ -24,10 +25,22 @@ document.querySelectorAll(".include-btn").forEach((btn) => {
   }
 
   btn.innerHTML = buildButton({
-    text: "Get Started",
+    text: "Book a Meeting",
     className: "button-black-bg text-white rounded-pill",
   });
 });
+
+/**
+ *
+ * CREATE BUTTON SECTION
+ */
+
+// SERVICES SECTION
+createButton(
+  ".skip-content .include-btn",
+  "Contact Us",
+  "btn button-white-bg-black text-dark rounded-pill "
+);
 
 /**
  *
@@ -35,7 +48,7 @@ document.querySelectorAll(".include-btn").forEach((btn) => {
  */
 
 document.querySelector(".benefit-btn").innerHTML = buildButton({
-  text: "Get A Quote",
+  text: "Book a Meeting",
   className: "button-black-bg text-white rounded-pill",
 });
 
@@ -384,112 +397,6 @@ card = {
 
 document.querySelector(".solution .card-item-6").innerHTML =
   eShipperCard2(card);
-
-/**
- *
- * SCROLL JS FOR Didn’t find what you were looking for? section
- */
-
-const swiper = new Swiper(".swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: false,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 0,
-    modifier: 0,
-  },
-
-  keyboard: {
-    enabled: true,
-  },
-
-  loop: true,
-
-  // Default parameters
-  slidesPerView: 1.5,
-  spaceBetween: 10,
-
-  on: {
-    init: function () {
-      updatePaginationVisibility(this); // Call the function when slide changes
-    },
-    slideChange: function () {
-      updatePaginationVisibility(this); // Call the function when slide changes
-    },
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // Responsive breakpoints
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-      centeredSlides: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 10,
-        modifier: 35,
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
-    },
-  },
-});
-
-function updatePaginationVisibility(swiper) {
-  // Select all bullets
-  const allBullets = document.querySelectorAll(".swiper-pagination-bullet");
-  const totalBullets = allBullets.length;
-  // Remove 'visible' class from all bullets initially
-  allBullets.forEach((bullet) => bullet.classList.remove("visible"));
-
-  // console.log(allBullets);
-
-  // Find index of the active bullet
-  const activeIndex = Array.from(allBullets).findIndex((bullet) =>
-    bullet.classList.contains("swiper-pagination-bullet-active")
-  );
-
-  // Determine start index based on active bullet position
-  let startIndex;
-  if (activeIndex <= 2) {
-    // Covers first 3 slides where we want to show the first 4 bullets
-    startIndex = 0;
-  } else if (activeIndex > totalBullets - 4) {
-    // Covers last slide scenarios
-    startIndex = totalBullets - 3;
-  } else {
-    // For middle slides, keep the active bullet as the third bullet
-    startIndex = activeIndex - 2;
-  }
-
-  // Add 'visible' class to relevant bullets
-  for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
-    allBullets[i].classList.add("visible");
-    // console.log(allBullets[i]);
-  }
-}
-
-swiper.slideTo(3, false, false);
 
 /**
  *

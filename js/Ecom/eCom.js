@@ -24,7 +24,7 @@ document.querySelectorAll(".include-btn").forEach((btn) => {
   }
 
   btn.innerHTML = buildButton({
-    text: "Get Started",
+    text: "Book a Meeting",
     className: "button-black-bg text-white rounded-pill",
   });
 });
@@ -35,7 +35,7 @@ document.querySelectorAll(".include-btn").forEach((btn) => {
  */
 
 document.querySelector(".benefit-btn").innerHTML = buildButton({
-  text: "Get A Quote",
+  text: "Book a Meeting",
   className: "button-black-bg text-white rounded-pill",
 });
 
@@ -513,64 +513,6 @@ document.querySelector(".solution .card-item-6").innerHTML =
 
 /**
  *
- * SCROLL JS FOR Didn’t find what you were looking for? section
- */
-
-const swiper = new Swiper(".swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: false,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 0,
-    modifier: 0,
-  },
-
-  keyboard: {
-    enabled: true,
-  },
-
-  loop: true,
-
-  // Default parameters
-  slidesPerView: 1.5,
-  spaceBetween: 10,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // Responsive breakpoints
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-      centeredSlides: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 10,
-        modifier: 35,
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
-    },
-  },
-});
-
-swiper.slideTo(3, false, false);
-
-/**
- *
  * LOGO SLIDER
  */
 const images = [
@@ -694,4 +636,4 @@ play_lottie();
  *
  * LOOP ARROW ANIMATION 3 TIMES
  */
-loop_arrow();
+// loop_arrow();

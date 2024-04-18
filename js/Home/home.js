@@ -1,6 +1,19 @@
 import { sliderLogo } from "../helper.js";
 import { sliderInput } from "../helper.js";
 import { play_lottie } from "../helper.js";
+import { createButton } from "../helper.js";
+
+/**
+ *
+ * CREATE BUTTON SECTION
+ */
+
+// SERVICES SECTION
+createButton(
+  ".services-btn",
+  "Get a Quote",
+  "btn button-black-bg text-white rounded-pill "
+);
 
 document.querySelector("#canada-usa").addEventListener("click", activateForm);
 document.querySelector("#worldwide").addEventListener("click", activateForm);
