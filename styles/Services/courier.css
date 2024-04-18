@@ -455,11 +455,17 @@
   color: var(--Neutral-500, #6b7280);
   font-family: "thicccboi-medium" !important;
 
-  font-size: 18px;
+  /* font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px; */
+
+  color: var(--Neutral-500, #6b7280);
+
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.36px;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: -0.32px;
 }
 
 @media (min-width: 768px) {
