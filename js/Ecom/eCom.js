@@ -6,6 +6,7 @@ import { sliderInput } from "../helper.js";
 import { eshipperHeaderInstantQuote } from "../helper.js";
 import { play_lottie } from "../helper.js";
 import { loop_arrow } from "../helper.js";
+import { createButton } from "../helper.js";
 
 /**
  *
@@ -38,6 +39,18 @@ document.querySelector(".benefit-btn").innerHTML = buildButton({
   text: "Book a Meeting",
   className: "button-black-bg text-white rounded-pill",
 });
+
+/**
+ *
+ * CREATE BUTTON SECTION
+ */
+
+// CTA SECTION
+createButton(
+  ".CTA .include-btn",
+  "Book a Meeting",
+  "btn button-teal-txt-white-bg rounded-pill"
+);
 
 /**
  *

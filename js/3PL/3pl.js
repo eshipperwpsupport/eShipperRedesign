@@ -42,6 +42,13 @@ createButton(
   "btn button-white-bg-black text-dark rounded-pill "
 );
 
+// CTA SECTION
+createButton(
+  ".CTA .include-btn",
+  "Book a Meeting",
+  "btn button-teal-txt-white-bg rounded-pill "
+);
+
 /**
  *
  * BUTTON FOR CARDS SECTION

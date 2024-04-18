@@ -633,10 +633,6 @@
   background-size: cover;
 }
 
-.CTA .include-btn .btn .hover-state path {
-  stroke: #000 !important;
-}
-
 .CTA h2 {
   max-width: 25ch;
   margin: 0 auto;

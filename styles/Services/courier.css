@@ -765,6 +765,11 @@
   .solution .swiper-pagination {
     bottom: -60px;
   }
+
+  #next-day-shipping p {
+    max-width: 37.9ch;
+  }
+
   .solution .swiper-pagination-bullet {
     display: none;
     /* display: inline-block; */

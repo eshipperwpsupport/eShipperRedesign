@@ -178,9 +178,11 @@ h5 {
 .button-teal-bg {
   background: var(--primary-500-main, #2fb5c0);
 }
+
 .button-purple-bg {
   background: var(--secondary-500-main, #472f92);
 }
+
 .button-white-bg-black {
   background: var(--Generic-White, #fff);
   color: var(--Neutral-700, #374151);
@@ -189,8 +191,14 @@ h5 {
   background: var(--Generic-White, #fff);
   color: var(--primary-500-main, #2fb5c0);
 }
+
 .button-black-bg {
   background: var(--Neutral-900, #111827);
+}
+
+.button-teal-txt-white-bg {
+  background: #fff;
+  color: var(--Primary-600, #2aa3ad);
 }
 
 /* button hover state */
@@ -215,6 +223,11 @@ h5 {
   background: var(--Neutral-600, #4b5563);
 }
 
+.button-teal-txt-white-bg:hover {
+  background: var(--Primary-400, #59c4cd);
+  color: #fff;
+}
+
 .btn .hover-state {
   display: none;
 }
@@ -232,6 +245,15 @@ h5 {
 
 .btn:hover .hover-state {
   display: block;
+}
+
+/* button hover state svg */
+
+.button-teal-txt-white-bg path {
+  stroke: var(--Primary-600, #2aa3ad);
+}
+.button-teal-txt-white-bg .hover-state path {
+  stroke: white;
 }
 
 img {

@@ -696,9 +696,6 @@
 .CTA-section .include-btn {
   margin-top: 0 !important;
 }
-.CTA-section .include-btn .btn .hover-state path {
-  stroke: black !important;
-}
 
 @media (min-width: 992px) {
   .CTA h2 {
