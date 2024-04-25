@@ -190,7 +190,7 @@ const service_overview_tracking_returns = [
 
 
       `,
-    header: "Pay invoices without the Hassle",
+    header: "Pay Invoices Without the Hassle",
     paragragh: `
         Receive one consolidated invoice for all your shipments, regardless of how many carriers 
 you’ve shipped with
@@ -301,7 +301,7 @@ document.querySelectorAll(".service_overview_feature").forEach((div, index) => {
 
 /**
  *
- * ICON TEXT BLOCK
+ * COMPONENT - ICON TEXT BLOCK
  * FOR
  * HOW IT WORKS
  */
@@ -638,7 +638,7 @@ const swiper = new Swiper(".solution-mobile .swiper", {
   },
   freeMode: true,
 
-  loop: true,
+  loop: false,
   pagination: {
     el: ".solution-mobile .swiper-pagination",
     clickable: true,
@@ -659,7 +659,7 @@ const desktop_swiper = new Swiper(".solution-desktop .swiper", {
   },
   freeMode: true,
 
-  loop: true,
+  loop: false,
   pagination: {
     el: ".solution-desktop .swiper-pagination",
     clickable: true,
@@ -706,7 +706,6 @@ function updatePaginationVisibility(swiper) {
   // Add 'visible' class to relevant bullets
   for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
     allBullets[i].classList.add("visible");
-    console.log(allBullets[i]);
   }
 }
 

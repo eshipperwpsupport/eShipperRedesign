@@ -662,14 +662,6 @@
     line-height: 44px;
     letter-spacing: -0.84px;
   }
-
-  .support .paragraph-supporting-text {
-    /* font-size: 24px; */
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.52px;
-  }
 }
 @media (min-width: 1600px) {
 }

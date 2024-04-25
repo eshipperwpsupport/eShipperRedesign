@@ -208,13 +208,9 @@ card = {
     `,
 
   lottiePlayer: `
-  
-  <img
-  src="/eShipperRedesign/assets/svgFolder/3PL/card-3.svg"
-  
-  alt=""
-  class="d-none d-xl-block"
-  />
+
+   <dotlottie-player src="https://lottie.host/4b55a108-cbcd-45a7-aae4-caa7028de7b5/LS4yIwSnDK.json" background="transparent" speed="1" style="width: 280px; height: 270px;" loop class="d-none d-xl-block"></dotlottie-player>
+
   
   `,
   buttonText: "Learn More",
@@ -262,7 +258,7 @@ card = {
   mobileImg: `
 
     <img
-        src="/eShipperRedesign/assets/svgFolder/3PL/card-3.svg"
+        src="/eShipperRedesign/assets/svgFolder/3PL/card-4.svg"
 
         alt=""
         class="d-block d-xl-none"

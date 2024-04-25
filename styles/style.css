@@ -185,7 +185,7 @@ h5 {
 
 .button-white-bg-black {
   background: var(--Generic-White, #fff);
-  color: var(--Neutral-700, #374151);
+  color: var(--Neutral-900);
 }
 .button-white-bg-teal {
   background: var(--Generic-White, #fff);
@@ -201,6 +201,15 @@ h5 {
   color: var(--Primary-600, #2aa3ad);
 }
 
+.button-purple-txt-white-bg {
+  background: #fff;
+  color: var(--secondary-500-main, #472f92);
+}
+
+.button-learn-more-purple-text {
+  color: var(--secondary-500-main, #472f92);
+}
+
 /* button hover state */
 .button-teal-bg:hover {
   background: var(--Primary-300, #82d3d9);
@@ -212,7 +221,7 @@ h5 {
 
 .button-white-bg-black:hover {
   background: var(--Neutral-200, #e5e7eb);
-  color: var(--Neutral-700, #374151);
+  color: var(--Neutral-900, #374151);
 }
 .button-white-bg-teal:hover {
   background: #9fa9b6;
@@ -226,6 +235,15 @@ h5 {
 .button-teal-txt-white-bg:hover {
   background: var(--Primary-400, #59c4cd);
   color: #fff;
+}
+
+.button-purple-txt-white-bg:hover {
+  background: var(--secondary-300, #472f92);
+  color: #fff;
+}
+
+.button-learn-more-purple-text:hover {
+  color: var(--secondary-500-main, #472f92);
 }
 
 .btn .hover-state {
@@ -254,6 +272,30 @@ h5 {
 }
 .button-teal-txt-white-bg .hover-state path {
   stroke: white;
+}
+
+.button-purple-txt-white-bg path {
+  stroke: var(--secondary-500-main, #472f92);
+}
+
+.button-purple-txt-white-bg .hover-state path {
+  stroke: white;
+}
+
+.button-learn-more-purple-text path {
+  stroke: var(--secondary-500-main, #472f92);
+}
+
+.button-learn-more-purple-text .hover-state path {
+  stroke: var(--secondary-500-main, #472f92) !important;
+}
+
+.button-white-bg-black path {
+  stroke: var(--Neutral-900, #374151);
+}
+
+.button-white-bg-black .hover-state path {
+  stroke: var(--Neutral-900, #374151);
 }
 
 img {

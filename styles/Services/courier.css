@@ -136,7 +136,7 @@
   .hero .header-supporting-text {
     margin-top: 34px;
     margin-bottom: 34px;
-    max-width: 40ch;
+    max-width: 42ch;
   }
 
   .hero-container img {
@@ -442,7 +442,7 @@
 }
 .benefit .Icon_Text_Block h4 {
   color: var(--Neutral-900, #111827);
-  font-family: "thicccboi-semibold" !important;
+  font-family: "thicccboi-medium" !important;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -452,20 +452,24 @@
 }
 
 .benefit .Icon_Text_Block p {
-  color: var(--Neutral-500, #6b7280);
   font-family: "thicccboi-medium" !important;
 
-  /* font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.36px; */
-
   color: var(--Neutral-500, #6b7280);
-
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 137.5% */
+  line-height: normal;
   letter-spacing: -0.32px;
+}
+
+.benefit .card-container .card-item:nth-child(3) p {
+  max-width: 24ch;
+}
+.benefit .card-container .card-item:nth-child(4) p {
+  max-width: 30ch;
+}
+.benefit .card-container .card-item:nth-child(6) p {
+  max-width: 27ch;
 }
 
 @media (min-width: 768px) {
@@ -493,32 +497,44 @@
     border: 1px solid var(--Neutral-200, #e5e7eb);
     background: var(--Generic-White, #fff);
     padding: 28px 20px;
+    width: 384px;
+    height: 300px;
   }
   .benefit .card-item:nth-child(1) img {
     width: 158px;
     height: 143px;
     flex-shrink: 0;
   }
-
   .benefit .card-item:nth-child(2) img {
-    width: 366.444px;
-    height: 163.792px;
-    flex-shrink: 0;
+    transform: scale(1);
+    position: relative;
+    top: -19px;
   }
+
   .benefit .card-item:nth-child(3) img {
-    width: 326px;
-    height: 124.189px;
+    position: relative;
+    top: -14px;
   }
+
+  .benefit .card-item:nth-child(4) {
+    padding-bottom: 0;
+  }
+
   .benefit .card-item:nth-child(4) img {
-    width: 294.783px;
-    height: 201.729px;
+    position: relative;
+    right: -25px;
+    transform: scale(0.9);
+    top: -45px;
   }
   .benefit .card-item:nth-child(5) img {
     width: 304.895px;
   }
   .benefit .card-item:nth-child(6) img {
     width: 296.433px;
-    height: 85px;
+    transform: scale(1.1);
+    top: -21px;
+    position: relative;
+    right: -6px;
   }
 }
 @media (min-width: 992px) {
@@ -527,12 +543,28 @@
   .benefit .eshipper-card h5 {
     max-width: none;
   }
+
+  .benefit .Icon_Text_Block h4 {
+    margin-bottom: 6px;
+  }
 }
 @media (min-width: 1400px) {
   .benefit .eshipper-card {
     height: 270px;
     padding: 28px 0;
     padding-left: 32px;
+  }
+
+  .benefit .Icon_Text_Block p {
+    color: var(--Neutral-500, #6b7280);
+    font-family: "thicccboi-medium" !important;
+    color: var(--Neutral-500, #6b7280);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: -0.32px;
   }
 
   .eshipper-card h5 {
@@ -559,10 +591,16 @@
     max-width: 31ch;
   }
   .benefit .card-item:nth-child(3) p {
-    max-width: 35ch;
+    max-width: 25ch;
   }
   .benefit .card-item:nth-child(4) p {
-    max-width: 35ch;
+    max-width: 31ch;
+  }
+  .benefit .card-item:nth-child(5) p {
+    max-width: 23ch;
+  }
+  .benefit .card-item:nth-child(6) p {
+    max-width: 25ch;
   }
 
   .benefit .card-container {
@@ -597,7 +635,7 @@
 .solution h2 span {
   position: relative;
   z-index: 1;
-  color: var(--Neutral-900, #111827);
+  /* color: var(--Neutral-900, #111827); */
   text-align: center;
   font-family: "thicccboi-bold" !important;
   font-size: 42px;
@@ -607,7 +645,7 @@
   letter-spacing: -0.84px;
 }
 
-.solution h2 span::before {
+/* .solution h2 span::before {
   content: "";
   width: calc(100% + 15px);
   height: 44px;
@@ -617,7 +655,7 @@
   z-index: -1;
   left: -9px;
   top: 3px;
-}
+} */
 
 .solution .solution-top-container p {
   color: var(--Neutral-400, #9ca3af);
@@ -761,11 +799,11 @@
 }
 
 @media (min-width: 768px) {
-  .solution h2 span::before {
+  /* .solution h2 span::before {
     width: calc(100% + 9px);
     left: -4px;
     top: 6px;
-  }
+  } */
 }
 @media (min-width: 992px) {
   .solution .swiper-pagination {
@@ -1034,7 +1072,7 @@
   }
 
   .service_overview_feature {
-    max-width: 41ch;
+    max-width: 42ch;
   }
   .service_overview .include-btn {
     margin-top: 42px;
