@@ -205,7 +205,7 @@ const how_it_works = [
 
 
         `,
-    header: `Inbound inventory`,
+    header: `Inbound shipment`,
     paragragh: `We’ll receive, inspect, count, and store your products at our fulfillment centers`,
   },
 

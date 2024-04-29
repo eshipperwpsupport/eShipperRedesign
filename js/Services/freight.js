@@ -22,8 +22,10 @@ createButton(
   "btn button-black-bg text-white rounded-pill"
 );
 
+// TAKE CONTROL SECTION
+
 createButton(
-  ".hero .include-btn.mobile",
+  ".take_control .include-btn",
   "Start Now",
   "btn button-black-bg text-white rounded-pill"
 );
@@ -48,7 +50,21 @@ createButton(
 
 createButton(
   ".how_it_works .include-btn",
-  "Sign Up",
+  "Sign Up for a Free Audit",
+  "btn button-black-bg text-white rounded-pill"
+);
+// FREE AUDIT
+
+createButton(
+  ".free_audit .include-btn",
+  "Get a Free Audit",
+  "btn button-purple-txt-white-bg rounded-pill"
+);
+// FREIGHT SOLUTION
+
+createButton(
+  ".freight_soln-swiper_container .include-btn",
+  "Book a Meeting",
   "btn button-black-bg text-white rounded-pill"
 );
 
@@ -185,8 +201,9 @@ const how_it_works = [
 
 
         `,
-    header: `Sign up for free`,
-    paragragh: `No payment information required`,
+    header: `Sign up`,
+    paragragh: `Sign up for a free account, with no 
+set-up or monthly fees`,
   },
 
   {
@@ -199,8 +216,8 @@ const how_it_works = [
 
 
         `,
-    header: `Create your shipments`,
-    paragragh: `Input location and package details`,
+    header: `Free Audit`,
+    paragragh: `Get a free audit from of our experts`,
   },
 
   {
@@ -214,8 +231,8 @@ const how_it_works = [
 
 
         `,
-    header: `Get rates`,
-    paragragh: `Choose from competitive rates with multiple carrier options`,
+    header: `Dedicated Onboarding`,
+    paragragh: `Your Account Manager handles all your shipments, from LTLs to full container loads`,
   },
 
   {
@@ -229,9 +246,8 @@ const how_it_works = [
 
 
         `,
-    header: `Print shipping labels`,
-    paragragh: `Print one shipping label, multiple labels
-or a batch - the choice is yours`,
+    header: `Expansive Network`,
+    paragragh: `Enjoy access to eShipper’s curated global network of freight partners with preferred rates`,
   },
   {
     svg: `
@@ -241,20 +257,8 @@ or a batch - the choice is yours`,
 <path d="M13.9913 12.52C15.4847 12.52 16.658 12.8733 17.5113 13.58C18.378 14.2867 18.8113 15.2667 18.8113 16.52C18.8113 17.9733 18.378 19.12 17.5113 19.96C16.658 20.8 15.4847 21.22 13.9913 21.22C12.6313 21.22 11.518 20.9133 10.6513 20.3C9.78466 19.6733 9.26466 18.82 9.09133 17.74L10.8513 17.54C11.038 18.14 11.4113 18.6133 11.9713 18.96C12.5313 19.3067 13.2047 19.48 13.9913 19.48C14.9513 19.48 15.7047 19.22 16.2513 18.7C16.8113 18.1667 17.0913 17.44 17.0913 16.52C17.0913 15.7733 16.8113 15.1867 16.2513 14.76C15.7047 14.32 14.9513 14.1 13.9913 14.1H10.8513V14.06L9.71133 14.1L10.6313 7H18.3913V8.72H12.1313L11.6713 12.52H13.9913Z" fill="white"/>
 </svg>
         `,
-    header: `Ship`,
-    paragragh: `Schedule free pickups with any carrier`,
-  },
-  {
-    svg: `
-        
-<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="19" cy="19" r="19" fill="#111827"/>
-<path d="M18.96 14.552C19.872 14.552 20.704 14.704 21.456 15.008C22.224 15.296 22.88 15.704 23.424 16.232C23.984 16.76 24.416 17.384 24.72 18.104C25.04 18.808 25.2 19.584 25.2 20.432C25.2 21.28 25.04 22.064 24.72 22.784C24.416 23.488 23.984 24.104 23.424 24.632C22.88 25.144 22.224 25.552 21.456 25.856C20.704 26.144 19.872 26.288 18.96 26.288C18.064 26.288 17.232 26.144 16.464 25.856C15.712 25.552 15.056 25.144 14.496 24.632C13.952 24.104 13.52 23.488 13.2 22.784C12.896 22.064 12.744 21.28 12.744 20.432C12.744 19.888 12.808 19.368 12.936 18.872C13.08 18.376 13.272 17.92 13.512 17.504L13.536 17.456C13.568 17.392 13.6 17.336 13.632 17.288C13.664 17.24 13.696 17.184 13.728 17.12L18.744 9.2H21.264L17.832 14.648C18.008 14.616 18.192 14.592 18.384 14.576C18.576 14.56 18.768 14.552 18.96 14.552ZM18.96 16.664C18.4 16.664 17.88 16.76 17.4 16.952C16.92 17.144 16.496 17.408 16.128 17.744C15.776 18.08 15.496 18.48 15.288 18.944C15.096 19.408 15 19.904 15 20.432C15 20.96 15.104 21.456 15.312 21.92C15.52 22.368 15.8 22.76 16.152 23.096C16.504 23.432 16.92 23.696 17.4 23.888C17.896 24.064 18.416 24.152 18.96 24.152C19.536 24.152 20.064 24.056 20.544 23.864C21.04 23.672 21.464 23.408 21.816 23.072C22.168 22.736 22.44 22.344 22.632 21.896C22.84 21.448 22.944 20.96 22.944 20.432C22.944 19.904 22.84 19.416 22.632 18.968C22.44 18.504 22.16 18.104 21.792 17.768C21.44 17.416 21.024 17.144 20.544 16.952C20.064 16.76 19.536 16.664 18.96 16.664Z" fill="white"/>
-</svg>
-
-        `,
-    header: `Track`,
-    paragragh: `Track and trace your shipments with any carrier from our unified dashboard`,
+    header: `Tracking Visibility`,
+    paragragh: `We ship your cargo with door-to-door tracking for full visibility`,
   },
 ];
 
@@ -283,3 +287,68 @@ document.querySelector("#canada").addEventListener("click", function (e) {
 document
   .querySelector("#worldwide")
   .addEventListener("click", eshipperHeaderInstantQuote);
+
+/**
+ *
+ * SWIPER
+ * FREIGHT SOLUTION SECTION
+ */
+
+const swiper = new Swiper(".freight_soln-bottom_section .swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+
+  on: {
+    init: function () {
+      updatePaginationVisibility(this); // Call the function when slide changes
+    },
+    slideChange: function () {
+      updatePaginationVisibility(this); // Call the function when slide changes
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".freight_soln-bottom_section .swiper-pagination",
+  },
+});
+
+function updatePaginationVisibility(swiper) {
+  // Select all bullets
+  const allBullets = document.querySelectorAll(
+    ".freight_soln-bottom_section .swiper-pagination-bullet"
+  );
+  const totalBullets = allBullets.length;
+  // Remove 'visible' class from all bullets initially
+  allBullets.forEach((bullet) => bullet.classList.remove("visible"));
+
+  console.log(allBullets);
+  // console.log("dog");
+
+  // Find index of the active bullet
+  const activeIndex = Array.from(allBullets).findIndex((bullet) =>
+    bullet.classList.contains("swiper-pagination-bullet-active")
+  );
+
+  // Determine start index based on active bullet position
+  let startIndex;
+  if (activeIndex <= 2) {
+    // Covers first 3 slides where we want to show the first 4 bullets
+    startIndex = 0;
+  } else if (activeIndex > totalBullets - 4) {
+    // Covers last slide scenarios
+    startIndex = totalBullets - 3;
+  } else {
+    // For middle slides, keep the active bullet as the third bullet
+    startIndex = activeIndex - 2;
+  }
+
+  // Add 'visible' class to relevant bullets
+  for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
+    allBullets[i].classList.add("visible");
+    // console.log(allBullets[i]);
+  }
+}

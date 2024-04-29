@@ -977,6 +977,17 @@ h1 span {
   }
 
   .tailored_built_for_growth
+    .card-container.card-item:nth-child(3)
+    .Icon_Text_Block-container {
+    height: 128px !important;
+  }
+  .tailored_built_for_growth
+    .card-container.card-item:nth-child(4)
+    .Icon_Text_Block-container {
+    height: 128px !important;
+  }
+
+  .tailored_built_for_growth
     .card-container
     .card-item:last-child
     .Icon_Text_Block-container {
@@ -1091,6 +1102,12 @@ h1 span {
 @media (min-width: 992px) {
   .scale_and_grow-main_content {
     flex-direction: row;
+  }
+
+  .scale_and_grow h2 {
+    max-width: 26ch;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
   .scale_and_grow-main_content > div {

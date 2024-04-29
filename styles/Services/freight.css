@@ -9,6 +9,7 @@
 8. HOW IT WORKS
 9. TAILORED BUILT FOR GROWTH
 SCALE UP AND GROW
+10. TAKE CONTROL
 
 /* ===================================== */
 /*              ##############
@@ -191,8 +192,8 @@ h1 span {
 @media (min-width: 1200px) {
   .hero .header-supporting-text {
     /* margin-top: 34px; */
-    /* margin-bottom: 34px; */
-    max-width: none;
+    margin-bottom: 34px;
+    max-width: 32ch;
   }
 
   .hero-container img {
@@ -673,7 +674,7 @@ h1 span {
 }
 
 .how_it_works .card-item:nth-child(1) p {
-  max-width: 32ch;
+  max-width: 27ch;
 }
 .how_it_works .card-item:nth-child(2) p {
   max-width: 30ch;
@@ -713,12 +714,7 @@ h1 span {
   right: -3px;
   transform: scale(1.1);
 }
-/* .how_it_works .card-item:nth-child(2) > div.Icon_Text_Block {
-  margin-bottom: 33px;
-}
-.how_it_works .card-item:nth-child(3) > div.Icon_Text_Block {
-  margin-bottom: 33px;
-} */
+
 .how_it_works .card-item:nth-child(3) {
   padding-bottom: 0;
 }
@@ -744,6 +740,25 @@ h1 span {
   line-height: normal;
   letter-spacing: -0.48px;
   margin-bottom: 12px;
+}
+
+.how_it_works .cta_container p {
+  color: var(--Neutral-600, #4b5563);
+  font-family: "thicccboi-medium" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+  max-width: 27ch;
+  margin-top: 34px;
+}
+.how_it_works .cta_container p a {
+  color: var(--secondary-500-main, #472f92);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
 @media (min-width: 992px) {
@@ -902,7 +917,7 @@ h1 span {
   max-width: 36ch;
 }
 
-#in-house-support p {
+#air-freight p {
   max-width: 36ch;
 }
 
@@ -911,26 +926,26 @@ h1 span {
   height: 282px;
   border-radius: 12px;
 }
-#in-house-support {
-  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/26143641/Standard-Delivery-2.png);
+#air-freight {
+  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/29141033/freight-1597879067.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
-#warehouse-fulfillment {
-  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/26143634/Standard-Delivery-3.png);
+#ocean-freight {
+  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/29141040/freight-1597879398.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
-#flexible-storage {
-  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/26143654/Standard-Delivery.png);
+#trucking-freight {
+  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/29141046/freight-1597879399.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
-#versatile-shipping {
-  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/26143647/Standard-Delivery-1.png);
+#rail-intermodal-freight {
+  background: url(https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/29141054/freight-1597879098.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -965,4 +980,278 @@ h1 span {
 @media (min-width: 1600px) {
 }
 @media (min-width: 1900px) {
+}
+
+/* ===================================== */
+/*               TAKE CONTROL
+/* ===================================== */
+
+.take_control h2 {
+  color: var(--Neutral-900, #111827);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  margin-bottom: 14px;
+}
+.take_control-top_section p {
+  color: var(--Neutral-900, #111827);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.3px;
+}
+
+.take_control-top_section {
+  margin-bottom: 20px;
+}
+
+.take_control-bottom_section p {
+  color: var(--Neutral-700, #374151);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+  letter-spacing: -0.3px;
+}
+.take_control-bottom_section p:first-child {
+  margin-bottom: 14px;
+}
+
+.take_control-main_section {
+  margin-top: 34px;
+}
+
+.take_control-main_section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.take_control-main_section li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.take_control-main_section li p {
+  color: var(--Neutral-900, #111827);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+
+.take_control-img_container {
+  margin-top: 34px;
+}
+
+@media (min-width: 992px) {
+  .take_control > div:first-child {
+    display: flex;
+  }
+
+  .take_control > div:first-child > div {
+    flex: 1 1;
+  }
+
+  .take_control h2 {
+    max-width: 17ch;
+  }
+
+  .take_control-top_section p {
+    max-width: 37ch;
+    color: var(--Neutral-900, #111827);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.3px;
+  }
+
+  .take_control-top_section {
+    margin-bottom: 24px;
+  }
+
+  .take_control-bottom_section p:first-child {
+    margin-bottom: 20px;
+  }
+
+  .take_control-main_section {
+    margin-top: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .take_control-bottom_section p:nth-child(2) {
+    max-width: 46ch;
+    margin-bottom: 24px;
+  }
+
+  .take_control-main_section li p {
+    max-width: 50ch;
+  }
+
+  .take_control-img_container img {
+    flex: 1 1;
+    width: 100%;
+  }
+  .take_control-img_container {
+    display: flex;
+    gap: 34px;
+    margin-top: 54px;
+  }
+
+  .take_control .include-btn {
+    width: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+/* ===================================== */
+/*              ##############
+/* ===================================== */
+
+.free_audit {
+  padding-bottom: 0;
+}
+
+.free_audit-main_container {
+  margin-top: 24px;
+}
+.free_audit-main_container p {
+  color: var(--Neutral-100, #f3f4f6);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+}
+
+.free_audit-main_container .include-btn {
+  margin-top: 34px;
+}
+
+.free_audit .img-container {
+  margin-top: 34px;
+}
+.free_audit .img-container img {
+  position: relative;
+  right: -21px;
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1900px) {
+}
+
+.freight_soln {
+  padding-bottom: 0;
+}
+
+/* .freight_soln-swiper_container {
+  padding-bottom: 124px;
+} */
+
+.freight_soln-top_section p {
+  color: var(--Neutral-600, #4b5563);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 31ch;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.freight_soln-item img {
+  width: 224px;
+  height: 156px;
+  margin: 0 auto;
+}
+
+.freight_soln-bottom_section {
+  margin: 0;
+  position: relative;
+}
+
+.freight_soln-bottom_section .swiper-pagination-bullet {
+  width: 80px;
+  height: 2px;
+  border-radius: 0;
+  background: var(--Neutral-300, #d1d5db);
+}
+
+.freight_soln-bottom_section .swiper-pagination-bullet-active {
+  background: var(--Neutral-800, #1f2937);
+}
+
+.freight_soln-bottom_section .swiper-pagination-bullet {
+  display: none;
+}
+
+.freight_soln-bottom_section .swiper-pagination-bullet.visible {
+  display: inline-block;
+}
+
+.freight_soln-bottom_section .swiper-pagination {
+  /* bottom: -40px !important; */
+  margin: 34px 0;
+  margin-bottom: 42px;
+}
+
+.freight_soln-item {
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  flex: 1 1;
+  width: 100%;
+  margin-top: 10px;
+  gap: 16px;
+}
+
+.freight_soln-bottom_section .swiper-slide {
+  border-radius: 12px;
+  background: #fff;
+  width: 244px !important;
+  height: 334px;
+}
+.freight_soln-item h4 {
+  color: var(--Neutral-900, #111827);
+  font-family: "thicccboi-semibold" !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.freight_soln-item p {
+  color: var(--Neutral-700, #374151);
+  font-family: "thicccboi-medium" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  margin-top: 10px;
+  max-width: 27ch;
+}
+
+.freight_soln-content {
+  padding: 0 20px;
 }

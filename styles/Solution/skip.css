@@ -468,6 +468,7 @@
   .benefit h2 {
     margin: 0 auto;
     margin-bottom: 22px;
+    max-width: 20ch;
   }
 
   .benefit-container > div:first-child p {
@@ -549,7 +550,7 @@
 
     transform: scale(1.1);
     position: relative;
-    right: 5px;
+    right: 13px;
     top: 7px;
   }
   .benefit
@@ -1028,9 +1029,9 @@
 
   .how_it_works .card-item:nth-child(2) img {
     position: relative;
-    right: 4px;
-    bottom: -60px;
-    transform: scale(1.2);
+    right: -8px;
+    bottom: -20px;
+    transform: scale(1.1);
   }
 
   .how_it_works .card-item:nth-child(3) img {

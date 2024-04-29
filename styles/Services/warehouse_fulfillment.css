@@ -897,6 +897,10 @@ h1 span {
   margin-top: 34px;
 }
 
+.tailored_built_for_growth .card-container .card-item:nth-child(5) {
+  opacity: 0;
+}
+
 @media (min-width: 992px) {
   .tailored_built_for_growth .img-container {
     width: 326px;
@@ -956,6 +960,23 @@ h1 span {
     justify-content: flex-end;
     align-items: center;
     margin-top: 0 !important;
+  }
+
+  .tailored_built_for_growth
+    .card-container
+    .card-item:nth-child(4)
+    .Icon_Text_Block-container {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .tailored_built_for_growth
+    .card-container
+    .card-item:nth-child(3)
+    .Icon_Text_Block-container {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

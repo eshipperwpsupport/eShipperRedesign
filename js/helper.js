@@ -129,8 +129,15 @@ export function loop_arrow() {
  */
 
 export function createButton(btnClass, text, classname) {
-  document.querySelector(`${btnClass}`).innerHTML = buildButton({
-    text: `${text}`,
-    className: `${classname}`,
+  document.querySelectorAll(`${btnClass}`).forEach((btn) => {
+    btn.innerHTML = buildButton({
+      text: `${text}`,
+      className: `${classname}`,
+    });
   });
+
+  // document.querySelector(`${btnClass}`).innerHTML = buildButton({
+  //   text: `${text}`,
+  //   className: `${classname}`,
+  // });
 }
