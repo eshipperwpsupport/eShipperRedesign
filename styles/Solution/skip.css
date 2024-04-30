@@ -468,7 +468,7 @@
   .benefit h2 {
     margin: 0 auto;
     margin-bottom: 22px;
-    max-width: 20ch;
+    /* max-width: 20ch; */
   }
 
   .benefit-container > div:first-child p {

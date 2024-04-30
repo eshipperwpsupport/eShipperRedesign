@@ -781,7 +781,7 @@ const images = [
 sliderLogo(images, "sliderlogo");
 sliderLogo(images, "sliderlogo");
 
-// sliderInput();
+sliderInput();
 
 /**
  *

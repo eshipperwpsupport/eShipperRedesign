@@ -800,7 +800,7 @@ h1 span {
   }
   .how_it_works .card-item:nth-child(5) img {
     position: relative;
-    bottom: -29px;
+    bottom: -27px;
     transform: scale(1.1);
   }
 }
