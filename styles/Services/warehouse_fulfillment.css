@@ -794,7 +794,7 @@ h1 span {
 
   .how_it_works .card-item:nth-child(4) img {
     position: relative;
-    left: 3px;
+    left: 6px;
     bottom: 95px;
     transform: scale(0.5);
   }
