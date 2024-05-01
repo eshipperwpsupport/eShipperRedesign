@@ -911,12 +911,19 @@ h1 span {
   line-height: 32px; /* 133.333% */
   letter-spacing: -0.48px;
 }
+
 .tailored_built_for_growth .card-container p {
   color: var(--Neutral-600, #4b5563);
-
   /* Paragraph/Small/Medium */
   font-family: "thicccboi-medium" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
 
+.tailored_built_for_growth .card-container span {
+  color: var(--Neutral-600, #4b5563);
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -937,6 +944,15 @@ h1 span {
 }
 .tailored_built_for_growth .include-btn {
   margin-top: 34px;
+}
+
+.tailored_built_for_growth
+  .card-container
+  .card-item:nth-child(4)
+  .Icon_Text_Block-container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
 }
 
 @media (min-width: 992px) {
@@ -977,6 +993,20 @@ h1 span {
   }
 
   .tailored_built_for_growth
+    .card-container
+    .card-item:nth-child(3)
+    .Icon_Text_Block-container,
+  .tailored_built_for_growth
+    .card-container
+    .card-item:nth-child(4)
+    .Icon_Text_Block-container {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+    height: auto;
+  }
+
+  .tailored_built_for_growth
     .card-container.card-item:nth-child(3)
     .Icon_Text_Block-container {
     height: 128px !important;
@@ -1009,6 +1039,11 @@ h1 span {
     justify-content: flex-end;
     align-items: center;
     margin-top: 0 !important;
+  }
+
+  .tailored_built_for_growth .card-container .card-item:nth-child(1) h4,
+  .tailored_built_for_growth .card-container .card-item:nth-child(3) h4 {
+    max-width: none;
   }
 }
 @media (min-width: 1200px) {
