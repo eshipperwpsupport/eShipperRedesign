@@ -95,7 +95,7 @@ const service_overview_shipping = [
         `,
     header: "Access All Major Carriers at a Glance",
     paragragh: `
-        Easily access and compare rates from the world’s most reputable carriers on one platform
+        Easily access and compare rates from the world’s most reputable carriers on one platform.
         `,
   },
   {
@@ -112,7 +112,7 @@ const service_overview_shipping = [
         `,
     header: "Take the Non-Traditional Route",
     paragragh: `
-        Enjoy advanced tracking technology and lightning fast shipping from newer innovative players within the shipping industry
+        Enjoy advanced tracking technology and lightning fast shipping from newer innovative players within the shipping industry.
         `,
   },
   {
@@ -159,7 +159,7 @@ const service_overview_shipping = [
         `,
     header: "Ship on Your Own Terms",
     paragragh: `
-        Access multiple service levels depending on your shipping requirements, including Same Day, Next Day and 2 Day Shipping – no minimum shipping volume require
+        Access multiple service levels depending on your shipping requirements, including Same Day, Next Day and 2 Day Shipping – no minimum shipping volume require.
         `,
   },
 ];
@@ -175,7 +175,7 @@ const service_overview_tracking_returns = [
         `,
     header: "Offer Easy Returns",
     paragragh: `
-        Include free return labels with your orders to boost customer experience while handing over the entire returns process to our team
+        Include free return labels with your orders to boost customer experience while handing over the entire returns process to our team.
         `,
   },
   {
@@ -193,7 +193,7 @@ const service_overview_tracking_returns = [
     header: "Pay Invoices Without the Hassle",
     paragragh: `
         Receive one consolidated invoice for all your shipments, regardless of how many carriers 
-you’ve shipped with
+you’ve shipped with.
         `,
   },
   {
@@ -318,7 +318,7 @@ const how_it_works = [
 
         `,
     header: `Sign up for free`,
-    paragragh: `No payment information required`,
+    paragragh: `No payment information required.`,
   },
 
   {
@@ -332,7 +332,7 @@ const how_it_works = [
 
         `,
     header: `Create your shipments`,
-    paragragh: `Input location and package details`,
+    paragragh: `Input location and package details.`,
   },
 
   {
@@ -347,7 +347,7 @@ const how_it_works = [
 
         `,
     header: `Get rates`,
-    paragragh: `Choose from competitive rates with multiple carrier options`,
+    paragragh: `Choose from competitive rates with multiple carrier options.`,
   },
 
   {
@@ -363,7 +363,7 @@ const how_it_works = [
         `,
     header: `Print shipping labels`,
     paragragh: `Print one shipping label, multiple labels
-or a batch - the choice is yours`,
+or a batch - the choice is yours.`,
   },
 
   {
@@ -377,7 +377,7 @@ or a batch - the choice is yours`,
 
         `,
     header: `Ship`,
-    paragragh: `Schedule free pickups with any carrier`,
+    paragragh: `Schedule free pickups with any carrier.`,
   },
   {
     svg: `
@@ -390,7 +390,7 @@ or a batch - the choice is yours`,
 
         `,
     header: `Track`,
-    paragragh: `Track and trace your shipments with any carrier from our unified dashboard`,
+    paragragh: `Track and trace your shipments with any carrier from our unified dashboard.`,
   },
 ];
 

@@ -206,7 +206,7 @@ const how_it_works = [
 
         `,
     header: `Inbound shipment`,
-    paragragh: `We’ll receive, inspect, count, and store your products at our fulfillment centers`,
+    paragragh: `We’ll receive, inspect, count, and store your products at our fulfillment centers.`,
   },
 
   {
@@ -220,7 +220,7 @@ const how_it_works = [
 
         `,
     header: `Manage inventory`,
-    paragragh: `We’ll add your products to our warehouse management system and your online stores`,
+    paragragh: `We’ll add your products to our warehouse management system and your online stores.`,
   },
 
   {
@@ -235,7 +235,7 @@ const how_it_works = [
 
         `,
     header: `Receive orders`,
-    paragragh: `Our warehouse will instantly receive your customers’ orders from all your online marketplaces`,
+    paragragh: `Our warehouse will instantly receive your customers’ orders from all your online marketplaces.`,
   },
 
   {
@@ -250,7 +250,7 @@ const how_it_works = [
 
         `,
     header: `Process`,
-    paragragh: `We pick, pack, prepare, and scan your orders`,
+    paragragh: `We pick, pack, prepare, and scan your orders.`,
   },
   {
     svg: `
@@ -261,7 +261,7 @@ const how_it_works = [
 </svg>
         `,
     header: `Ship`,
-    paragragh: `We ship orders on the same day using your preferred shipping carrier and solution`,
+    paragragh: `We ship orders on the same day using your preferred shipping carrier and solution.`,
   },
 ];
 
@@ -312,7 +312,7 @@ const tailored_built_for_growth = [
 
         `,
     header: `Simplify the Returns Process`,
-    paragragh: `Reduce the time you spend inspecting and sorting returns with efficient and timely handling of returns and packaging & relabeling services. Can we add more information here. `,
+    paragragh: `Reduce the time you spend inspecting and sorting returns with efficient and timely handling of returns and packaging & relabeling services.`,
   },
 
   {

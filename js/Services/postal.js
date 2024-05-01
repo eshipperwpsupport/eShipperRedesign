@@ -193,7 +193,7 @@ const how_it_works = [
 
         `,
     header: `Sign up for free`,
-    paragragh: `No payment information required`,
+    paragragh: `No payment information required.`,
   },
 
   {
@@ -207,7 +207,7 @@ const how_it_works = [
 
         `,
     header: `Create your shipments`,
-    paragragh: `Input location and package details`,
+    paragragh: `Input location and package details.`,
   },
 
   {
@@ -222,7 +222,7 @@ const how_it_works = [
 
         `,
     header: `Get rates`,
-    paragragh: `Choose from competitive rates with multiple carrier options`,
+    paragragh: `Choose from competitive rates with multiple carrier options.`,
   },
 
   {
@@ -238,7 +238,7 @@ const how_it_works = [
         `,
     header: `Print shipping labels`,
     paragragh: `Print one shipping label, multiple labels
-or a batch - the choice is yours`,
+or a batch - the choice is yours.`,
   },
   {
     svg: `
@@ -249,7 +249,7 @@ or a batch - the choice is yours`,
 </svg>
         `,
     header: `Ship`,
-    paragragh: `Schedule free pickups with any carrier`,
+    paragragh: `Schedule free pickups with any carrier.`,
   },
   {
     svg: `
@@ -261,7 +261,7 @@ or a batch - the choice is yours`,
 
         `,
     header: `Track`,
-    paragragh: `Track and trace your shipments with any carrier from our unified dashboard`,
+    paragragh: `Track and trace your shipments with any carrier from our unified dashboard.`,
   },
 ];
 

@@ -224,11 +224,11 @@ card = {
 Tracking Technology
     `,
   mobileDesc: `
-    Give your customers’ peace of mind with precise tracking technology including multiple scanning points, configurable alerts and notifications, and picture POD (proof of delivery)
+    Give your customers’ peace of mind with precise tracking technology including multiple scanning points, configurable alerts and notifications, and picture POD (proof of delivery).
       `,
   DesktopDesc: `
 
-    Give your customers’ peace of mind with precise tracking technology including multiple scanning points, configurable alerts and notifications, and picture POD (proof of delivery)
+    Give your customers’ peace of mind with precise tracking technology including multiple scanning points, configurable alerts and notifications, and picture POD (proof of delivery).
     `,
   mobileImg: `
 
@@ -466,7 +466,7 @@ const how_it_works = [
 
         `,
     header: `Air Zone Skipping`,
-    paragragh: `Packages are tendered to the airport by evening, where they will fly on a passenger plane to arrive at the destination province by the next morning`,
+    paragragh: `After collection, your shipments are fast-tracked by air, effectively turning every destination into a local Zone 1 delivery.`,
   },
 
   {
@@ -481,7 +481,7 @@ const how_it_works = [
 
         `,
     header: `Induct`,
-    paragragh: `Packages are inducted in the local carrier network, or at the airport for air-zone skipping depending on destination`,
+    paragragh: `Packages are inducted in the local carrier network, or at the airport for air-zone skipping depending on destination.`,
   },
 
   {
@@ -496,7 +496,7 @@ const how_it_works = [
 
         `,
     header: `Deliver`,
-    paragragh: `Last-mile delivery of packages is done by a local carrier with picture POD`,
+    paragragh: `Last-mile delivery of packages is done by a local carrier with picture POD.`,
   },
 ];
 
