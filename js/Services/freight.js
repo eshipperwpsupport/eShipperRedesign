@@ -201,7 +201,7 @@ const how_it_works = [
 
 
         `,
-    header: `Sign up`,
+    header: `Sign Up`,
     paragragh: `Sign up for a free account, with no 
 set-up or monthly fees.`,
   },
@@ -297,7 +297,7 @@ document
 const swiper = new Swiper(".freight_soln-bottom_section .swiper", {
   // Optional parameters
   direction: "horizontal",
-  loop: true,
+  loop: false,
   slidesPerView: 1.5,
   spaceBetween: 20,
   mousewheel: {
