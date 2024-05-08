@@ -32,7 +32,7 @@ createButton(
 
 createButton(
   ".scale_and_grow .include-btn",
-  "Get a Quote",
+  "Book a Meeting",
   "btn button-white-bg-black rounded-pill"
 );
 
@@ -40,7 +40,7 @@ createButton(
 
 createButton(
   ".tailored_built_for_growth .include-btn",
-  "Get a Quote",
+  "Sign Up",
   "btn button-black-bg text-white rounded-pill"
 );
 // SUPPORT SECTION
@@ -57,6 +57,13 @@ createButton(
   ".how_it_works .include-btn",
   "Sign Up",
   "btn button-black-bg text-white rounded-pill"
+);
+// CTA SECTION
+
+createButton(
+  ".CTA .include-btn",
+  "Book a Meeting",
+  "btn button-teal-txt-white-bg rounded-pill "
 );
 
 /**
@@ -298,7 +305,7 @@ const tailored_built_for_growth = [
 
         `,
     header: `Keep Savings at the Forefront`,
-    paragragh: `Access competitive pricing and compare rates from traditional and non-traditional carriers on one platform, and receive one consolidated invoice for all your shipments. `,
+    paragragh: `Leverage our specialized programs with Canada Post and USPS to get access to the most cost-effective solution.`,
   },
 
   {
@@ -346,8 +353,8 @@ const tailored_built_for_growth = [
 
 
         `,
-    header: `Deliver Everywhere`,
-    paragragh: `Expand your reach with domestic, cross-border and international shipping services, including PO Boxes and 100% coverage across Canada.
+    header: `Nationwide Coverage`,
+    paragragh: `Expand your reach with 100% coverage across Canada through Canada Post, including PO Boxes and rural areas..
     `,
   },
 
@@ -385,10 +392,101 @@ document
  * TOGGLE ESHIPPER_HEADER_INSTANT QUOTE FORM
  */
 
-document.querySelector("#canada").addEventListener("click", function (e) {
-  // Call your function here
-  eshipperHeaderInstantQuote(e);
+// document.querySelector("#canada").addEventListener("click", function (e) {
+//   // Call your function here
+//   eshipperHeaderInstantQuote(e);
+// });
+// document
+//   .querySelector("#worldwide")
+//   .addEventListener("click", eshipperHeaderInstantQuote);
+
+/**
+ *
+ * SCROLL JS
+ * SOLUTION SECTION
+ */
+
+const swiper = new Swiper(".solution-mobile .swiper", {
+  grabCursor: true,
+  spaceBetween: 24,
+  slidesPerView: 1,
+
+  keyboard: {
+    enabled: true,
+  },
+
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  freeMode: true,
+
+  loop: false,
+  pagination: {
+    el: ".solution-mobile .swiper-pagination",
+    clickable: true,
+  },
 });
-document
-  .querySelector("#worldwide")
-  .addEventListener("click", eshipperHeaderInstantQuote);
+
+const desktop_swiper = new Swiper(".solution-desktop .swiper", {
+  grabCursor: true,
+  spaceBetween: 24,
+  slidesPerView: 3,
+
+  keyboard: {
+    enabled: true,
+  },
+
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  freeMode: true,
+
+  loop: false,
+  pagination: {
+    el: ".solution-desktop .swiper-pagination",
+    clickable: true,
+  },
+
+  on: {
+    init: function () {
+      updatePaginationVisibility(this); // Call the function when slide changes
+    },
+    slideChange: function () {
+      updatePaginationVisibility(this); // Call the function when slide changes
+    },
+  },
+});
+
+function updatePaginationVisibility(swiper) {
+  // Select all bullets
+  const allBullets = document.querySelectorAll(
+    ".solution-desktop .swiper-pagination-bullet"
+  );
+
+  const totalBullets = allBullets.length;
+  // Remove 'visible' class from all bullets initially
+  allBullets.forEach((bullet) => bullet.classList.remove("visible"));
+
+  // Find index of the active bullet
+  const activeIndex = Array.from(allBullets).findIndex((bullet) =>
+    bullet.classList.contains("swiper-pagination-bullet-active")
+  );
+
+  // Determine start index based on active bullet position
+  let startIndex;
+  if (activeIndex <= 2) {
+    // Covers first 3 slides where we want to show the first 4 bullets
+    startIndex = 0;
+  } else if (activeIndex > totalBullets - 4) {
+    // Covers last slide scenarios
+    startIndex = totalBullets - 3;
+  } else {
+    // For middle slides, keep the active bullet as the third bullet
+    startIndex = activeIndex - 2;
+  }
+
+  // Add 'visible' class to relevant bullets
+  for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
+    allBullets[i].classList.add("visible");
+  }
+}

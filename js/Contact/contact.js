@@ -22,22 +22,6 @@ createButton(
   "btn button-black-bg text-white rounded-pill"
 );
 
-// TAKE CONTROL SECTION
-
-createButton(
-  ".take_control .include-btn",
-  "Sign Up",
-  "btn button-black-bg text-white rounded-pill"
-);
-
-// SCALE AND GROW SECTION
-
-createButton(
-  ".scale_and_grow .include-btn",
-  "Book a Meeting",
-  "btn button-white-bg-black rounded-pill"
-);
-
 // SUPPORT SECTION
 
 createButton(
@@ -66,6 +50,13 @@ createButton(
   ".freight_soln-swiper_container .include-btn",
   "Book a Meeting",
   "btn button-black-bg text-white rounded-pill"
+);
+// FREIGHT SOLUTION
+
+createButton(
+  ".CTA .include-btn",
+  "Book a Meeting",
+  "btn button-teal-txt-white-bg rounded-pill  "
 );
 
 /**
@@ -138,7 +129,7 @@ const images = [
 sliderLogo(images, "sliderlogo");
 sliderLogo(images, "sliderlogo");
 
-sliderInput();
+// sliderInput();
 
 /**
  *
@@ -175,13 +166,13 @@ gsap.utils.toArray("#layered-pin-1").forEach((container, i) => {
  *
  * PLAY ANIMATION ON HOVER ON CARD
  */
-play_lottie();
+// play_lottie();
 
 /**
  *
  * LOOP ARROW ANIMATION 3 TIMES
  */
-loop_arrow();
+// loop_arrow();
 
 /**
  *
@@ -262,31 +253,31 @@ set-up or monthly fees.`,
   },
 ];
 
-document
-  .querySelectorAll(".how_it_works .card-item .Icon_Text_Block")
-  .forEach((div, index) => {
-    if (index < how_it_works.length) {
-      // Check if the feature exists to avoid errors
-      div.innerHTML = Icon_text_block(
-        how_it_works[index].svg,
-        how_it_works[index].header,
-        how_it_works[index].paragragh
-      ); // Populate div with the corresponding feature
-    }
-  });
+// document
+//   .querySelectorAll(".how_it_works .card-item .Icon_Text_Block")
+//   .forEach((div, index) => {
+//     if (index < how_it_works.length) {
+//       // Check if the feature exists to avoid errors
+//       div.innerHTML = Icon_text_block(
+//         how_it_works[index].svg,
+//         how_it_works[index].header,
+//         how_it_works[index].paragragh
+//       ); // Populate div with the corresponding feature
+//     }
+//   });
 
 /**
  *
  * TOGGLE ESHIPPER_HEADER_INSTANT QUOTE FORM
  */
 
-document.querySelector("#canada").addEventListener("click", function (e) {
-  // Call your function here
-  eshipperHeaderInstantQuote(e);
-});
-document
-  .querySelector("#worldwide")
-  .addEventListener("click", eshipperHeaderInstantQuote);
+// document.querySelector("#canada").addEventListener("click", function (e) {
+//   // Call your function here
+//   eshipperHeaderInstantQuote(e);
+// });
+// document
+//   .querySelector("#worldwide")
+//   .addEventListener("click", eshipperHeaderInstantQuote);
 
 /**
  *
@@ -294,75 +285,144 @@ document
  * FREIGHT SOLUTION SECTION
  */
 
-const swiper = new Swiper(".freight_soln-bottom_section .swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  slidesPerView: 1.5,
-  spaceBetween: 20,
-  mousewheel: {
-    releaseOnEdges: true,
-  },
-  freeMode: true,
+// const swiper = new Swiper(".freight_soln-bottom_section .swiper", {
+//   // Optional parameters
+//   direction: "horizontal",
+//   loop: true,
+//   slidesPerView: 1.5,
+//   spaceBetween: 20,
+//   mousewheel: {
+//     releaseOnEdges: true,
+//   },
+//   freeMode: true,
 
-  on: {
-    init: function () {
-      updatePaginationVisibility(this); // Call the function when slide changes
-    },
-    slideChange: function () {
-      updatePaginationVisibility(this); // Call the function when slide changes
-    },
-  },
+//   on: {
+//     init: function () {
+//       updatePaginationVisibility(this); // Call the function when slide changes
+//     },
+//     slideChange: function () {
+//       updatePaginationVisibility(this); // Call the function when slide changes
+//     },
+//   },
 
-  // If we need pagination
-  pagination: {
-    el: ".freight_soln-bottom_section .swiper-pagination",
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: ".freight_soln-bottom_section .swiper-pagination",
+//   },
 
-  breakpoints: {
-    768: {
-      slidesPerView: 5,
-    },
-    992: {
-      slidesPerView: 5,
-      spaceBetween: 32,
-    },
-  },
-});
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 5,
+//     },
+//     992: {
+//       slidesPerView: 5,
+//       spaceBetween: 32,
+//     },
+//   },
+// });
 
-function updatePaginationVisibility(swiper) {
-  // Select all bullets
-  const allBullets = document.querySelectorAll(
-    ".freight_soln-bottom_section .swiper-pagination-bullet"
-  );
-  const totalBullets = allBullets.length;
-  // Remove 'visible' class from all bullets initially
-  allBullets.forEach((bullet) => bullet.classList.remove("visible"));
+// function updatePaginationVisibility(swiper) {
+//   // Select all bullets
+//   const allBullets = document.querySelectorAll(
+//     ".freight_soln-bottom_section .swiper-pagination-bullet"
+//   );
+//   const totalBullets = allBullets.length;
+//   // Remove 'visible' class from all bullets initially
+//   allBullets.forEach((bullet) => bullet.classList.remove("visible"));
 
-  console.log(allBullets);
-  // console.log("dog");
+//   console.log(allBullets);
+//   // console.log("dog");
 
-  // Find index of the active bullet
-  const activeIndex = Array.from(allBullets).findIndex((bullet) =>
-    bullet.classList.contains("swiper-pagination-bullet-active")
-  );
+//   // Find index of the active bullet
+//   const activeIndex = Array.from(allBullets).findIndex((bullet) =>
+//     bullet.classList.contains("swiper-pagination-bullet-active")
+//   );
 
-  // Determine start index based on active bullet position
-  let startIndex;
-  if (activeIndex <= 2) {
-    // Covers first 3 slides where we want to show the first 4 bullets
-    startIndex = 0;
-  } else if (activeIndex > totalBullets - 4) {
-    // Covers last slide scenarios
-    startIndex = totalBullets - 3;
-  } else {
-    // For middle slides, keep the active bullet as the third bullet
-    startIndex = activeIndex - 2;
-  }
+//   // Determine start index based on active bullet position
+//   let startIndex;
+//   if (activeIndex <= 2) {
+//     // Covers first 3 slides where we want to show the first 4 bullets
+//     startIndex = 0;
+//   } else if (activeIndex > totalBullets - 4) {
+//     // Covers last slide scenarios
+//     startIndex = totalBullets - 3;
+//   } else {
+//     // For middle slides, keep the active bullet as the third bullet
+//     startIndex = activeIndex - 2;
+//   }
 
-  // Add 'visible' class to relevant bullets
-  for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
-    allBullets[i].classList.add("visible");
-    // console.log(allBullets[i]);
-  }
-}
+//   // Add 'visible' class to relevant bullets
+//   for (let i = startIndex; i < startIndex + 3 && i < totalBullets; i++) {
+//     allBullets[i].classList.add("visible");
+//     // console.log(allBullets[i]);
+//   }
+// }
+
+// UAE
+
+document
+  .querySelector(".map_locate .uae .grey-scale")
+  .addEventListener("mouseover", (e) => {
+    // turnOn();
+
+    document.querySelector(".map_locate .uae .coloured").style.display =
+      "block";
+    document.querySelector(".map_locate .uae .grey-scale").style.display =
+      "none";
+  });
+document
+  .querySelector(".map_locate .uae .coloured")
+  .addEventListener("mouseout", (e) => {
+    // turnOff();
+
+    document.querySelector(".map_locate .uae .coloured").style.display = "none";
+    document.querySelector(".map_locate .uae .grey-scale").style.display =
+      "block";
+  });
+
+// US
+document
+  .querySelector(".map_locate .us .grey-scale")
+  .addEventListener("mouseover", (e) => {
+    // turnOn();
+
+    document.querySelector(".map_locate .us .coloured").style.display = "block";
+    document.querySelector(".map_locate .us .grey-scale").style.display =
+      "none";
+  });
+document
+  .querySelector(".map_locate .us .coloured")
+  .addEventListener("mouseout", (e) => {
+    // turnOff();
+
+    document.querySelector(".map_locate .us .coloured").style.display = "none";
+    document.querySelector(".map_locate .us .grey-scale").style.display =
+      "block";
+  });
+
+// CANADA
+document
+  .querySelector(".map_locate .canada .grey-scale")
+  .addEventListener("mouseover", (e) => {
+    // turnOn();
+
+    document.querySelector(".map_locate .canada .coloured").style.display =
+      "block";
+    document.querySelector(".map_locate .canada .grey-scale").style.display =
+      "none";
+  });
+document
+  .querySelector(".map_locate .canada .coloured")
+  .addEventListener("mouseout", (e) => {
+    // turnOff();
+
+    document.querySelector(".map_locate .canada .coloured").style.display =
+      "none";
+    document.querySelector(".map_locate .canada .grey-scale").style.display =
+      "block";
+  });
+
+// function turnOn(params) {
+//   document.querySelector(".map_locate .uae .coloured").style.display = "block";
+//   document.querySelector(".map_locate .uae .grey-scale").style.display = "none";
+// }

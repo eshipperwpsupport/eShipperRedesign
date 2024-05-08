@@ -478,6 +478,10 @@ h1 span {
 }
 
 @media (min-width: 992px) {
+  .support {
+    padding: 80px 0;
+  }
+
   .support-container {
     flex-direction: row;
     padding: 0;
@@ -583,7 +587,7 @@ h1 span {
 
 @media (min-width: 992px) {
   .CTA h2 {
-    max-width: 18ch;
+    max-width: 14ch;
   }
 
   .form-container > div {
@@ -899,6 +903,7 @@ h1 span {
 
 .tailored_built_for_growth .card-container .card-item:nth-child(5) {
   opacity: 0;
+  height: 0;
 }
 
 @media (min-width: 992px) {

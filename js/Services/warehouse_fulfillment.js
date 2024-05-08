@@ -18,13 +18,13 @@ import Icon_text_block from "../../assets/IconTextBlock/Icon_text_block.js";
 
 createButton(
   ".hero .include-btn",
-  "Get a Quote",
+  "Book a Meeting",
   "btn button-black-bg text-white rounded-pill"
 );
 
 createButton(
   ".hero .include-btn.mobile",
-  "Get a Quote",
+  "Book a Meeting",
   "btn button-black-bg text-white rounded-pill"
 );
 
@@ -32,7 +32,7 @@ createButton(
 
 createButton(
   ".scale_and_grow .include-btn",
-  "Get a Quote",
+  "Book a Meeting",
   "btn button-white-bg-black rounded-pill"
 );
 
@@ -57,6 +57,14 @@ createButton(
   ".how_it_works .include-btn",
   "Sign Up",
   "btn button-black-bg text-white rounded-pill"
+);
+
+// CTA SECTION
+
+createButton(
+  ".CTA .include-btn",
+  "Book a Meeting",
+  "btn button-teal-txt-white-bg rounded-pill "
 );
 
 /**
@@ -235,7 +243,7 @@ const how_it_works = [
 
         `,
     header: `Receive orders`,
-    paragragh: `Our warehouse will instantly receive your customers’ orders from all your online marketplaces.`,
+    paragragh: `Our warehouse will instantly receive your customers’ orders from all your online and offline channels.`,
   },
 
   {

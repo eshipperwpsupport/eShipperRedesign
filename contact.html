@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freight</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/eShipperRedesign/styles/style.css" />
+    <link rel="stylesheet" href="/eShipperRedesign/styles/design-system.css" />
+
+    <!-- Header & Footer -->
+    <link rel="stylesheet" href="/eShipperRedesign/styles/Header/Header.css" />
+    <link rel="stylesheet" href="/eShipperRedesign/styles/Footer/footer.css" />
+
+    <!-- Card -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/Card/card.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/Card/eshipperCard-2.css"
+    />
+
+    <!--  -->
+
+    <!-- Form Style -->
+    <link rel="stylesheet" href="/eShipperRedesign/styles/Form/form.css" />
+
+    <!-- Logo Slider -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/Logoslider/logoslider.css"
+    />
+
+    <!-- Components -->
+    <!-- <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/Component/more_services_swiper.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/Component/Icon_Text_Block.css"
+    />
+
+    <!-- Header Instant Quote -->
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/redesign/headerInstantQuote.css"
+    />
+
+    <link rel="stylesheet" href="/eShipperRedesign/styles/redesign/style.css" />
+    <link
+      rel="stylesheet"
+      href="/eShipperRedesign/styles/Contact/contact.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <eshipper-contact-header class=""></eshipper-contact-header>
+
+    <!-- bg-span -->
+
+    <!-- <section id="layered-pin-1" class="layered-pin"> -->
+    <section class="comn-py hero bg-secondary-500-main">
+      <div class="section-margin">
+        <div class="hero-container">
+          <div class="hero-context">
+            <h1 class="text-white semibold">
+              Get in touch <br />
+              with an&nbsp;
+              <span class="bold bg-span text-dark secondary-600">Expert</span>
+            </h1>
+
+            <p class="header-supporting-text">
+              Contact us and we’ll be happy to assist!
+              <br class="d-none d-lg-block" />
+              Below are the two best ways you can reach out.
+            </p>
+          </div>
+
+          <div class="d-none d-lg-block contact-us-form-container">
+            <form id="contact-us-form" action="">
+              <div class="d-flex flex-column flex-lg-row formDetails-container">
+                <div class="d-flex flex-column formDetails">
+                  <fieldset>
+                    <label for="f_name">First Name</label>
+                    <div class="d-flex align-items-center formInput-Container">
+                      <input
+                        type="text"
+                        placeholder="First Name*"
+                        name="f_name"
+                        id="f_name"
+                        required
+                      />
+                    </div>
+                    <span class="form-error">Required</span>
+                  </fieldset>
+                </div>
+
+                <div class="d-flex flex-column formDetails">
+                  <fieldset>
+                    <label for="l_name">Last Name</label>
+                    <div class="d-flex align-items-center formInput-Container">
+                      <input
+                        type="text"
+                        placeholder="Last Name*"
+                        name="l_name"
+                        id="l_name"
+                        required
+                      />
+                    </div>
+                    <span class="form-error">Required</span>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-lg-row formDetails-container">
+                <div class="d-flex flex-column formDetails">
+                  <fieldset>
+                    <label for="phonenumber">Phone Number</label>
+                    <div class="d-flex align-items-center formInput-Container">
+                      <input
+                        type="text"
+                        placeholder="Phone Number*"
+                        name="phonenumber"
+                        id="phonenumber"
+                        required
+                      />
+                    </div>
+                    <span class="form-error">Required</span>
+                  </fieldset>
+                </div>
+
+                <div class="d-flex flex-column formDetails">
+                  <fieldset>
+                    <label for="email">Company Email</label>
+                    <div class="d-flex align-items-center formInput-Container">
+                      <input
+                        type="text"
+                        placeholder="Company Email*"
+                        name="email"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <span class="form-error">Required</span>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-lg-row formDetails-container">
+                <div class="d-flex flex-column formDetails flex-item">
+                  <fieldset>
+                    <label for="desc">How can we help?</label>
+                    <div class="d-flex align-items-center formInput-Container">
+                      <textarea
+                        name="desc"
+                        id="desc"
+                        placeholder="Type your message here..."
+                        class="w-100"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                    <span class="form-error">Required</span>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div
+                class="btn_container d-flex flex-row justify-content-between align-items-center"
+              >
+                <p class="text-start text-dark medium">
+                  By contacting us, you agree to our
+                  <a href="" class="bold underline Neutral-900"
+                    >Terms of service</a
+                  >
+                  and
+                  <a href="" class="bold underline Neutral-900">
+                    Privacy Policy
+                  </a>
+                </p>
+                <button
+                  href=""
+                  type="button"
+                  class="btn rounded-pill button-purple-bg text-white justify-content-center"
+                >
+                  Submit
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="base-state"
+                  >
+                    <path
+                      d="M6.75 13.5L11.25 9L6.75 4.5"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hover-state"
+                  >
+                    <path
+                      d="M9.5 13.5L14 9M14 9L9.5 4.5M14 9H3.5"
+                      stroke="#472F92"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- <div class="include-btn mobile d-block d-lg-none"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py d-lg-none">
+      <div class="section-margin">
+        <form id="contact-us-form" action="">
+          <div class="d-flex flex-column flex-lg-row formDetails-container">
+            <div class="d-flex flex-column formDetails">
+              <fieldset>
+                <label for="f_name">First Name</label>
+                <div class="d-flex align-items-center formInput-Container">
+                  <input
+                    type="text"
+                    placeholder="First Name*"
+                    name="f_name"
+                    id="f_name"
+                    required
+                  />
+                </div>
+                <span class="form-error">Required</span>
+              </fieldset>
+            </div>
+
+            <div class="d-flex flex-column formDetails">
+              <fieldset>
+                <label for="l_name">Last Name</label>
+                <div class="d-flex align-items-center formInput-Container">
+                  <input
+                    type="text"
+                    placeholder="Last Name*"
+                    name="l_name"
+                    id="l_name"
+                    required
+                  />
+                </div>
+                <span class="form-error">Required</span>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-lg-row formDetails-container">
+            <div class="d-flex flex-column formDetails">
+              <fieldset>
+                <label for="phonenumber">Phone Number</label>
+                <div class="d-flex align-items-center formInput-Container">
+                  <input
+                    type="text"
+                    placeholder="Phone Number*"
+                    name="phonenumber"
+                    id="phonenumber"
+                    required
+                  />
+                </div>
+                <span class="form-error">Required</span>
+              </fieldset>
+            </div>
+
+            <div class="d-flex flex-column formDetails">
+              <fieldset>
+                <label for="email">Company Email</label>
+                <div class="d-flex align-items-center formInput-Container">
+                  <input
+                    type="text"
+                    placeholder="Company Email*"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <span class="form-error">Required</span>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-lg-row formDetails-container">
+            <div class="d-flex flex-column formDetails">
+              <fieldset>
+                <label for="desc">How can we help?</label>
+                <div class="d-flex align-items-center formInput-Container">
+                  <textarea
+                    name="desc"
+                    id="desc"
+                    placeholder="Type your message here..."
+                    class="w-100"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <span class="form-error">Required</span>
+              </fieldset>
+            </div>
+          </div>
+
+          <div
+            class="btn_container d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="text-center text-dark medium">
+              By contacting us, you agree to our
+              <a href="" class="bold underline Neutral-900">Terms of service</a>
+              and
+              <a href="" class="bold underline Neutral-900"> Privacy Policy </a>
+            </p>
+            <button
+              href=""
+              type="button"
+              class="btn rounded-pill button-purple-bg text-white justify-content-center"
+            >
+              Submit
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="base-state"
+              >
+                <path
+                  d="M6.75 13.5L11.25 9L6.75 4.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover-state"
+              >
+                <path
+                  d="M9.5 13.5L14 9M14 9L9.5 4.5M14 9H3.5"
+                  stroke="#472F92"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="sliderlogo">
+      <eshipper-logoslider></eshipper-logoslider>
+    </section>
+
+    <section class="comn-py support_contact">
+      <div class="section-margin">
+        <div>
+          <div class="support_contact-top_section">
+            <h2 class="bold">Support <span class="medium">Centre</span></h2>
+            <div class="d-flex number">
+              <p class="meidum">
+                Call us
+                <a href="tel:+905-671-1771"
+                  ><span class="bold secondary-500-main">905-671-1771</span></a
+                >
+              </p>
+              <div>
+                <svg
+                  width="26"
+                  height="27"
+                  viewBox="0 0 26 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.65311 22.8445C4.19007 23.3852 5.02918 23.3852 5.56619 22.8445L20.065 8.34607L20.065 19.8029C20.065 20.5465 20.669 21.1547 21.4075 21.1547C22.146 21.1547 22.75 20.5465 22.75 19.8029L22.75 3.75L6.50555 3.75C5.76704 3.75 5.16304 4.35824 5.16304 5.10182C5.16304 5.8454 5.76709 6.45364 6.50555 6.45364L18.1515 6.45365L3.65272 20.9184C3.11576 21.4591 3.11576 22.3038 3.65272 22.8447L3.65311 22.8445Z"
+                    fill="#472F92"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="support_contact-bottom_section">
+            <div class="support_contact-card">
+              <div>
+                <div>
+                  <svg
+                    width="54"
+                    height="54"
+                    viewBox="0 0 54 54"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="27" cy="27" r="27" fill="#1F2937" />
+                    <path
+                      d="M27.8114 20.168C27.8114 23.5001 25.4314 26.2159 22.5193 26.2159C19.5792 26.2159 17.1992 23.4999 17.1992 20.168C17.1994 16.8361 19.5794 14.1201 22.5193 14.1201C25.4314 14.1201 27.8114 16.8361 27.8114 20.168Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M37.7529 19.6645C37.7529 22.0165 36.073 23.8925 34.0288 23.8925C31.9849 23.8925 30.3047 21.9885 30.3047 19.6645C30.3047 17.3405 31.9846 15.4365 34.0288 15.4365C36.0727 15.4365 37.7529 17.3126 37.7529 19.6645Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M30.78 38.9843C30.388 39.1522 29.996 39.2924 29.604 39.4043C29.156 39.5442 28.708 39.6844 28.2601 39.7963C28.008 39.8523 27.7562 39.9082 27.5041 39.9642C27.4201 39.9922 27.3362 39.9922 27.224 40.0202C26.888 40.0761 26.58 40.1321 26.2439 40.1881C26.076 40.2161 25.9079 40.244 25.768 40.244C25.432 40.3 25.1239 40.328 24.8161 40.356C24.564 40.384 24.2842 40.384 24.0321 40.412H23.724C23.388 40.412 23.052 40.4399 22.7439 40.412H22.66H22.3799C19.944 40.412 17.256 40.02 14.512 38.9559C13.476 38.5643 12.944 37.2482 13.2801 36.0442L14.0361 33.4404C14.12 33.1603 14.2882 32.7124 14.484 32.2364C14.512 32.1524 14.54 32.0685 14.596 31.9843C14.624 31.9004 14.652 31.8164 14.7079 31.7322C14.7639 31.6203 14.8199 31.5081 14.8758 31.3682C14.904 31.3123 14.932 31.2563 14.96 31.2003C14.988 31.1164 15.044 31.0042 15.0999 30.9203C15.2119 30.6962 15.324 30.4443 15.4639 30.2202C15.5199 30.1362 15.5479 30.0241 15.6039 29.9401C15.6318 29.8842 15.6878 29.8002 15.7158 29.744C15.7718 29.6321 15.8557 29.5199 15.9399 29.38C16.3599 28.708 16.8358 28.0921 17.34 27.6441C17.396 27.5882 17.4799 27.5322 17.5361 27.4762C17.5921 27.4203 17.676 27.3643 17.7322 27.3363C17.8721 27.2524 18.0123 27.1684 18.1522 27.0842C18.2641 27.0283 18.3763 27.0003 18.4882 26.9443C18.6281 26.8883 18.7683 26.8883 18.9082 26.8604H19.0201H19.0481C19.1601 26.8604 19.2722 26.8604 19.3842 26.8883C19.4961 26.9163 19.6083 26.9443 19.7202 26.9723C19.8041 27.0003 19.8601 27.0283 19.9443 27.0562C20.5604 27.3363 21.4283 27.6724 22.4924 27.7283L20.6721 30.0803L22.6321 36.6045L24.5921 30.0803L22.828 27.7283C23.8921 27.6723 24.816 27.3363 25.4321 27.0562C25.6841 26.9443 25.936 26.8883 26.1881 26.8883C26.3 26.8883 26.4401 26.8883 26.5521 26.9163C26.636 26.9443 26.72 26.9443 26.7762 26.9723C26.8601 27.0003 26.9441 27.0283 27.0003 27.0562C27.1122 27.1122 27.2243 27.1682 27.3363 27.2242C27.4202 27.2801 27.4762 27.3081 27.5604 27.3641C27.7845 27.532 28.0363 27.7281 28.2324 27.924C28.2884 27.9799 28.3164 28.0079 28.3724 28.0639C28.7644 28.4559 29.0724 28.8759 29.3242 29.2119C30.1922 30.4998 30.7523 31.9559 31.2562 33.4119L31.3122 33.636L32.0123 36.044C32.3761 37.2762 31.816 38.5923 30.7801 38.9843L30.78 38.9843Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M40.6916 30.8356L40.1597 29.0155C39.7957 28.0074 39.4037 26.9716 38.7876 26.0754C38.2557 25.2914 37.1356 24.0035 36.0436 24.5354C35.6236 24.7315 35.0355 24.9554 34.3357 25.0114L34.9798 25.8793L33.9996 29.1275L33.0195 25.8795L33.6916 24.9836C33.0475 24.9276 32.5156 24.7315 32.1516 24.5356C30.8636 23.9195 29.6876 25.4036 28.9316 26.8876C29.5478 27.4475 30.0516 28.0916 30.3877 28.5676C31.3678 29.9956 31.9837 31.6476 32.4876 33.0477C32.5436 33.1876 32.5995 33.4117 32.7397 33.8597C33.1876 33.8877 33.6356 33.9156 34.0556 33.9156H34.1395H34.2235C35.9594 33.9156 37.8914 33.6636 39.8514 32.9075C40.5516 32.5995 40.9436 31.6756 40.6915 30.8356L40.6916 30.8356Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="support_contact-card_content">
+                  <h4>Sales Rep</h4>
+                  <p>
+                    Interested in using eShipper’s shipping solutions for your
+                    business? Call the number below to chat with a member of our
+                    sales team.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  href=""
+                  type="button"
+                  class="btn rounded-pill justify-content-center"
+                >
+                  menu option <span class="bold">#5</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="support_contact-card">
+              <div>
+                <div>
+                  <svg
+                    width="54"
+                    height="54"
+                    viewBox="0 0 54 54"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="27" cy="27" r="27" fill="#1F2937" />
+                    <path
+                      d="M37.4998 40.0667C37.5001 40.3144 37.3994 40.5518 37.2204 40.7268C37.0414 40.9018 36.7986 41.0002 36.5453 41H17.4546C17.2013 41.0002 16.9584 40.9018 16.7795 40.7268C16.6005 40.5518 16.4998 40.3144 16.5001 40.0667C16.5001 37.3437 17.6063 34.7324 19.5755 32.8071C21.5445 30.8816 24.2152 29.8 27 29.8C29.7849 29.8 32.4555 30.8816 34.4245 32.8071C36.3938 34.7323 37.5 37.3437 37.5 40.0667H37.4998ZM26.9999 16.7334C25.481 16.7334 24.0242 17.3233 22.9501 18.3735C21.876 19.4238 21.2727 20.8481 21.2727 22.3334C21.2727 23.8186 21.876 25.243 22.9501 26.2932C24.0242 27.3434 25.481 27.9334 26.9999 27.9334C28.5189 27.9334 29.9756 27.3434 31.0497 26.2932C32.1238 25.243 32.7271 23.8186 32.7271 22.3334C32.7255 20.8486 32.1215 19.4252 31.0479 18.3753C29.9743 17.3256 28.5185 16.7349 26.9999 16.7334ZM18.4091 25.1334C18.9153 25.1327 19.4004 24.9358 19.7584 24.586C20.1161 24.236 20.3175 23.7616 20.3181 23.2667V21.4C20.3181 20.7331 19.9544 20.1169 19.3636 19.7836C18.7729 19.45 18.0453 19.45 17.4545 19.7836C16.8638 20.1169 16.5 20.7331 16.5 21.4V23.2667C16.5007 23.7616 16.702 24.236 17.0598 24.586C17.4177 24.9358 17.9029 25.1327 18.4091 25.1334ZM26.9999 14.8667C29.6074 14.8692 32.0331 16.1737 33.4323 18.3255C33.9795 17.9629 34.6143 17.7467 35.2733 17.6981C34.158 15.7868 32.3866 14.3233 30.2732 13.5672C28.1597 12.8109 25.8405 12.8109 23.7269 13.5672C21.6134 14.3233 19.8421 15.7869 18.7268 17.6981C19.3858 17.7467 20.0206 17.9629 20.5678 18.3255C21.9667 16.1737 24.3924 14.8692 27.0002 14.8667H26.9999ZM35.5908 19.5334C35.0846 19.5341 34.5994 19.7309 34.2415 20.0807C33.8837 20.4307 33.6824 20.9051 33.6817 21.4V23.2667C33.6829 23.8995 34.0122 24.4887 34.5565 24.8312C34.4106 25.4467 34.0564 25.996 33.551 26.3898C33.0455 26.7835 32.4188 26.9987 31.7726 27C31.4317 27 31.1164 27.178 30.9461 27.4667C30.7755 27.7554 30.7755 28.1113 30.9461 28.4C31.1164 28.6887 31.4317 28.8667 31.7726 28.8667C32.9094 28.8637 34.0075 28.4636 34.8693 27.7385C35.7308 27.0134 36.299 26.0113 36.4716 24.9128C36.7804 24.7565 37.0395 24.5202 37.2206 24.2301C37.402 23.9398 37.4984 23.6067 37.4998 23.2667V21.4C37.4991 20.9051 37.2978 20.4307 36.9401 20.0807C36.5821 19.7309 36.0969 19.5341 35.5908 19.5334Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="support_contact-card_content">
+                  <h4>Customer Support</h4>
+                  <p>
+                    If you require help with a shipment, we’re here to support.
+                    Call the number below to chat with a member of our support
+                    team.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  href=""
+                  type="button"
+                  class="btn rounded-pill justify-content-center"
+                >
+                  menu option <span class="bold">#1</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="support_contact-card">
+              <div>
+                <div>
+                  <svg
+                    width="54"
+                    height="54"
+                    viewBox="0 0 54 54"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="27" cy="27" r="27" fill="#1F2937" />
+                    <path
+                      d="M13.5211 39.8563C13.4762 40.0076 13.5035 40.1712 13.5985 40.2986C13.6922 40.4249 13.8421 40.4998 13.9998 40.4998H39.9998C40.1573 40.4998 40.3075 40.4249 40.4012 40.2986C40.495 40.1712 40.5238 40.0074 40.4786 39.8563L37.6725 30.5H16.3275L13.5211 39.8563ZM36.9998 36.5001C36.9998 36.7764 36.7762 37.0001 36.4998 37.0001H23.9998C23.7235 37.0001 23.4998 36.7764 23.4998 36.5001C23.4998 36.2237 23.7235 36.0001 23.9998 36.0001H36.4998C36.7762 36.0001 36.9998 36.2237 36.9998 36.5001ZM36.4998 34.5001C36.4998 34.7764 36.2762 35.0001 35.9998 35.0001H28.9998C28.7235 35.0001 28.4998 34.7764 28.4998 34.5001C28.4998 34.2237 28.7235 34.0001 28.9998 34.0001H35.9998C36.2762 34.0001 36.4998 34.2237 36.4998 34.5001ZM32.9996 32.0001H35.4996C35.776 32.0001 35.9996 32.2237 35.9996 32.5001C35.9996 32.7764 35.776 33.0001 35.4996 33.0001H32.9996C32.7232 33.0001 32.4996 32.7764 32.4996 32.5001C32.4996 32.2237 32.7232 32.0001 32.9996 32.0001ZM18.4996 32.0001H30.9996C31.276 32.0001 31.4996 32.2237 31.4996 32.5001C31.4996 32.7764 31.276 33.0001 30.9996 33.0001H18.4996C18.2232 33.0001 17.9996 32.7764 17.9996 32.5001C17.9996 32.2237 18.2232 32.0001 18.4996 32.0001ZM17.9996 34.0001H26.9996C27.276 34.0001 27.4996 34.2237 27.4996 34.5001C27.4996 34.7764 27.276 35.0001 26.9996 35.0001H17.9996C17.7232 35.0001 17.4996 34.7764 17.4996 34.5001C17.4996 34.2237 17.7232 34.0001 17.9996 34.0001ZM17.4996 36.0001H21.9993C22.2757 36.0001 22.4993 36.2237 22.4993 36.5001C22.4993 36.7764 22.2757 37.0001 21.9993 37.0001H17.4996C17.2232 37.0001 16.9996 36.7764 16.9996 36.5001C16.9996 36.2237 17.2232 36.0001 17.4996 36.0001ZM16.9996 38.0001H36.9996C37.276 38.0001 37.4996 38.2237 37.4996 38.5001C37.4996 38.7764 37.276 39.0001 36.9996 39.0001H16.9996C16.7232 39.0001 16.4996 38.7764 16.4996 38.5001C16.4996 38.2237 16.7232 38.0001 16.9996 38.0001Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M37 13.5H17C16.7236 13.5 16.5 13.7236 16.5 14V29.5H37.5V14C37.5 13.7236 37.2764 13.5 37 13.5ZM31.3535 21.8538L27.3535 25.8538C27.2561 25.9512 27.1272 26 26.9997 26C26.8723 26 26.7434 25.9512 26.646 25.8538L22.646 21.8538C22.4509 21.6587 22.4509 21.3413 22.646 21.1462L26.646 17.1462C26.841 16.9512 27.1584 16.9512 27.3535 17.1462L31.3535 21.1462C31.5485 21.3425 31.5486 21.6575 31.3535 21.8538Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="support_contact-card_content">
+                  <h4>Tech Support</h4>
+                  <p>
+                    Need technical assistance? Call the number below to chat
+                    with a member of our tech support team.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  href=""
+                  type="button"
+                  class="btn rounded-pill justify-content-center"
+                >
+                  menu option <span class="bold">#1</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="support_contact-card">
+              <div>
+                <div>
+                  <svg
+                    width="54"
+                    height="54"
+                    viewBox="0 0 54 54"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="27" cy="27" r="27" fill="#1F2937" />
+                    <path
+                      d="M27.8114 20.168C27.8114 23.5001 25.4314 26.2159 22.5193 26.2159C19.5792 26.2159 17.1992 23.4999 17.1992 20.168C17.1994 16.8361 19.5794 14.1201 22.5193 14.1201C25.4314 14.1201 27.8114 16.8361 27.8114 20.168Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M37.7529 19.6645C37.7529 22.0165 36.073 23.8925 34.0288 23.8925C31.9849 23.8925 30.3047 21.9885 30.3047 19.6645C30.3047 17.3405 31.9846 15.4365 34.0288 15.4365C36.0727 15.4365 37.7529 17.3126 37.7529 19.6645Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M30.78 38.9843C30.388 39.1522 29.996 39.2924 29.604 39.4043C29.156 39.5442 28.708 39.6844 28.2601 39.7963C28.008 39.8523 27.7562 39.9082 27.5041 39.9642C27.4201 39.9922 27.3362 39.9922 27.224 40.0202C26.888 40.0761 26.58 40.1321 26.2439 40.1881C26.076 40.2161 25.9079 40.244 25.768 40.244C25.432 40.3 25.1239 40.328 24.8161 40.356C24.564 40.384 24.2842 40.384 24.0321 40.412H23.724C23.388 40.412 23.052 40.4399 22.7439 40.412H22.66H22.3799C19.944 40.412 17.256 40.02 14.512 38.9559C13.476 38.5643 12.944 37.2482 13.2801 36.0442L14.0361 33.4404C14.12 33.1603 14.2882 32.7124 14.484 32.2364C14.512 32.1524 14.54 32.0685 14.596 31.9843C14.624 31.9004 14.652 31.8164 14.7079 31.7322C14.7639 31.6203 14.8199 31.5081 14.8758 31.3682C14.904 31.3123 14.932 31.2563 14.96 31.2003C14.988 31.1164 15.044 31.0042 15.0999 30.9203C15.2119 30.6962 15.324 30.4443 15.4639 30.2202C15.5199 30.1362 15.5479 30.0241 15.6039 29.9401C15.6318 29.8842 15.6878 29.8002 15.7158 29.744C15.7718 29.6321 15.8557 29.5199 15.9399 29.38C16.3599 28.708 16.8358 28.0921 17.34 27.6441C17.396 27.5882 17.4799 27.5322 17.5361 27.4762C17.5921 27.4203 17.676 27.3643 17.7322 27.3363C17.8721 27.2524 18.0123 27.1684 18.1522 27.0842C18.2641 27.0283 18.3763 27.0003 18.4882 26.9443C18.6281 26.8883 18.7683 26.8883 18.9082 26.8604H19.0201H19.0481C19.1601 26.8604 19.2722 26.8604 19.3842 26.8883C19.4961 26.9163 19.6083 26.9443 19.7202 26.9723C19.8041 27.0003 19.8601 27.0283 19.9443 27.0562C20.5604 27.3363 21.4283 27.6724 22.4924 27.7283L20.6721 30.0803L22.6321 36.6045L24.5921 30.0803L22.828 27.7283C23.8921 27.6723 24.816 27.3363 25.4321 27.0562C25.6841 26.9443 25.936 26.8883 26.1881 26.8883C26.3 26.8883 26.4401 26.8883 26.5521 26.9163C26.636 26.9443 26.72 26.9443 26.7762 26.9723C26.8601 27.0003 26.9441 27.0283 27.0003 27.0562C27.1122 27.1122 27.2243 27.1682 27.3363 27.2242C27.4202 27.2801 27.4762 27.3081 27.5604 27.3641C27.7845 27.532 28.0363 27.7281 28.2324 27.924C28.2884 27.9799 28.3164 28.0079 28.3724 28.0639C28.7644 28.4559 29.0724 28.8759 29.3242 29.2119C30.1922 30.4998 30.7523 31.9559 31.2562 33.4119L31.3122 33.636L32.0123 36.044C32.3761 37.2762 31.816 38.5923 30.7801 38.9843L30.78 38.9843Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M40.6916 30.8356L40.1597 29.0155C39.7957 28.0074 39.4037 26.9716 38.7876 26.0754C38.2557 25.2914 37.1356 24.0035 36.0436 24.5354C35.6236 24.7315 35.0355 24.9554 34.3357 25.0114L34.9798 25.8793L33.9996 29.1275L33.0195 25.8795L33.6916 24.9836C33.0475 24.9276 32.5156 24.7315 32.1516 24.5356C30.8636 23.9195 29.6876 25.4036 28.9316 26.8876C29.5478 27.4475 30.0516 28.0916 30.3877 28.5676C31.3678 29.9956 31.9837 31.6476 32.4876 33.0477C32.5436 33.1876 32.5995 33.4117 32.7397 33.8597C33.1876 33.8877 33.6356 33.9156 34.0556 33.9156H34.1395H34.2235C35.9594 33.9156 37.8914 33.6636 39.8514 32.9075C40.5516 32.5995 40.9436 31.6756 40.6915 30.8356L40.6916 30.8356Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="support_contact-card_content">
+                  <h4>Claims</h4>
+                  <p>
+                    Looking for support with your claims? Call the number below
+                    to chat with one of our claims specialists.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  href=""
+                  type="button"
+                  class="btn rounded-pill justify-content-center"
+                >
+                  menu option <span class="bold">#1</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py our_offices bg-Neutral-50">
+      <div class="section-margin">
+        <div>
+          <h2 class="bold text-start text-lg-center">Our Offices</h2>
+          <div class="our_offices-location">
+            <div class="our_offices-canada">
+              <div class="our_offices-top_section">
+                <h3>Canada</h3>
+                <div>
+                  <p>9 Van Der Graaf Ct, Brampton,</p>
+                  <p>Ontario, L6T 5E5</p>
+                </div>
+              </div>
+              <div class="our_offices-email_address-container">
+                <div>
+                  <h4>General Inquiries</h4>
+                  <p>
+                    <a href="mailto:info@eshipper.com">info@eshipper.com</a>
+                  </p>
+                </div>
+
+                <div>
+                  <h4>Sales</h4>
+                  <p>
+                    <a href="mailto:sales@eshipper.com">sales@eshipper.com</a>
+                  </p>
+                </div>
+
+                <div>
+                  <h4>Operations</h4>
+                  <p>
+                    <a href="mailto:operations@eshipper.com"
+                      >operations@eshipper.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="our_offices-USA">
+              <div class="our_offices-top_section">
+                <h3>USA</h3>
+                <div>
+                  <p>975 Florida Central Pkwy Suite 1300,</p>
+                  <p>Longwood Florida, 32750</p>
+                </div>
+              </div>
+              <div class="our_offices-email_address-container">
+                <div>
+                  <h4>General Inquiries</h4>
+                  <p>
+                    <a href="mailto:inquire@eshipperusa.com"
+                      >inquire@eshipperusa.com</a
+                    >
+                  </p>
+                </div>
+
+                <div>
+                  <h4>Sales</h4>
+                  <p>
+                    <a href="mailto:sales@eshipperusa.com"
+                      >sales@eshipperusa.com</a
+                    >
+                  </p>
+                </div>
+
+                <div>
+                  <h4>Operations</h4>
+                  <p>
+                    <a href="mailto:operations@eshipperusa.com"
+                      >operations@eshipperusa.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="our_offices-UAE">
+              <div class="our_offices-top_section">
+                <h3>UAE</h3>
+                <div>
+                  <p>Street 25, Warehouse #11 - Al Quoz</p>
+                  <p>Industrial Area 4, Dubai</p>
+                </div>
+              </div>
+              <div class="our_offices-email_address-container">
+                <div>
+                  <h4>General Inquiries</h4>
+                  <p>
+                    <a href="mailto:infouae@eshipper.com"
+                      >infouae@eshipper.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py support d-none">
+      <div class="section-margin">
+        <div class="support-container">
+          <div>
+            <div>
+              <h2 class="text-white">
+                Your Shortcut to
+                <span class="primary-200 bold">eCommerce Growth</span>
+              </h2>
+              <p class="text-white paragraph-supporting-text">
+                Fast track your growth with an expansive carrier network at your
+                fingertips, integrated technology, competitive rates, and a team
+                of logistics experts guiding you through the entire shipping
+                journey.
+              </p>
+              <div class="include-btn btn-support"></div>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/26143701/Frame-1597879393.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py how_it_works bg-Neutral-50 d-none">
+      <div class="section-margin">
+        <div>
+          <div>
+            <h2 class="text-lg-center text-start medium">
+              How it <span class="bold">works</span>
+            </h2>
+          </div>
+
+          <div class="card-container">
+            <div class="card-item">
+              <div class="Icon_Text_Block"></div>
+              <div class="">
+                <img
+                  src="/eShipperRedesign/assets/svgFolder/Courier/card-1.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="card-item">
+              <div class="Icon_Text_Block"></div>
+              <div>
+                <img
+                  src="/eShipperRedesign/assets/svgFolder/Freight/how_it_works_2.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="card-item">
+              <div class="Icon_Text_Block"></div>
+              <div>
+                <img
+                  src="/eShipperRedesign/assets/svgFolder/Freight/how_it_works_3.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="card-item">
+              <div class="Icon_Text_Block"></div>
+              <div>
+                <img
+                  src="/eShipperRedesign/assets/svgFolder/Freight/how_it_works_4.svg"
+                  alt=""
+                  class="d-none d-md-block"
+                />
+                <img
+                  src="/eShipperRedesign/assets/svgFolder/Courier/card-4.svg"
+                  alt=""
+                  class="d-block d-md-none"
+                />
+              </div>
+            </div>
+
+            <div class="card-item">
+              <div class="Icon_Text_Block"></div>
+              <div>
+                <img
+                  src="/eShipperRedesign/assets/svgFolder/Freight/how_it_works_5.svg"
+                  alt=""
+                  class="d-none d-md-block"
+                />
+              </div>
+            </div>
+
+            <div class="card-item d-none d-lg-flex bg-Neutral-100">
+              <div
+                class="cta_container d-flex justify-content-center align-items-center flex-column h-100 flex-item"
+              >
+                <div
+                  class="include-btn d-flex justify-content-lg-center justify-content-start"
+                ></div>
+                <p class="text-center">
+                  Your Dedicated Onboarding Expert will
+                  <a href="">get in touch.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta_container d-block d-lg-none">
+            <div
+              class="include-btn d-flex justify-content-lg-center justify-content-start"
+            ></div>
+            <p>
+              Your Dedicated Onboarding Expert will <a href="">get in touch.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comn-py freight_soln bg-Neutral-100 d-none">
+      <div class="section-margin">
+        <div class="freight_soln-container">
+          <div class="freight_soln-top_section">
+            <h2 class="text-center">
+              <span class="bold">Freight solutions</span> for every business
+            </h2>
+            <p>
+              Whatever your industry, we’ve built out tailored solutions to
+              streamline processes and enhance efficiencies —
+              <span class="bold">because one size does not fit all.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-Neutral-100 freight_soln-swiper_container comn-py d-none"
+    >
+      <div class="freight_soln-bottom_section section-margin">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/03/28152827/Rectangle-24238.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Medical Equipment</h4>
+                  <p>
+                    Ship fragile, heavy, and oversized medical equipment safely
+                    and securely. 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/05/03142345/Frame-1597879337.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Pharmaceuticals & Chemicals</h4>
+                  <p>
+                    Maintain safety standards with secure, controlled shipping
+                    for your sensitive or hazardous deliveries.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/05/03142338/Frame-1597879337-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Light & Heavy Machinery</h4>
+                  <p>Move machinery with ease, whatever its weight or size.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/05/03142332/Rectangle-24238.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Retail Distribution</h4>
+                  <p>
+                    Stay on top of operations with your reliable retail
+                    logistics partner. 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/03/28152802/Rectangle-242394.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Marketplace Distribution</h4>
+                  <p>
+                    Scale your business with smooth, easy distribution across
+                    all your marketplace channels. 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/03/28152756/Rectangle-242387.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Dangerous Goods</h4>
+                  <p>
+                    Get peace of mind with safe solutions for the handling and
+                    transportation of dangerous goods. 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/03/28152749/Rectangle-242390.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Tankers & Petroleum</h4>
+                  <p>
+                    Transport your oil and petroleum freight swiftly and
+                    expertly, with strict safety controls to protect your cargo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="freight_soln-item">
+                <div class="d-flex">
+                  <img
+                    src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/03/28152743/Rectangle-2423921.png"
+                    alt=""
+                  />
+                </div>
+                <div class="freight_soln-content">
+                  <h4>Flatbeds</h4>
+                  <p>
+                    Enjoy versatile, reliable solutions for your flatbed
+                    freight, with expert loading and unloading and route
+                    optimization.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+        </div>
+
+        <div class="position-relative">
+          <div class="swiper-pagination position-relative"></div>
+        </div>
+
+        <div class="include-btn d-flex justify-content-center"></div>
+      </div>
+    </section>
+
+    <section class="free_audit comn-py d-none">
+      <div class="section-margin">
+        <div
+          class="free_audit-container d-flex flex-column flex-lg-row justify-content-between"
+        >
+          <div>
+            <h2 class="text-white">
+              Elevate your shipping strategy with a
+              <span class="secondary-200 bold">free freight audit</span>
+            </h2>
+            <div class="free_audit-main_container">
+              <p class="Neutral-100 medium">
+                Cut costs and maximize efficiencies with a shipping analysis by
+                our logistics experts. From carrier rates to shipping and
+                packaging analysis—so you can hone in your shipping strategy and
+                optimize your savings. 
+              </p>
+              <div class="include-btn d-flex justify-content-start"></div>
+            </div>
+          </div>
+          <div class="img-container">
+            <img
+              class="d-none d-lg-block"
+              src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/05/03162944/1.png"
+              alt=""
+            />
+            <img
+              class="d-lg-none"
+              src="https://live-eshipper-media-wprocket.s3.ca-central-1.amazonaws.com/wp-content/uploads/2024/04/29152922/Frame-1597879400.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map_locate position-relative">
+      <div class="uae">
+        <img
+          class="grey-scale cursor-pointer"
+          style="width: 54px; height: 86.63px"
+          src="/eShipperRedesign/assets/svgFolder/Contact/uae-gs.svg"
+          alt=""
+        />
+        <img
+          class="coloured"
+          style="width: 54px; height: 86.63px"
+          src="/eShipperRedesign/assets/svgFolder/Contact/uae-color.svg"
+          alt=""
+        />
+      </div>
+      <div class="us">
+        <img
+          class="grey-scale cursor-pointer"
+          style="width: 54px; height: 86.63px"
+          src="/eShipperRedesign/assets/svgFolder/Contact/usa-gs.svg"
+          alt=""
+        />
+        <img
+          class="coloured"
+          style="width: 54px; height: 86.63px"
+          src="/eShipperRedesign/assets/svgFolder/Contact/usa-color.svg"
+          alt=""
+        />
+      </div>
+      <div class="canada">
+        <img
+          class="grey-scale cursor-pointer"
+          style="width: 54px; height: 86.63px"
+          src="/eShipperRedesign/assets/svgFolder/Contact/canada-gs.svg"
+          alt=""
+        />
+        <img
+          class="coloured"
+          style="width: 54px; height: 86.63px"
+          src="/eShipperRedesign/assets/svgFolder/Contact/canada-colour.svg"
+          alt=""
+        />
+      </div>
+      <img src="/eShipperRedesign/assets/svgFolder/Contact/map.svg" alt="" />
+    </section>
+
+    <section class="comn-py CTA">
+      <section class="section-margin">
+        <div
+          class="CTA-section d-flex align-items-center justify-content-center flex-column"
+        >
+          <h2 class="text-center text-lg-start text-white medium flex-item">
+            New to <span class="bold">eShipper?</span>
+          </h2>
+          <p class="medium">
+            Get one of our agents to walk you through our platform
+          </p>
+
+          <div class="include-btn d-flex justify-content-center"></div>
+        </div>
+      </section>
+    </section>
+
+    <eshipper-footer></eshipper-footer>
+    <!-- </section> -->
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LOTTIE FILE -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+    <!-- SCROLL TRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" src="/eShipperRedesign/js/helper.js"></script>
+    <script
+      type="module"
+      src="/eShipperRedesign/js/insert-sections.js"
+    ></script>
+
+    <!-- Components -->
+    <!-- <script
+      type="module"
+      src="/eShipperRedesign/js/Component/more_services_swiper.js"
+    ></script> -->
+
+    <script type="module" src="/eShipperRedesign/js/Header/header.js"></script>
+    <script
+      type="module"
+      src="/eShipperRedesign/js/Contact/contact.js"
+    ></script>
+  </body>
+</html>

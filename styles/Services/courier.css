@@ -611,6 +611,7 @@
 }
 @media (min-width: 1900px) {
 }
+
 /* ===================================== */
 /*               SOLUTION
 /* ===================================== */
@@ -856,6 +857,11 @@
 
 .CTA-section {
   gap: 34px;
+}
+
+.CTA #packageType_fieldset .list .item:nth-child(2),
+.CTA #packageType_fieldset .list .item:nth-child(4) {
+  display: none;
 }
 
 @media (min-width: 992px) {

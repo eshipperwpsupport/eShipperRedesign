@@ -159,7 +159,7 @@ const service_overview_shipping = [
         `,
     header: "Ship on Your Own Terms",
     paragragh: `
-        Access multiple service levels depending on your shipping requirements, including Same Day, Next Day and 2 Day Shipping – no minimum shipping volume require.
+        Access multiple service levels depending on your shipping requirements, including Same Day, Next Day and 2 Day Shipping – no minimum shipping volume required.
         `,
   },
 ];
