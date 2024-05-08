@@ -1053,6 +1053,12 @@ h1 span {
   display: flex;
   align-items: center;
   gap: 14px;
+  border-bottom: 1px solid var(--Neutral-200, #e5e7eb);
+  padding-bottom: 10px;
+}
+.take_control-main_section li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .take_control-main_section li p {
   color: var(--Neutral-900, #111827);
