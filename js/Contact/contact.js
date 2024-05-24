@@ -367,6 +367,8 @@ document
 
     document.querySelector(".map_locate .uae .coloured").style.display =
       "block";
+    document.querySelector(".map_locate .uae .map-mail").style.display =
+      "block";
     document.querySelector(".map_locate .uae .grey-scale").style.display =
       "none";
   });
@@ -378,6 +380,7 @@ document
     document.querySelector(".map_locate .uae .coloured").style.display = "none";
     document.querySelector(".map_locate .uae .grey-scale").style.display =
       "block";
+    document.querySelector(".map_locate .uae .map-mail").style.display = "none";
   });
 
 // US
@@ -387,6 +390,7 @@ document
     // turnOn();
 
     document.querySelector(".map_locate .us .coloured").style.display = "block";
+    document.querySelector(".map_locate .us .map-mail").style.display = "block";
     document.querySelector(".map_locate .us .grey-scale").style.display =
       "none";
   });
@@ -398,6 +402,7 @@ document
     document.querySelector(".map_locate .us .coloured").style.display = "none";
     document.querySelector(".map_locate .us .grey-scale").style.display =
       "block";
+    document.querySelector(".map_locate .us .map-mail").style.display = "none";
   });
 
 // CANADA

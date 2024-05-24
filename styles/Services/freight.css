@@ -1354,10 +1354,10 @@ h1 span {
     left: 113px;
   }
 
-  .freight_soln-bottom_section::after {
+  /* .freight_soln-bottom_section::after {
     content: "";
     position: absolute;
-    width: 250px;
+    width: 280px;
     height: 334px;
     background: red;
     top: 54px;
@@ -1368,7 +1368,23 @@ h1 span {
       rgba(243, 244, 246, 0) 83.96%
     );
     z-index: 2;
-  }
+  } */
+
+  /* .freight_soln-bottom_section::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 334px;
+    background: red;
+    top: 54px;
+    left: 0px;
+    background: linear-gradient(
+      90deg,
+      #f3f4f6 0%,
+      rgba(243, 244, 246, 0) 83.96%
+    );
+    z-index: 2;
+  } */
 
   .freight_soln-swiper_container {
     padding-top: 54px;

@@ -1508,7 +1508,8 @@ h1 span {
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translate(-355px, -162.6px);
+  /* transform: translate(-355px, -162.6px); */
+  transform: translate(-445px, -72px);
 }
 
 .map_locate .uae .grey-scale {
@@ -1531,7 +1532,8 @@ h1 span {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translate(276px, -188px);
+  /* transform: translate(276px, -88px); */
+  transform: translate(282px, -94px);
 }
 
 .map_locate .us .grey-scale {
@@ -1554,7 +1556,8 @@ h1 span {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translate(276px, -288px);
+  /* transform: translate(276px, -288px); */
+  transform: translate(286px, -151px);
 }
 
 .map_locate .canada .grey-scale {
@@ -1568,4 +1571,43 @@ h1 span {
   transform: translate(0px, 0px);
   position: relative;
   display: none;
+}
+
+.map-mail {
+  background-color: #101828;
+  padding: 4px 8px;
+  border-radius: 8px;
+  height: fit-content;
+  position: absolute;
+  bottom: 10px;
+  left: 37px;
+  display: none;
+}
+
+.map-mail::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #101828;
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 11px;
+  transform: rotate(45deg);
+}
+
+.map-mail a {
+  display: flex;
+  gap: 8px;
+}
+.map-mail a span {
+  color: white;
+  text-align: center;
+
+  /* Text xs/Semibold */
+  font-family: "thicccboi-regular" !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 150% */
 }

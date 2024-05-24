@@ -376,38 +376,38 @@ document.querySelector(".freight_soln-swiper_container .swiper").style.left =
 //   const sectionMarginLeft = window.getComputedStyle(
 //     document.querySelector(".free_audit .section-margin")
 //   ).marginLeft;
-//   document.querySelector(
-//     ".freight_soln-swiper_container .swiper"
-//   ).style.left = sectionMarginLeft;
+//   document.querySelector(".freight_soln-swiper_container .swiper").style.left =
+//     sectionMarginLeft;
 // }
 
-// function checkMediaQuery() {
-//   // Check if the viewport is at least 1200 pixels wide
-//   const mediaQuery = window.matchMedia("(min-width: 1200px)");
+function checkMediaQuery() {
+  // Check if the viewport is at least 1200 pixels wide
+  const mediaQuery = window.matchMedia("(min-width: 1200px)");
 
-//   // If the media query matches (i.e., the viewport is at least 1200px wide)
-//   if (mediaQuery.matches) {
-//     adjustSwiperPosition(); // Call your function
-//   } else {
-//     // Optionally, handle the case where the viewport is less than 1200px
-//     // e.g., reset styles or perform other logic
-//     document.querySelector(
-//       ".freight_soln-swiper_container .swiper"
-//     ).style.left = "initial";
-//   }
+  // If the media query matches (i.e., the viewport is at least 1200px wide)
+  if (mediaQuery.matches) {
+    adjustSwiperPosition(); // Call your function
+  }
+  // else {
+  //   // Optionally, handle the case where the viewport is less than 1200px
+  //   // e.g., reset styles or perform other logic
+  //   document.querySelector(
+  //     ".freight_soln-swiper_container .swiper"
+  //   ).style.left = "initial";
+  // }
 
-//   // Add a listener for changes in the media query's match state
-//   mediaQuery.addListener((e) => {
-//     if (e.matches) {
-//       adjustSwiperPosition(); // Adjust position when it changes to at least 1200px
-//     } else {
-//       // Reset or handle the less than 1200px case
-//       document.querySelector(
-//         ".freight_soln-swiper_container .swiper"
-//       ).style.left = "initial";
-//     }
-//   });
-// }
+  // // Add a listener for changes in the media query's match state
+  // mediaQuery.addListener((e) => {
+  //   if (e.matches) {
+  //     adjustSwiperPosition(); // Adjust position when it changes to at least 1200px
+  //   } else {
+  //     // Reset or handle the less than 1200px case
+  //     document.querySelector(
+  //       ".freight_soln-swiper_container .swiper"
+  //     ).style.left = "initial";
+  //   }
+  // });
+}
 
-// // Run the function on initial load and setup the listener
+// Run the function on initial load and setup the listener
 // checkMediaQuery();
