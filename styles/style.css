@@ -1107,6 +1107,11 @@ footer .section-margin {
   .footer-container {
     gap: 108px;
   }
+
+  footer {
+    padding-bottom: 24px !important;
+    padding-top: 80px !important;
+  }
 }
 @media (min-width: 1200px) {
 }
